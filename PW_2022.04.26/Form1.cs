@@ -18,5 +18,17 @@ namespace PW_2022._04._26
             MessageBox.Show(str2, "׀וח‏לו");
             MessageBox.Show($"{str3}{Environment.NewLine}(ֲ נוח‏לו {stringcount} סטלגמכמג.)", "׀וח‏לו");
         }
+
+        private void Form1_MouseClick(object sender, MouseEventArgs e)
+        {
+            if(e.X > 10 && e.Y > 10)
+            {
+                MessageBox.Show("ֱמכüרו 10-ט");
+            }
+            else
+            {
+                MessageBox.Show("ּוםüרו 10-ט");
+            }
+        }
     }
 }
