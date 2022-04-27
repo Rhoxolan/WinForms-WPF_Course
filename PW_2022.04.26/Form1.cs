@@ -14,9 +14,13 @@ namespace PW_2022._04._26
             string str2 = "C# developer";
             string str3 = "Компьютерная академия ШАГ, г. Кривой Рог";
             int stringcount = (str1.Length + str2.Length + str3.Length) / string_count;
-            MessageBox.Show(str1, "Резюме");
-            MessageBox.Show(str2, "Резюме");
-            MessageBox.Show($"{str3}{Environment.NewLine}(В резюме {stringcount} символов.)", "Резюме");
+            if (MessageBox.Show("Показать резюме?", "Резюме", MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question) == DialogResult.Yes) //Пример работы с DialogResult
+            {
+                MessageBox.Show(str1, "Резюме");
+                MessageBox.Show(str2, "Резюме");
+                MessageBox.Show($"{str3}{Environment.NewLine}(В резюме {stringcount} символов.)", "Резюме");
+            }
         }
 
         private void Form1_MouseClick(object sender, MouseEventArgs e)
