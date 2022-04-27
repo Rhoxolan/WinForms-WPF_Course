@@ -6,5 +6,10 @@ namespace HW_2022._04._25
         {
             InitializeComponent();
         }
+
+        private void Game_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
