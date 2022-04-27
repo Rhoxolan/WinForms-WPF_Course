@@ -21,13 +21,28 @@ namespace PW_2022._04._26
 
         private void Form1_MouseClick(object sender, MouseEventArgs e)
         {
-            if(e.X > 10 && e.Y > 10)
+            if(e.Button == MouseButtons.Left)
             {
-                MessageBox.Show("Больше 10-и");
-            }
-            else
-            {
-                MessageBox.Show("Меньше 10-и");
+                if (e.X > 10 && e.Y > 10 &&
+                e.Y < (this.Height - 50) && e.X < (this.Width - 50))
+                {
+                    //MessageBox.Show("Попали в квадрат", "Нажатие мышкой",
+                    //    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Попали в квадрат");
+                }
+                else if (e.X == 10 || e.Y == 10 ||
+                e.Y == (this.Height - 50) || e.X == (this.Width - 50))
+                {
+                    //MessageBox.Show("Вы нажали на границу квадрата", "Нажатие мышкой",
+                    //    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Вы нажали на границу квадрата");
+                }
+                else
+                {
+                    //MessageBox.Show("Не попали в квадрат", "Нажатие мышкой",
+                    //    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Не Попали в квадрат");
+                }
             }
         }
     }
