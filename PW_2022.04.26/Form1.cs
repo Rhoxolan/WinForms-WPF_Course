@@ -10,6 +10,7 @@ namespace PW_2022._04._26
         private void Task1_Click(object sender, EventArgs e)
         {
             const int string_count = 3;
+
             string str1 = "Бацемакин Павел";
             string str2 = "C# developer";
             string str3 = "Компьютерная академия ШАГ, г. Кривой Рог";
