@@ -24,14 +24,14 @@ namespace PW_2022._04._26
             if(e.Button == MouseButtons.Left)
             {
                 if (e.X > 10 && e.Y > 10 &&
-                e.Y < (this.Height - 50) && e.X < (this.Width - 50))
+                e.Y < (this.ClientSize.Height - 10) && e.X < (this.ClientSize.Width - 10))
                 {
                     //MessageBox.Show("Попали в квадрат", "Нажатие мышкой",
                     //    MessageBoxButtons.OK, MessageBoxIcon.Information);
                     MessageBox.Show("Попали в квадрат");
                 }
                 else if (e.X == 10 || e.Y == 10 ||
-                e.Y == (this.Height - 50) || e.X == (this.Width - 50))
+                e.Y == (this.ClientSize.Height - 10) || e.X == (this.ClientSize.Width - 10))
                 {
                     //MessageBox.Show("Вы нажали на границу квадрата", "Нажатие мышкой",
                     //    MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -41,8 +41,17 @@ namespace PW_2022._04._26
                 {
                     //MessageBox.Show("Не попали в квадрат", "Нажатие мышкой",
                     //    MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    MessageBox.Show("Не Попали в квадрат");
+                    MessageBox.Show("Не попали в квадрат");
                 }
+            }
+            if(e.Button == MouseButtons.Right)
+            {
+                MessageBox.Show($"Ширина рабочей области: {this.ClientSize.Width}," +
+                    $"высота рабочей области:{this.ClientSize.Height}.", "Информация про рабочую область");
+            }
+            if(e.Button == MouseButtons.Middle)
+            {
+                MessageBox.Show($"Вы кликнули: X{e.X} Y{e.Y}.", "Информация про клик мышкой");
             }
         }
     }
