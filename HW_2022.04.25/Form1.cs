@@ -13,28 +13,28 @@ namespace HW_2022._04._25
             while(true)
             {
                 DialogResult dr;
-                dr = MessageBox.Show("Загадайте число от 1 до 2000!", "Игра", MessageBoxButtons.OKCancel);
+                dr = MessageBox.Show("Р—Р°РіР°РґР°Р№С‚Рµ С‡РёСЃР»Рѕ РѕС‚ 1 РґРѕ 2000!", "РРіСЂР°", MessageBoxButtons.OKCancel);
                 if (dr == DialogResult.OK)
                 {
                     DialogResult dr2;
                     while (true)
                     {
                         DialogResult dr3;
-                        dr2 = MessageBox.Show($"Вы загадали число {random.Next(0,2001)}?", "Игра",
+                        dr2 = MessageBox.Show($"Р’С‹ Р·Р°РіР°РґР°Р»Рё С‡РёСЃР»Рѕ {random.Next(0,2001)}?", "РРіСЂР°",
                             MessageBoxButtons.YesNoCancel);
                         if(dr2 == DialogResult.Yes)
                         {
-                            dr2 = MessageBox.Show($"Продолжить игру?", "Игра",
+                            dr3 = MessageBox.Show($"РџСЂРѕРґРѕР»Р¶РёС‚СЊ РёРіСЂСѓ?", "РРіСЂР°",
                             MessageBoxButtons.YesNoCancel);
-                            if (dr2 == DialogResult.Yes)
+                            if (dr3 == DialogResult.Yes)
                             {
                                 break;
                             }
-                            if (dr2 == DialogResult.No)
+                            if (dr3 == DialogResult.No)
                             {
                                 return;
                             }
-                            if (dr2 == DialogResult.Cancel)
+                            if (dr3 == DialogResult.Cancel)
                             {
                                 return;
                             }
