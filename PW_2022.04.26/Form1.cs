@@ -10,16 +10,16 @@ namespace PW_2022._04._26
         private void Task1_Click(object sender, EventArgs e)
         {
             const int string_count = 3;
-            string str1 = "Áàöåìàêèí Ïàâåë";
+            string str1 = "Ð‘Ð°Ñ†ÐµÐ¼Ð°ÐºÐ¸Ð½ ÐŸÐ°Ð²ÐµÐ»";
             string str2 = "C# developer";
-            string str3 = "Êîìïüþòåðíàÿ àêàäåìèÿ ØÀÃ, ã. Êðèâîé Ðîã";
+            string str3 = "ÐšÐ¾Ð¼Ð¿ÑŒÑŽÑ‚ÐµÑ€Ð½Ð°Ñ Ð°ÐºÐ°Ð´ÐµÐ¼Ð¸Ñ Ð¨ÐÐ“, Ð³. ÐšÑ€Ð¸Ð²Ð¾Ð¹ Ð Ð¾Ð³";
             int stringcount = (str1.Length + str2.Length + str3.Length) / string_count;
-            if (MessageBox.Show("Ïîêàçàòü ðåçþìå?", "Ðåçþìå", MessageBoxButtons.YesNo,
-                MessageBoxIcon.Question) == DialogResult.Yes) //Ïðèìåð ðàáîòû ñ DialogResult
+            if (MessageBox.Show("ÐŸÐ¾ÐºÐ°Ð·Ð°Ñ‚ÑŒ Ñ€ÐµÐ·ÑŽÐ¼Ðµ?", "Ð ÐµÐ·ÑŽÐ¼Ðµ", MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question) == DialogResult.Yes) //ÐŸÑ€Ð¸Ð¼ÐµÑ€ Ñ€Ð°Ð±Ð¾Ñ‚Ñ‹ Ñ DialogResult
             {
-                MessageBox.Show(str1, "Ðåçþìå");
-                MessageBox.Show(str2, "Ðåçþìå");
-                MessageBox.Show($"{str3}{Environment.NewLine}(Â ðåçþìå {stringcount} ñèìâîëîâ.)", "Ðåçþìå");
+                MessageBox.Show(str1, "Ð ÐµÐ·ÑŽÐ¼Ðµ");
+                MessageBox.Show(str2, "Ð ÐµÐ·ÑŽÐ¼Ðµ");
+                MessageBox.Show($"{str3}{Environment.NewLine}(Ð’ Ñ€ÐµÐ·ÑŽÐ¼Ðµ {stringcount} ÑÐ¸Ð¼Ð²Ð¾Ð»Ð¾Ð².)", "Ð ÐµÐ·ÑŽÐ¼Ðµ");
             }
         }
 
@@ -30,32 +30,32 @@ namespace PW_2022._04._26
                 if (e.X > 10 && e.Y > 10 &&
                 e.Y < (this.ClientSize.Height - 10) && e.X < (this.ClientSize.Width - 10))
                 {
-                    //MessageBox.Show("Ïîïàëè â êâàäðàò", "Íàæàòèå ìûøêîé",
+                    //MessageBox.Show("ÐŸÐ¾Ð¿Ð°Ð»Ð¸ Ð² ÐºÐ²Ð°Ð´Ñ€Ð°Ñ‚", "ÐÐ°Ð¶Ð°Ñ‚Ð¸Ðµ Ð¼Ñ‹ÑˆÐºÐ¾Ð¹",
                     //    MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    MessageBox.Show("Ïîïàëè â êâàäðàò");
+                    MessageBox.Show("ÐŸÐ¾Ð¿Ð°Ð»Ð¸ Ð² ÐºÐ²Ð°Ð´Ñ€Ð°Ñ‚");
                 }
                 else if (e.X == 10 || e.Y == 10 ||
                 e.Y == (this.ClientSize.Height - 10) || e.X == (this.ClientSize.Width - 10))
                 {
-                    //MessageBox.Show("Âû íàæàëè íà ãðàíèöó êâàäðàòà", "Íàæàòèå ìûøêîé",
+                    //MessageBox.Show("Ð’Ñ‹ Ð½Ð°Ð¶Ð°Ð»Ð¸ Ð½Ð° Ð³Ñ€Ð°Ð½Ð¸Ñ†Ñƒ ÐºÐ²Ð°Ð´Ñ€Ð°Ñ‚Ð°", "ÐÐ°Ð¶Ð°Ñ‚Ð¸Ðµ Ð¼Ñ‹ÑˆÐºÐ¾Ð¹",
                     //    MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    MessageBox.Show("Âû íàæàëè íà ãðàíèöó êâàäðàòà");
+                    MessageBox.Show("Ð’Ñ‹ Ð½Ð°Ð¶Ð°Ð»Ð¸ Ð½Ð° Ð³Ñ€Ð°Ð½Ð¸Ñ†Ñƒ ÐºÐ²Ð°Ð´Ñ€Ð°Ñ‚Ð°");
                 }
                 else
                 {
-                    //MessageBox.Show("Íå ïîïàëè â êâàäðàò", "Íàæàòèå ìûøêîé",
+                    //MessageBox.Show("ÐÐµ Ð¿Ð¾Ð¿Ð°Ð»Ð¸ Ð² ÐºÐ²Ð°Ð´Ñ€Ð°Ñ‚", "ÐÐ°Ð¶Ð°Ñ‚Ð¸Ðµ Ð¼Ñ‹ÑˆÐºÐ¾Ð¹",
                     //    MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    MessageBox.Show("Íå ïîïàëè â êâàäðàò");
+                    MessageBox.Show("ÐÐµ Ð¿Ð¾Ð¿Ð°Ð»Ð¸ Ð² ÐºÐ²Ð°Ð´Ñ€Ð°Ñ‚");
                 }
             }
             if(e.Button == MouseButtons.Right)
             {
-                MessageBox.Show($"Øèðèíà ðàáî÷åé îáëàñòè: {this.ClientSize.Width}," +
-                    $"âûñîòà ðàáî÷åé îáëàñòè:{this.ClientSize.Height}.", "Èíôîðìàöèÿ ïðî ðàáî÷óþ îáëàñòü");
+                MessageBox.Show($"Ð¨Ð¸Ñ€Ð¸Ð½Ð° Ñ€Ð°Ð±Ð¾Ñ‡ÐµÐ¹ Ð¾Ð±Ð»Ð°ÑÑ‚Ð¸: {this.ClientSize.Width}," +
+                    $"Ð²Ñ‹ÑÐ¾Ñ‚Ð° Ñ€Ð°Ð±Ð¾Ñ‡ÐµÐ¹ Ð¾Ð±Ð»Ð°ÑÑ‚Ð¸:{this.ClientSize.Height}.", "Ð˜Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ Ð¿Ñ€Ð¾ Ñ€Ð°Ð±Ð¾Ñ‡ÑƒÑŽ Ð¾Ð±Ð»Ð°ÑÑ‚ÑŒ");
             }
             if(e.Button == MouseButtons.Middle)
             {
-                MessageBox.Show($"Âû êëèêíóëè: X{e.X} Y{e.Y}.", "Èíôîðìàöèÿ ïðî êëèê ìûøêîé");
+                MessageBox.Show($"Ð’Ñ‹ ÐºÐ»Ð¸ÐºÐ½ÑƒÐ»Ð¸: X{e.X} Y{e.Y}.", "Ð˜Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ Ð¿Ñ€Ð¾ ÐºÐ»Ð¸Ðº Ð¼Ñ‹ÑˆÐºÐ¾Ð¹");
             }
         }
     }
