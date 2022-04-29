@@ -83,5 +83,64 @@ namespace PW_2022._04._27
                 $"Дополнительная информация: {personInfo.AddInfo}{Environment.NewLine}",
                 "Информация");
         }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked)
+            {
+                checkBox2.Enabled = false;
+            }
+            if (!checkBox1.Checked)
+            {
+                checkBox2.Enabled = true;
+            }
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox2.Checked)
+            {
+                checkBox1.Enabled = false;
+            }
+            if (!checkBox2.Checked)
+            {
+                checkBox1.Enabled = true;
+            }
+        }
+
+        private void checkBox3_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox3.Checked)
+            {
+                checkBox4.Enabled = false;
+            }
+            if (!checkBox3.Checked)
+            {
+                checkBox4.Enabled = true;
+            }
+        }
+
+        private void checkBox4_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox4.Checked)
+            {
+                checkBox3.Enabled = false;
+            }
+            if (!checkBox4.Checked)
+            {
+                checkBox3.Enabled = true;
+            }
+        }
+
+        private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            monthCalendar1.SetDate(new(Convert.ToInt32(YearBox.Text), Convert.ToInt32(MonthBox.Text),
+                Convert.ToInt32(DayBox.Text)));
+        }
     }
 }

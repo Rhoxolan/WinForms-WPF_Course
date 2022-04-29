@@ -46,6 +46,12 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.SaveClick = new System.Windows.Forms.Button();
             this.LoadNReadClick = new System.Windows.Forms.Button();
+            this.Task2 = new System.Windows.Forms.Label();
+            this.DayBox = new System.Windows.Forms.TextBox();
+            this.MonthBox = new System.Windows.Forms.TextBox();
+            this.YearBox = new System.Windows.Forms.TextBox();
+            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -105,6 +111,7 @@
             this.checkBox1.TabIndex = 6;
             this.checkBox1.Text = "Муж";
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // label4
             // 
@@ -124,6 +131,7 @@
             this.checkBox2.TabIndex = 8;
             this.checkBox2.Text = "Жен";
             this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
             // label5
             // 
@@ -161,6 +169,7 @@
             this.checkBox3.TabIndex = 12;
             this.checkBox3.Text = "Замужем (Женат)";
             this.checkBox3.UseVisualStyleBackColor = true;
+            this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
             // 
             // checkBox4
             // 
@@ -171,6 +180,7 @@
             this.checkBox4.TabIndex = 13;
             this.checkBox4.Text = "Свободен(на)";
             this.checkBox4.UseVisualStyleBackColor = true;
+            this.checkBox4.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
             // 
             // label7
             // 
@@ -209,11 +219,64 @@
             this.LoadNReadClick.UseVisualStyleBackColor = true;
             this.LoadNReadClick.Click += new System.EventHandler(this.LoadNReadClick_Click);
             // 
+            // Task2
+            // 
+            this.Task2.AutoSize = true;
+            this.Task2.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Task2.Location = new System.Drawing.Point(297, 9);
+            this.Task2.Name = "Task2";
+            this.Task2.Size = new System.Drawing.Size(114, 30);
+            this.Task2.TabIndex = 18;
+            this.Task2.Text = "Задание 2:";
+            // 
+            // DayBox
+            // 
+            this.DayBox.Location = new System.Drawing.Point(297, 42);
+            this.DayBox.Name = "DayBox";
+            this.DayBox.Size = new System.Drawing.Size(40, 23);
+            this.DayBox.TabIndex = 19;
+            // 
+            // MonthBox
+            // 
+            this.MonthBox.Location = new System.Drawing.Point(343, 42);
+            this.MonthBox.Name = "MonthBox";
+            this.MonthBox.Size = new System.Drawing.Size(40, 23);
+            this.MonthBox.TabIndex = 20;
+            // 
+            // YearBox
+            // 
+            this.YearBox.Location = new System.Drawing.Point(389, 42);
+            this.YearBox.Name = "YearBox";
+            this.YearBox.Size = new System.Drawing.Size(72, 23);
+            this.YearBox.TabIndex = 21;
+            // 
+            // monthCalendar1
+            // 
+            this.monthCalendar1.Location = new System.Drawing.Point(297, 106);
+            this.monthCalendar1.Name = "monthCalendar1";
+            this.monthCalendar1.TabIndex = 22;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(297, 71);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(164, 23);
+            this.button1.TabIndex = 23;
+            this.button1.Text = "Показать дату";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Practical_Work
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(504, 441);
+            this.ClientSize = new System.Drawing.Size(873, 441);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.monthCalendar1);
+            this.Controls.Add(this.YearBox);
+            this.Controls.Add(this.MonthBox);
+            this.Controls.Add(this.DayBox);
+            this.Controls.Add(this.Task2);
             this.Controls.Add(this.LoadNReadClick);
             this.Controls.Add(this.SaveClick);
             this.Controls.Add(this.textBox4);
@@ -259,5 +322,11 @@
         private TextBox textBox4;
         private Button SaveClick;
         private Button LoadNReadClick;
+        private Label Task2;
+        private TextBox DayBox;
+        private TextBox MonthBox;
+        private TextBox YearBox;
+        private MonthCalendar monthCalendar1;
+        private Button button1;
     }
 }
