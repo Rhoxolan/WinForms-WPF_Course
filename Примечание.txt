@@ -1,3 +1,6 @@
 25.04.2022 Введение в WinForms
 PW - Работа с MessageBox, DialogResult, мышиными сообщениями, пример работы с координатами клика и размером окна.
 HW - Работа с MessageBox, DialogResult, игра "Загадай число".
+
+27.04.2022 Взаимодействие с элементами управления
+PW - Работа с label, textBox, checkBox, dateTimePicker. Пример сериализации в JSON.

@@ -148,9 +148,9 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(13, 225);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(103, 15);
+            this.label6.Size = new System.Drawing.Size(129, 15);
             this.label6.TabIndex = 11;
-            this.label6.Text = "Семейный статус";
+            this.label6.Text = "Семейное положение";
             // 
             // checkBox3
             // 

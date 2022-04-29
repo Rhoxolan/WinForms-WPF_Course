@@ -42,20 +42,46 @@ namespace PW_2022._04._27
                 textBox4.Text);
 
             string docPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-            using (FileStream fs = new(Path.Combine(docPath, "personInfo.bin"), FileMode.OpenOrCreate))
+            using (FileStream fs = new(Path.Combine(docPath, "personInfo.json"), FileMode.Create))
             {
                 JsonSerializer.Serialize<PersonInfo?>(fs, personInfo);
             }
-            MessageBox.Show("������ ������� �������!");
+            MessageBox.Show("Данные успешно внесены!");
         }
 
         private void LoadNReadClick_Click(object sender, EventArgs e)
         {
             string docPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-            using (FileStream fs = new(Path.Combine(docPath, "personInfo.bin"), FileMode.OpenOrCreate))
+            using (FileStream fs = new(Path.Combine(docPath, "personInfo.json"), FileMode.OpenOrCreate))
             {
-                personInfo = JsonSerializer.Deserialize<PersonInfo>(fs);
+                personInfo = JsonSerializer.Deserialize<PersonInfo?>(fs);
             }
+
+            string? gender = null, marital_status = null;
+            if (personInfo.Gender == 1)
+            {
+                gender = "Муж";
+            }
+            if (personInfo.Gender == 2)
+            {
+                gender = "Жен";
+            }
+            if (personInfo.MaritalStatus == 1)
+            {
+                marital_status = "Замужем (женат)";
+            }
+            if (personInfo.MaritalStatus == 2)
+            {
+                marital_status = "Свободен(на)";
+            }
+            MessageBox.Show($"Имя: {personInfo.Name}{Environment.NewLine}" +
+                $"Фамилия: {personInfo.Surname}{Environment.NewLine}" +
+                $"Отчество: {personInfo.Patronymic}{Environment.NewLine}" +
+                $"Пол: {gender}{Environment.NewLine}" +
+                $"Дата рождения: {personInfo.Date_Time}{Environment.NewLine}" +
+                $"Семейное положение: {marital_status}{Environment.NewLine}" +
+                $"Дополнительная информация: {personInfo.AddInfo}{Environment.NewLine}",
+                "Информация");
         }
     }
 }
