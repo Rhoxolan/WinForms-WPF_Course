@@ -132,11 +132,6 @@ namespace PW_2022._04._27
             }
         }
 
-        private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             monthCalendar1.SetDate(new(Convert.ToInt32(YearBox.Text), Convert.ToInt32(MonthBox.Text),
