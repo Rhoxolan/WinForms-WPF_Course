@@ -52,6 +52,10 @@
             this.YearBox = new System.Windows.Forms.TextBox();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.button1 = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.dateTimePickerStart = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerEnd = new System.Windows.Forms.DateTimePicker();
+            this.CalculateTimeSpan = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -266,11 +270,49 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label8.Location = new System.Drawing.Point(503, 9);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(114, 30);
+            this.label8.TabIndex = 24;
+            this.label8.Text = "Задание 3:";
+            // 
+            // dateTimePickerStart
+            // 
+            this.dateTimePickerStart.Location = new System.Drawing.Point(503, 42);
+            this.dateTimePickerStart.Name = "dateTimePickerStart";
+            this.dateTimePickerStart.Size = new System.Drawing.Size(200, 23);
+            this.dateTimePickerStart.TabIndex = 25;
+            // 
+            // dateTimePickerEnd
+            // 
+            this.dateTimePickerEnd.Location = new System.Drawing.Point(503, 71);
+            this.dateTimePickerEnd.Name = "dateTimePickerEnd";
+            this.dateTimePickerEnd.Size = new System.Drawing.Size(200, 23);
+            this.dateTimePickerEnd.TabIndex = 26;
+            // 
+            // CalculateTimeSpan
+            // 
+            this.CalculateTimeSpan.Location = new System.Drawing.Point(503, 100);
+            this.CalculateTimeSpan.Name = "CalculateTimeSpan";
+            this.CalculateTimeSpan.Size = new System.Drawing.Size(200, 23);
+            this.CalculateTimeSpan.TabIndex = 27;
+            this.CalculateTimeSpan.Text = "Произвести рассчет!";
+            this.CalculateTimeSpan.UseVisualStyleBackColor = true;
+            this.CalculateTimeSpan.Click += new System.EventHandler(this.CalculateTimeSpan_Click);
+            // 
             // Practical_Work
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(873, 441);
+            this.Controls.Add(this.CalculateTimeSpan);
+            this.Controls.Add(this.dateTimePickerEnd);
+            this.Controls.Add(this.dateTimePickerStart);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.YearBox);
@@ -328,5 +370,9 @@
         private TextBox YearBox;
         private MonthCalendar monthCalendar1;
         private Button button1;
+        private Label label8;
+        private DateTimePicker dateTimePickerStart;
+        private DateTimePicker dateTimePickerEnd;
+        private Button CalculateTimeSpan;
     }
 }

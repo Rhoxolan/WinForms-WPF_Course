@@ -10,10 +10,23 @@ namespace PW_2022._04._27
     public partial class Practical_Work : Form
     {
         private PersonInfo? personInfo;
+        private TextBox tb1, tb2, tb3;
 
         public Practical_Work()
         {
             personInfo = null;
+
+            //Создаём статики для CalculateTimeSpan_Click
+            tb1 = new();
+            tb2 = new();
+            tb3 = new();
+            Controls.Add(tb1);
+            Controls.Add(tb2);
+            Controls.Add(tb3);
+            tb1.Visible = false; //Чтобы небыло видно изначально
+            tb2.Visible = false;
+            tb3.Visible = false;
+
             InitializeComponent();
         }
 
@@ -136,6 +149,38 @@ namespace PW_2022._04._27
         {
             monthCalendar1.SetDate(new(Convert.ToInt32(YearBox.Text), Convert.ToInt32(MonthBox.Text),
                 Convert.ToInt32(DayBox.Text)));
+        }
+
+        private void CalculateTimeSpan_Click(object sender, EventArgs e)
+        {
+            TimeSpan interval = dateTimePickerEnd.Value - dateTimePickerStart.Value;
+
+            //Создаем статик
+            Label label = new();
+            label.Text = "Разница во времени: " + interval.ToString();
+            label.Location = new Point(503, 130);
+            label.AutoSize = true; //Пишем чтобы размер сам подтягивался
+            Controls.Add(label);
+
+            //Активируем и заполняем Текстбоксы
+            tb1.Visible = true;
+            tb2.Visible = true;
+            tb3.Visible = true;
+
+            tb1.Text = $"{interval.Days / 365} Лет";
+            tb1.Enabled = false;
+            tb1.Location = new Point(503, 150);
+            tb1.AutoSize = true;
+
+            tb2.Text = $"{interval.Days / 12} Месяцев";
+            tb2.Enabled = false;
+            tb2.Location = new Point(503, 175);
+            tb2.AutoSize = true;
+
+            tb3.Text = $"{interval.Days} Дней";
+            tb3.Enabled = false;
+            tb3.Location = new Point(503, 200);
+            tb3.AutoSize = true;
         }
     }
 }

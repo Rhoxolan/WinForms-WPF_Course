@@ -3,4 +3,4 @@ PW - Работа с MessageBox, DialogResult, мышиными сообщениями, пример работы с ко
 HW - Работа с MessageBox, DialogResult, игра "Загадай число".
 
 27.04.2022 Взаимодействие с элементами управления
-PW - Работа с label, textBox, checkBox, dateTimePicker, monthCalendar. Пример сериализации в JSON.
+PW - Работа с label, textBox, checkBox, dateTimePicker, monthCalendar. Проработка рассчета значений с textBox-ов. Пример сериализации в JSON. Пример работы с TimeSpan и DateTime.
