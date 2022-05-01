@@ -4,3 +4,4 @@ HW - Работа с MessageBox, DialogResult, игра "Загадай число".
 
 27.04.2022 Взаимодействие с элементами управления
 PW - Работа с label, textBox, checkBox, dateTimePicker, monthCalendar. Проработка рассчета значений с textBox-ов. Пример сериализации в JSON. Пример работы с TimeSpan и DateTime.
+HW - Игра "Убегающая кнопка", работа с событием кнопки MouseEnter.
