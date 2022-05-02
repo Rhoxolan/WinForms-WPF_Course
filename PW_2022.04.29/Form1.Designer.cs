@@ -112,7 +112,7 @@
             this.tableLayoutPanel1.SetColumnSpan(this.TextBox, 4);
             this.TextBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TextBox.Enabled = false;
-            this.TextBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TextBox.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.TextBox.Location = new System.Drawing.Point(3, 3);
             this.TextBox.Multiline = true;
             this.TextBox.Name = "TextBox";

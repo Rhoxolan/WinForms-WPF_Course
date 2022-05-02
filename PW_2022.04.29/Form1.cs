@@ -81,18 +81,48 @@ namespace PW_2022._04._29
 
         private void PointButton_Click(object sender, EventArgs e)
         {
-            TextBox.Text += ".";
+            TextBox.Text += ",";
         }
 
         private void EqualsButton_Click(object sender, EventArgs e)
         {
             try
             {
-
+                string[] operands = TextBox.Text.Split('+', '-', '*', '/');
+                int rightoperand = 1;
+                decimal sum = Convert.ToDecimal(operands[0]);
+                foreach(var o in TextBox.Text)
+                {
+                    if(o == '+')
+                    {
+                        sum += Convert.ToDecimal(operands[rightoperand]);
+                        rightoperand++;
+                        continue;
+                    }
+                    if (o == '-')
+                    {
+                        sum -= Convert.ToDecimal(operands[rightoperand]);
+                        rightoperand++;
+                        continue;
+                    }
+                    if (o == '*')
+                    {
+                        sum *= Convert.ToDecimal(operands[rightoperand]);
+                        rightoperand++;
+                        continue;
+                    }
+                    if (o == '/')
+                    {
+                        sum /= Convert.ToDecimal(operands[rightoperand]);
+                        rightoperand++;
+                        continue;
+                    }
+                }
+                TextBox.Text = sum.ToString();
             }
             catch
             {
-
+                TextBox.Text = "Ошибка ввода! Проверьте, пожалуйста, строку на корректность ввода.";
             }
         }
 
