@@ -4,9 +4,12 @@ namespace PW_2022._04._29
 {
     public partial class Calculator : Form
     {
+        private bool isEqualsOut;
+
         public Calculator()
         {
             InitializeComponent();
+            isEqualsOut = false;
         }
 
         private void OneButton_Click(object sender, EventArgs e)
