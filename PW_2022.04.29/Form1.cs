@@ -1,4 +1,5 @@
 using System.Text;
+using System.Data;
 
 namespace PW_2022._04._29
 {
@@ -14,118 +15,214 @@ namespace PW_2022._04._29
 
         private void OneButton_Click(object sender, EventArgs e)
         {
-            TextBox.Text += "1";
+            if (isEqualsOut)
+            {
+                TextBox.Text += "1";
+            }
+            else
+            {
+                TextBox.Text = "1";
+                isEqualsOut = true;
+            }
         }
 
         private void TwoButton_Click(object sender, EventArgs e)
         {
-            TextBox.Text += "2";
+            if (isEqualsOut)
+            {
+                TextBox.Text += "2";
+            }
+            else
+            {
+                TextBox.Text = "2";
+                isEqualsOut = true;
+            }
         }
 
         private void ThreeButton_Click(object sender, EventArgs e)
         {
-            TextBox.Text += "3";
+            if (isEqualsOut)
+            {
+                TextBox.Text += "3";
+            }
+            else
+            {
+                TextBox.Text = "3";
+                isEqualsOut = true;
+            }
         }
 
         private void FourButton_Click(object sender, EventArgs e)
         {
-            TextBox.Text += "4";
+            if (isEqualsOut)
+            {
+                TextBox.Text += "4";
+            }
+            else
+            {
+                TextBox.Text = "4";
+                isEqualsOut = true;
+            }
         }
 
         private void FiveButton_Click(object sender, EventArgs e)
         {
-            TextBox.Text += "5";
+            if (isEqualsOut)
+            {
+                TextBox.Text += "5";
+            }
+            else
+            {
+                TextBox.Text = "5";
+                isEqualsOut = true;
+            }
         }
 
         private void SixButton_Click(object sender, EventArgs e)
         {
-            TextBox.Text += "6";
+            if (isEqualsOut)
+            {
+                TextBox.Text += "6";
+            }
+            else
+            {
+                TextBox.Text = "6";
+                isEqualsOut = true;
+            }
         }
 
         private void SevenButton_Click(object sender, EventArgs e)
         {
-            TextBox.Text += "7";
+            if (isEqualsOut)
+            {
+                TextBox.Text += "7";
+            }
+            else
+            {
+                TextBox.Text = "7";
+                isEqualsOut = true;
+            }
         }
 
         private void EightButton_Click(object sender, EventArgs e)
         {
-            TextBox.Text += "8";
+            if (isEqualsOut)
+            {
+                TextBox.Text += "8";
+            }
+            else
+            {
+                TextBox.Text = "8";
+                isEqualsOut = true;
+            }
         }
 
         private void NineButton_Click(object sender, EventArgs e)
         {
-            TextBox.Text += "9";
+            if (isEqualsOut)
+            {
+                TextBox.Text += "9";
+            }
+            else
+            {
+                TextBox.Text = "9";
+                isEqualsOut = true;
+            }
         }
 
         private void ZeroButton_Click(object sender, EventArgs e)
         {
-            TextBox.Text += "0";
+            if (isEqualsOut)
+            {
+                TextBox.Text += "0";
+            }
+            else
+            {
+                TextBox.Text = "0";
+                isEqualsOut = true;
+            }
         }
 
         private void PlusButton_Click(object sender, EventArgs e)
         {
-            TextBox.Text += "+";
+            if (isEqualsOut)
+            {
+                TextBox.Text += "+";
+            }
+            else
+            {
+                TextBox.Text = "+";
+                isEqualsOut = true;
+            }
         }
 
         private void MinusButton_Click(object sender, EventArgs e)
         {
-            TextBox.Text += "-";
+            if (isEqualsOut)
+            {
+                TextBox.Text += "-";
+            }
+            else
+            {
+                TextBox.Text = "-";
+                isEqualsOut = true;
+            }
         }
 
         private void SubButton_Click(object sender, EventArgs e)
         {
-            TextBox.Text += "*";
+            if (isEqualsOut)
+            {
+                TextBox.Text += "*";
+            }
+            else
+            {
+                TextBox.Text = "*";
+                isEqualsOut = true;
+            }
         }
 
         private void DivisionButton_Click(object sender, EventArgs e)
         {
-            TextBox.Text += "/";
+            if (isEqualsOut)
+            {
+                TextBox.Text += "/";
+            }
+            else
+            {
+                TextBox.Text = "/";
+                isEqualsOut = true;
+            }
         }
 
         private void PointButton_Click(object sender, EventArgs e)
         {
-            TextBox.Text += ",";
+            if (isEqualsOut)
+            {
+                TextBox.Text += ".";
+            }
+            else
+            {
+                TextBox.Text = ".";
+                isEqualsOut = true;
+            }
         }
 
         private void EqualsButton_Click(object sender, EventArgs e)
         {
             try
             {
-                string[] operands = TextBox.Text.Split('+', '-', '*', '/');
-                int rightoperand = 1;
-                decimal sum = Convert.ToDecimal(operands[0]);
-                foreach(var o in TextBox.Text)
-                {
-                    if(o == '+')
-                    {
-                        sum += Convert.ToDecimal(operands[rightoperand]);
-                        rightoperand++;
-                        continue;
-                    }
-                    if (o == '-')
-                    {
-                        sum -= Convert.ToDecimal(operands[rightoperand]);
-                        rightoperand++;
-                        continue;
-                    }
-                    if (o == '*')
-                    {
-                        sum *= Convert.ToDecimal(operands[rightoperand]);
-                        rightoperand++;
-                        continue;
-                    }
-                    if (o == '/')
-                    {
-                        sum /= Convert.ToDecimal(operands[rightoperand]);
-                        rightoperand++;
-                        continue;
-                    }
-                }
-                TextBox.Text = sum.ToString();
+                DataTable table = new DataTable();
+                table.Columns.Add("expression", typeof(string), TextBox.Text);
+                DataRow row = table.NewRow();
+                table.Rows.Add(row);
+                TextBox.Text = (string)row["expression"];
+                isEqualsOut = false;
             }
             catch
             {
-                TextBox.Text = "Ошибка ввода! Проверьте, пожалуйста, строку на корректность ввода.";
+                TextBox.Text = "Ошибка ввода! Пожалуйста, проверьте корректность ввода";
+                isEqualsOut = false;
             }
         }
 
@@ -136,9 +233,12 @@ namespace PW_2022._04._29
 
         private void DelButton_Click(object sender, EventArgs e)
         {
-            StringBuilder sb = new(TextBox.Text);
-            sb.Remove(sb.Length - 1, 1);
-            TextBox.Text = sb.ToString();
+            if (TextBox.Text.Length != 0)
+            {
+                StringBuilder sb = new(TextBox.Text);
+                sb.Remove(sb.Length - 1, 1);
+                TextBox.Text = sb.ToString();
+            }
         }
 
         //Меняем последний знак

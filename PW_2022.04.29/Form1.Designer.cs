@@ -111,11 +111,11 @@
             this.TextBox.BackColor = System.Drawing.Color.White;
             this.tableLayoutPanel1.SetColumnSpan(this.TextBox, 4);
             this.TextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TextBox.Enabled = false;
-            this.TextBox.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.TextBox.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.TextBox.Location = new System.Drawing.Point(3, 3);
             this.TextBox.Multiline = true;
             this.TextBox.Name = "TextBox";
+            this.TextBox.ReadOnly = true;
             this.TextBox.Size = new System.Drawing.Size(358, 69);
             this.TextBox.TabIndex = 1;
             // 
@@ -361,6 +361,7 @@
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(364, 450);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Name = "Calculator";
             this.Text = "Калькулятор";
             this.tableLayoutPanel1.ResumeLayout(false);
