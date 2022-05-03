@@ -221,7 +221,7 @@ namespace PW_2022._04._29
             }
             catch
             {
-                TextBox.Text = "Ошибка ввода! Пожалуйста, проверьте корректность ввода";
+                TextBox.Text = "РћС€РёР±РєР° РІРІРѕРґР°! РџРѕР¶Р°Р»СѓР№СЃС‚Р°, РїСЂРѕРІРµСЂСЊС‚Рµ РєРѕСЂСЂРµРєС‚РЅРѕСЃС‚СЊ РІРІРѕРґР°";
                 isEqualsOut = false;
             }
         }
@@ -241,7 +241,7 @@ namespace PW_2022._04._29
             }
         }
 
-        //Меняем последний знак
+        //РњРµРЅСЏРµРј РїРѕСЃР»РµРґРЅРёР№ Р·РЅР°Рє
         private void ChangeButton_Click(object sender, EventArgs e)
         {
             StringBuilder sb = new(TextBox.Text);
