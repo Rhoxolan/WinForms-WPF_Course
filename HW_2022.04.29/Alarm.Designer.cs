@@ -69,6 +69,7 @@
             this.SettingsButtom.TabIndex = 0;
             this.SettingsButtom.Text = "Настройки";
             this.SettingsButtom.UseVisualStyleBackColor = true;
+            this.SettingsButtom.Click += new System.EventHandler(this.SettingsButtom_Click);
             // 
             // StopButton
             // 

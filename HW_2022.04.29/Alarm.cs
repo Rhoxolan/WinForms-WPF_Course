@@ -8,6 +8,7 @@ namespace HW_2022._04._29
         private static System.Windows.Forms.Timer _timer;
         private SoundPlayer player;
         private WindowsMediaPlayer wmplayer;
+        private Settings settings; //Вторая форма для настроек
         private string docPath;
 
         public Alarm()
@@ -20,16 +21,29 @@ namespace HW_2022._04._29
             try
             {
                 TimeSpan ts = Convert.ToDateTime(MaskedTextBox.Text) - DateTime.Now;
-                Timer.Text = $"{ts.Hours}:{ts.Minutes}:{ts.Seconds}";
+                if (ts < TimeSpan.Zero)
+                {
+                    Timer.Text = $"{ts.Hours + 24}:{ts.Minutes + 60}:{ts.Seconds + 60}";
+                }
+                else
+                {
+                    Timer.Text = $"{ts.Hours}:{ts.Minutes}:{ts.Seconds}";
+                }
                 if (Convert.ToDateTime(MaskedTextBox.Text).Hour == DateTime.Now.Hour &&
                     Convert.ToDateTime(MaskedTextBox.Text).Minute == DateTime.Now.Minute)
                 {
                     _timer.Stop();
                     Timer.Text = "00:00:00";
-                    //player.SoundLocation = Path.Combine(docPath, "alarm.wav");
-                    //player.Play();
-                    wmplayer.URL = Path.Combine(docPath, "alarm.wav");
-                    wmplayer.controls.play();
+                    if(settings.WMPEnabled())
+                    {
+                        wmplayer.URL = Path.Combine(docPath, "alarm.mp3");
+                        wmplayer.controls.play();
+                    }
+                    else
+                    {
+                        player.SoundLocation = Path.Combine(docPath, "alarm.wav");
+                        player.Play();
+                    }
                 }
             }
             catch
@@ -44,6 +58,7 @@ namespace HW_2022._04._29
             _timer = new();
             player = new();
             wmplayer = new();
+            settings = new();
             docPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
         }
 
@@ -60,6 +75,11 @@ namespace HW_2022._04._29
             player.Stop();
             wmplayer.controls.stop();
             Timer.Text = "00:00:00";
+        }
+
+        private void SettingsButtom_Click(object sender, EventArgs e)
+        {
+            settings.ShowDialog();
         }
     }
 }
