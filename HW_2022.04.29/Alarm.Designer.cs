@@ -80,6 +80,7 @@
             this.StopButton.TabIndex = 1;
             this.StopButton.Text = "Остановить будильник";
             this.StopButton.UseVisualStyleBackColor = true;
+            this.StopButton.Click += new System.EventHandler(this.StopButton_Click);
             // 
             // StartButton
             // 

@@ -1,8 +1,11 @@
+using System.Media;
+
 namespace HW_2022._04._29
 {
     public partial class Alarm : Form
     {
         private static System.Windows.Forms.Timer _timer;
+        private SoundPlayer player;
 
         public Alarm()
         {
@@ -11,10 +14,27 @@ namespace HW_2022._04._29
 
         private void ShowTime(object obj, EventArgs e)
         {
-            if (Convert.ToDateTime(MaskedTextBox.Text).Hour == DateTime.Now.Hour &&
-                Convert.ToDateTime(MaskedTextBox.Text).Minute == DateTime.Now.Minute)
+            try
+            {
+                TimeSpan ts = Convert.ToDateTime(MaskedTextBox.Text) - DateTime.Now;
+                Timer.Text = $"{ts.Hours}:{ts.Minutes}:{ts.Seconds}";
+                if (Convert.ToDateTime(MaskedTextBox.Text).Hour == DateTime.Now.Hour &&
+                    Convert.ToDateTime(MaskedTextBox.Text).Minute == DateTime.Now.Minute)
+                {
+                    _timer.Stop();
+                    Timer.Text = "00:00:00";
+                    //
+                    player = new();
+                    player.SoundLocation = "alarm.wav";
+                    player.Play();
+                    player.Stop();
+                    //
+                }
+            }
+            catch
             {
                 _timer.Stop();
+                Timer.Text = "00:00:00";
             }
         }
 
@@ -28,6 +48,12 @@ namespace HW_2022._04._29
             _timer.Tick += new EventHandler(ShowTime);
             _timer.Interval = 1000;
             _timer.Start();
+        }
+
+        private void StopButton_Click(object sender, EventArgs e)
+        {
+            _timer.Stop();
+            Timer.Text = "00:00:00";
         }
     }
 }
