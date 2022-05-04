@@ -1,4 +1,5 @@
 using System.Media;
+using WMPLib;
 
 namespace HW_2022._04._29
 {
@@ -6,6 +7,7 @@ namespace HW_2022._04._29
     {
         private static System.Windows.Forms.Timer _timer;
         private SoundPlayer player;
+        private WindowsMediaPlayer wmplayer;
         private string docPath;
 
         public Alarm()
@@ -24,9 +26,10 @@ namespace HW_2022._04._29
                 {
                     _timer.Stop();
                     Timer.Text = "00:00:00";
-                    player = new();
-                    player.SoundLocation = Path.Combine(docPath, "alarm.wav");
-                    player.Play();
+                    //player.SoundLocation = Path.Combine(docPath, "alarm.wav");
+                    //player.Play();
+                    wmplayer.URL = Path.Combine(docPath, "alarm.wav");
+                    wmplayer.controls.play();
                 }
             }
             catch
@@ -39,6 +42,8 @@ namespace HW_2022._04._29
         private void Alarm_Load(object sender, EventArgs e)
         {
             _timer = new();
+            player = new();
+            wmplayer = new();
             docPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
         }
 
@@ -52,6 +57,8 @@ namespace HW_2022._04._29
         private void StopButton_Click(object sender, EventArgs e)
         {
             _timer.Stop();
+            player.Stop();
+            wmplayer.controls.stop();
             Timer.Text = "00:00:00";
         }
     }
