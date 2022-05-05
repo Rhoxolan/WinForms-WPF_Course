@@ -8,7 +8,7 @@ namespace HW_2022._04._29
         private static System.Windows.Forms.Timer _timer;
         private SoundPlayer player;
         private WindowsMediaPlayer wmplayer;
-        private Settings settings; //Вторая форма для настроек
+        private Settings settings; //Р’С‚РѕСЂР°СЏ С„РѕСЂРјР° РґР»СЏ РЅР°СЃС‚СЂРѕРµРє
         private string docPath;
 
         public Alarm()
