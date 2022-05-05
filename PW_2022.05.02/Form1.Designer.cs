@@ -174,7 +174,7 @@
             this.LoadButton.Name = "LoadButton";
             this.LoadButton.Size = new System.Drawing.Size(115, 28);
             this.LoadButton.TabIndex = 16;
-            this.LoadButton.Text = "Загрзить";
+            this.LoadButton.Text = "Загрузить";
             this.LoadButton.UseVisualStyleBackColor = true;
             this.LoadButton.Click += new System.EventHandler(this.LoadButton_Click);
             // 
