@@ -42,16 +42,7 @@ namespace PW_2022._05._02
 
         private void SaveButton_Click(object sender, EventArgs e)
         {
-            ArrayList al = new(ListBoxForm.Items);
-            //Попробовать это сериализовать
 
-            //Отлично сериализуется
-            //using (FileStream fs = new(Path.Combine(docPath, "personInfo.json"), FileMode.Create))
-            //{
-            //    JsonSerializer.Serialize(fs, ListBoxForm.Items);
-            //}
-
-            //Попробовать десиаризовать в аррей лист, затем привязать к листбоксу
         }
 
         private void LoadButton_Click(object sender, EventArgs e)
