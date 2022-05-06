@@ -106,6 +106,7 @@
             this.MaskedTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.MaskedTextBox.Size = new System.Drawing.Size(141, 39);
             this.MaskedTextBox.TabIndex = 3;
+            this.MaskedTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.MaskedTextBox.ValidatingType = typeof(System.DateTime);
             // 
             // Timer
@@ -119,6 +120,7 @@
             this.Timer.Size = new System.Drawing.Size(251, 46);
             this.Timer.TabIndex = 4;
             this.Timer.Text = "00:00:00";
+            this.Timer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Alarm
             // 
