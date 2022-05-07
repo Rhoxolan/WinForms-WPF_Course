@@ -6,5 +6,6 @@ namespace HW_2022._05._04
         {
             InitializeComponent();
         }
+
     }
 }

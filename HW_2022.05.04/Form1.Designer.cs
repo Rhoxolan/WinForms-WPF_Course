@@ -28,12 +28,86 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.groupBoxPetrol = new System.Windows.Forms.GroupBox();
+            this.groupBoxCafe = new System.Windows.Forms.GroupBox();
+            this.groupBoxTotalAmountPayable = new System.Windows.Forms.GroupBox();
+            this.groupBoxPetrolChecksum = new System.Windows.Forms.GroupBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBoxPetrol.SuspendLayout();
+            this.groupBoxCafe.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // groupBoxPetrol
+            // 
+            this.groupBoxPetrol.Controls.Add(this.groupBoxPetrolChecksum);
+            this.groupBoxPetrol.Location = new System.Drawing.Point(12, 12);
+            this.groupBoxPetrol.Name = "groupBoxPetrol";
+            this.groupBoxPetrol.Size = new System.Drawing.Size(232, 308);
+            this.groupBoxPetrol.TabIndex = 0;
+            this.groupBoxPetrol.TabStop = false;
+            this.groupBoxPetrol.Text = "АЗС";
+            // 
+            // groupBoxCafe
+            // 
+            this.groupBoxCafe.Controls.Add(this.groupBox1);
+            this.groupBoxCafe.Location = new System.Drawing.Point(250, 12);
+            this.groupBoxCafe.Name = "groupBoxCafe";
+            this.groupBoxCafe.Size = new System.Drawing.Size(232, 308);
+            this.groupBoxCafe.TabIndex = 1;
+            this.groupBoxCafe.TabStop = false;
+            this.groupBoxCafe.Text = "Кафе";
+            // 
+            // groupBoxTotalAmountPayable
+            // 
+            this.groupBoxTotalAmountPayable.Location = new System.Drawing.Point(12, 326);
+            this.groupBoxTotalAmountPayable.Name = "groupBoxTotalAmountPayable";
+            this.groupBoxTotalAmountPayable.Size = new System.Drawing.Size(468, 100);
+            this.groupBoxTotalAmountPayable.TabIndex = 2;
+            this.groupBoxTotalAmountPayable.TabStop = false;
+            this.groupBoxTotalAmountPayable.Text = "Сумма к оплате";
+            // 
+            // groupBoxPetrolChecksum
+            // 
+            this.groupBoxPetrolChecksum.Location = new System.Drawing.Point(6, 210);
+            this.groupBoxPetrolChecksum.Name = "groupBoxPetrolChecksum";
+            this.groupBoxPetrolChecksum.Size = new System.Drawing.Size(220, 92);
+            this.groupBoxPetrolChecksum.TabIndex = 0;
+            this.groupBoxPetrolChecksum.TabStop = false;
+            this.groupBoxPetrolChecksum.Text = "К оплате";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Location = new System.Drawing.Point(6, 210);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(220, 92);
+            this.groupBox1.TabIndex = 1;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "К оплате";
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.BackColor = System.Drawing.Color.OldLace;
+            this.ClientSize = new System.Drawing.Size(494, 434);
+            this.Controls.Add(this.groupBoxTotalAmountPayable);
+            this.Controls.Add(this.groupBoxCafe);
+            this.Controls.Add(this.groupBoxPetrol);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Name = "Form1";
+            this.Text = "BestOil";
+            this.groupBoxPetrol.ResumeLayout(false);
+            this.groupBoxCafe.ResumeLayout(false);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private GroupBox groupBoxPetrol;
+        private GroupBox groupBoxCafe;
+        private GroupBox groupBoxTotalAmountPayable;
+        private GroupBox groupBoxPetrolChecksum;
+        private GroupBox groupBox1;
     }
 }
