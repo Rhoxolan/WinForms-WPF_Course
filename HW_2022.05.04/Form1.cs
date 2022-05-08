@@ -74,7 +74,7 @@ namespace HW_2022._05._04
             try
             {
                 SUM.Text = (Convert.ToDouble(textBoxInputBenzinLitres.Text) * Convert.ToDouble(10)).ToString();
-                //Ты тут. Решить проблему. Возможно, попробовать привязку.
+                //Ты тут. Решить проблему. Возможно, попробовать привязку
             }
             catch
             {
