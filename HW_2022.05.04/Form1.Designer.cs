@@ -30,6 +30,7 @@
         {
             this.groupBoxPetrol = new System.Windows.Forms.GroupBox();
             this.groupBoxAmountPrice = new System.Windows.Forms.GroupBox();
+            this.radioButtonAmount = new System.Windows.Forms.RadioButton();
             this.labelUAH = new System.Windows.Forms.Label();
             this.textBoxBenzinPrice = new System.Windows.Forms.TextBox();
             this.labelBenzinPrice = new System.Windows.Forms.Label();
@@ -39,7 +40,7 @@
             this.groupBoxCafe = new System.Windows.Forms.GroupBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBoxTotalAmountPayable = new System.Windows.Forms.GroupBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButtonPrice = new System.Windows.Forms.RadioButton();
             this.groupBoxPetrol.SuspendLayout();
             this.groupBoxAmountPrice.SuspendLayout();
             this.groupBoxCafe.SuspendLayout();
@@ -63,12 +64,24 @@
             // 
             // groupBoxAmountPrice
             // 
-            this.groupBoxAmountPrice.Controls.Add(this.radioButton1);
+            this.groupBoxAmountPrice.Controls.Add(this.radioButtonPrice);
+            this.groupBoxAmountPrice.Controls.Add(this.radioButtonAmount);
             this.groupBoxAmountPrice.Location = new System.Drawing.Point(6, 104);
             this.groupBoxAmountPrice.Name = "groupBoxAmountPrice";
             this.groupBoxAmountPrice.Size = new System.Drawing.Size(120, 100);
             this.groupBoxAmountPrice.TabIndex = 6;
             this.groupBoxAmountPrice.TabStop = false;
+            // 
+            // radioButtonAmount
+            // 
+            this.radioButtonAmount.AutoSize = true;
+            this.radioButtonAmount.Location = new System.Drawing.Point(6, 50);
+            this.radioButtonAmount.Name = "radioButtonAmount";
+            this.radioButtonAmount.Size = new System.Drawing.Size(90, 19);
+            this.radioButtonAmount.TabIndex = 2;
+            this.radioButtonAmount.TabStop = true;
+            this.radioButtonAmount.Text = "Количество";
+            this.radioButtonAmount.UseVisualStyleBackColor = true;
             // 
             // labelUAH
             // 
@@ -158,16 +171,16 @@
             this.groupBoxTotalAmountPayable.TabStop = false;
             this.groupBoxTotalAmountPayable.Text = "Сумма к оплате";
             // 
-            // radioButton1
+            // radioButtonPrice
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(6, 22);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(94, 19);
-            this.radioButton1.TabIndex = 2;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "radioButton1";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButtonPrice.AutoSize = true;
+            this.radioButtonPrice.Location = new System.Drawing.Point(6, 75);
+            this.radioButtonPrice.Name = "radioButtonPrice";
+            this.radioButtonPrice.Size = new System.Drawing.Size(53, 19);
+            this.radioButtonPrice.TabIndex = 3;
+            this.radioButtonPrice.TabStop = true;
+            this.radioButtonPrice.Text = "Цена";
+            this.radioButtonPrice.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -204,6 +217,7 @@
         private Label labelUAH;
         private TextBox textBoxBenzinPrice;
         private GroupBox groupBoxAmountPrice;
-        private RadioButton radioButton1;
+        private RadioButton radioButtonAmount;
+        private RadioButton radioButtonPrice;
     }
 }
