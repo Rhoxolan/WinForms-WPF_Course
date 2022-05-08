@@ -20,6 +20,7 @@ namespace HW_2022._05._04
                 ["Самогон"] = 35
             };
             comboBoxBenzin.SelectedItem = "Бензин премиум";
+            radioButtonAmount.Checked = true;
         }
 
         private void comboBoxBenzin_SelectedIndexChanged(object sender, EventArgs e)
@@ -43,6 +44,41 @@ namespace HW_2022._05._04
             else if (comboBoxBenzin.SelectedItem.ToString() == "Самогон")
             {
                 textBoxBenzinPrice.Text = price["Самогон"].ToString();
+            }
+        }
+
+        private void radioButtonAmount_CheckedChanged(object sender, EventArgs e)
+        {
+            if(radioButtonAmount.Checked)
+            {
+                textBoxInputBenzinPrice.Enabled = false;
+                textBoxInputBenzinLitres.Enabled = true;
+                groupBoxPetrolChecksum.Text = "К оплате";
+                SUM.Text = "0 грн";
+            }
+        }
+
+        private void radioButtonPrice_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButtonPrice.Checked)
+            {
+                textBoxInputBenzinLitres.Enabled = false;
+                textBoxInputBenzinPrice.Enabled = true;
+                groupBoxPetrolChecksum.Text = "К выдаче";
+                SUM.Text = "0 л.";
+            }
+        }
+
+        private void textBoxInputBenzinLitres_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                SUM.Text = (Convert.ToDouble(textBoxInputBenzinLitres.Text) * Convert.ToDouble(10)).ToString();
+                //Ты тут. Решить проблему. Возможно, попробовать привязку.
+            }
+            catch
+            {
+                SUM.Text = "0 грн";
             }
         }
     }
