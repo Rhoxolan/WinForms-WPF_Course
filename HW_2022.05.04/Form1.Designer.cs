@@ -45,12 +45,26 @@
             this.SUM = new System.Windows.Forms.Label();
             this.groupBoxCafe = new System.Windows.Forms.GroupBox();
             this.labelLitres = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBoxCafeSum = new System.Windows.Forms.GroupBox();
             this.groupBoxTotalAmountPayable = new System.Windows.Forms.GroupBox();
+            this.CAFESUM = new System.Windows.Forms.Label();
+            this.checkBoxHotDog = new System.Windows.Forms.CheckBox();
+            this.textBoxHotDogPrice = new System.Windows.Forms.TextBox();
+            this.textBoxHotDogAmount = new System.Windows.Forms.TextBox();
+            this.textBoxBeerAmount = new System.Windows.Forms.TextBox();
+            this.textBoxBeerPrice = new System.Windows.Forms.TextBox();
+            this.checkBoxBeer = new System.Windows.Forms.CheckBox();
+            this.textBoxSomeOtherAmount = new System.Windows.Forms.TextBox();
+            this.textBoxSomeOtherPrice = new System.Windows.Forms.TextBox();
+            this.checkBoxSomeOther = new System.Windows.Forms.CheckBox();
+            this.textBoxWaterAmount = new System.Windows.Forms.TextBox();
+            this.textBoxWaterPrice = new System.Windows.Forms.TextBox();
+            this.checkBoxWater = new System.Windows.Forms.CheckBox();
             this.groupBoxPetrol.SuspendLayout();
             this.groupBoxAmountPrice.SuspendLayout();
             this.groupBoxPetrolChecksum.SuspendLayout();
             this.groupBoxCafe.SuspendLayout();
+            this.groupBoxCafeSum.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBoxPetrol
@@ -88,6 +102,7 @@
             this.textBoxInputBenzinPrice.Name = "textBoxInputBenzinPrice";
             this.textBoxInputBenzinPrice.Size = new System.Drawing.Size(62, 23);
             this.textBoxInputBenzinPrice.TabIndex = 9;
+            this.textBoxInputBenzinPrice.TextChanged += new System.EventHandler(this.textBoxInputBenzinPrice_TextChanged);
             // 
             // labelLitr
             // 
@@ -179,12 +194,6 @@
             // comboBoxBenzin
             // 
             this.comboBoxBenzin.FormattingEnabled = true;
-            this.comboBoxBenzin.Items.AddRange(new object[] {
-            "Бензин премиум",
-            "Бензин люкс",
-            "Бензин стандарт",
-            "Бензин эконом",
-            "Самогон"});
             this.comboBoxBenzin.Location = new System.Drawing.Point(58, 22);
             this.comboBoxBenzin.Name = "comboBoxBenzin";
             this.comboBoxBenzin.Size = new System.Drawing.Size(121, 23);
@@ -205,17 +214,29 @@
             // 
             this.SUM.AutoSize = true;
             this.SUM.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.SUM.Location = new System.Drawing.Point(109, 44);
+            this.SUM.Location = new System.Drawing.Point(6, 44);
             this.SUM.Name = "SUM";
             this.SUM.Size = new System.Drawing.Size(105, 45);
             this.SUM.TabIndex = 0;
             this.SUM.Text = "label1";
-            this.SUM.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SUM.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // groupBoxCafe
             // 
+            this.groupBoxCafe.Controls.Add(this.textBoxSomeOtherAmount);
+            this.groupBoxCafe.Controls.Add(this.textBoxSomeOtherPrice);
+            this.groupBoxCafe.Controls.Add(this.checkBoxSomeOther);
+            this.groupBoxCafe.Controls.Add(this.textBoxWaterAmount);
+            this.groupBoxCafe.Controls.Add(this.textBoxWaterPrice);
+            this.groupBoxCafe.Controls.Add(this.checkBoxWater);
+            this.groupBoxCafe.Controls.Add(this.textBoxBeerAmount);
+            this.groupBoxCafe.Controls.Add(this.textBoxBeerPrice);
+            this.groupBoxCafe.Controls.Add(this.checkBoxBeer);
+            this.groupBoxCafe.Controls.Add(this.textBoxHotDogAmount);
+            this.groupBoxCafe.Controls.Add(this.textBoxHotDogPrice);
+            this.groupBoxCafe.Controls.Add(this.checkBoxHotDog);
             this.groupBoxCafe.Controls.Add(this.labelLitres);
-            this.groupBoxCafe.Controls.Add(this.groupBox1);
+            this.groupBoxCafe.Controls.Add(this.groupBoxCafeSum);
             this.groupBoxCafe.Location = new System.Drawing.Point(250, 12);
             this.groupBoxCafe.Name = "groupBoxCafe";
             this.groupBoxCafe.Size = new System.Drawing.Size(232, 308);
@@ -232,14 +253,15 @@
             this.labelLitres.TabIndex = 8;
             this.labelLitres.Text = "л.";
             // 
-            // groupBox1
+            // groupBoxCafeSum
             // 
-            this.groupBox1.Location = new System.Drawing.Point(6, 210);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(220, 92);
-            this.groupBox1.TabIndex = 1;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "К оплате";
+            this.groupBoxCafeSum.Controls.Add(this.CAFESUM);
+            this.groupBoxCafeSum.Location = new System.Drawing.Point(6, 210);
+            this.groupBoxCafeSum.Name = "groupBoxCafeSum";
+            this.groupBoxCafeSum.Size = new System.Drawing.Size(220, 92);
+            this.groupBoxCafeSum.TabIndex = 1;
+            this.groupBoxCafeSum.TabStop = false;
+            this.groupBoxCafeSum.Text = "К оплате";
             // 
             // groupBoxTotalAmountPayable
             // 
@@ -249,6 +271,125 @@
             this.groupBoxTotalAmountPayable.TabIndex = 2;
             this.groupBoxTotalAmountPayable.TabStop = false;
             this.groupBoxTotalAmountPayable.Text = "Сумма к оплате";
+            // 
+            // CAFESUM
+            // 
+            this.CAFESUM.AutoSize = true;
+            this.CAFESUM.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CAFESUM.Location = new System.Drawing.Point(6, 44);
+            this.CAFESUM.Name = "CAFESUM";
+            this.CAFESUM.Size = new System.Drawing.Size(105, 45);
+            this.CAFESUM.TabIndex = 1;
+            this.CAFESUM.Text = "label1";
+            this.CAFESUM.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // checkBoxHotDog
+            // 
+            this.checkBoxHotDog.AutoSize = true;
+            this.checkBoxHotDog.Location = new System.Drawing.Point(6, 24);
+            this.checkBoxHotDog.Name = "checkBoxHotDog";
+            this.checkBoxHotDog.Size = new System.Drawing.Size(70, 19);
+            this.checkBoxHotDog.TabIndex = 9;
+            this.checkBoxHotDog.Text = "Хот-Дог";
+            this.checkBoxHotDog.UseVisualStyleBackColor = true;
+            // 
+            // textBoxHotDogPrice
+            // 
+            this.textBoxHotDogPrice.BackColor = System.Drawing.Color.OldLace;
+            this.textBoxHotDogPrice.Location = new System.Drawing.Point(82, 22);
+            this.textBoxHotDogPrice.Name = "textBoxHotDogPrice";
+            this.textBoxHotDogPrice.ReadOnly = true;
+            this.textBoxHotDogPrice.Size = new System.Drawing.Size(65, 23);
+            this.textBoxHotDogPrice.TabIndex = 10;
+            this.textBoxHotDogPrice.Text = "27 грн";
+            // 
+            // textBoxHotDogAmount
+            // 
+            this.textBoxHotDogAmount.Location = new System.Drawing.Point(153, 22);
+            this.textBoxHotDogAmount.Name = "textBoxHotDogAmount";
+            this.textBoxHotDogAmount.Size = new System.Drawing.Size(73, 23);
+            this.textBoxHotDogAmount.TabIndex = 11;
+            // 
+            // textBoxBeerAmount
+            // 
+            this.textBoxBeerAmount.Location = new System.Drawing.Point(153, 51);
+            this.textBoxBeerAmount.Name = "textBoxBeerAmount";
+            this.textBoxBeerAmount.Size = new System.Drawing.Size(73, 23);
+            this.textBoxBeerAmount.TabIndex = 14;
+            // 
+            // textBoxBeerPrice
+            // 
+            this.textBoxBeerPrice.BackColor = System.Drawing.Color.OldLace;
+            this.textBoxBeerPrice.Location = new System.Drawing.Point(82, 51);
+            this.textBoxBeerPrice.Name = "textBoxBeerPrice";
+            this.textBoxBeerPrice.ReadOnly = true;
+            this.textBoxBeerPrice.Size = new System.Drawing.Size(65, 23);
+            this.textBoxBeerPrice.TabIndex = 13;
+            this.textBoxBeerPrice.Text = "30 грн";
+            // 
+            // checkBoxBeer
+            // 
+            this.checkBoxBeer.AutoSize = true;
+            this.checkBoxBeer.Location = new System.Drawing.Point(6, 53);
+            this.checkBoxBeer.Name = "checkBoxBeer";
+            this.checkBoxBeer.Size = new System.Drawing.Size(55, 19);
+            this.checkBoxBeer.TabIndex = 12;
+            this.checkBoxBeer.Text = "Пиво";
+            this.checkBoxBeer.UseVisualStyleBackColor = true;
+            // 
+            // textBoxSomeOtherAmount
+            // 
+            this.textBoxSomeOtherAmount.Location = new System.Drawing.Point(153, 109);
+            this.textBoxSomeOtherAmount.Name = "textBoxSomeOtherAmount";
+            this.textBoxSomeOtherAmount.Size = new System.Drawing.Size(73, 23);
+            this.textBoxSomeOtherAmount.TabIndex = 20;
+            // 
+            // textBoxSomeOtherPrice
+            // 
+            this.textBoxSomeOtherPrice.BackColor = System.Drawing.Color.OldLace;
+            this.textBoxSomeOtherPrice.Location = new System.Drawing.Point(82, 109);
+            this.textBoxSomeOtherPrice.Name = "textBoxSomeOtherPrice";
+            this.textBoxSomeOtherPrice.ReadOnly = true;
+            this.textBoxSomeOtherPrice.Size = new System.Drawing.Size(65, 23);
+            this.textBoxSomeOtherPrice.TabIndex = 19;
+            this.textBoxSomeOtherPrice.Text = "100 грн";
+            // 
+            // checkBoxSomeOther
+            // 
+            this.checkBoxSomeOther.Font = new System.Drawing.Font("Segoe UI", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.checkBoxSomeOther.Location = new System.Drawing.Point(6, 111);
+            this.checkBoxSomeOther.Name = "checkBoxSomeOther";
+            this.checkBoxSomeOther.Size = new System.Drawing.Size(70, 35);
+            this.checkBoxSomeOther.TabIndex = 18;
+            this.checkBoxSomeOther.Text = "Я от Шерифа";
+            this.checkBoxSomeOther.UseVisualStyleBackColor = true;
+            // 
+            // textBoxWaterAmount
+            // 
+            this.textBoxWaterAmount.Location = new System.Drawing.Point(153, 80);
+            this.textBoxWaterAmount.Name = "textBoxWaterAmount";
+            this.textBoxWaterAmount.Size = new System.Drawing.Size(73, 23);
+            this.textBoxWaterAmount.TabIndex = 17;
+            // 
+            // textBoxWaterPrice
+            // 
+            this.textBoxWaterPrice.BackColor = System.Drawing.Color.OldLace;
+            this.textBoxWaterPrice.Location = new System.Drawing.Point(82, 80);
+            this.textBoxWaterPrice.Name = "textBoxWaterPrice";
+            this.textBoxWaterPrice.ReadOnly = true;
+            this.textBoxWaterPrice.Size = new System.Drawing.Size(65, 23);
+            this.textBoxWaterPrice.TabIndex = 16;
+            this.textBoxWaterPrice.Text = "10 грн";
+            // 
+            // checkBoxWater
+            // 
+            this.checkBoxWater.AutoSize = true;
+            this.checkBoxWater.Location = new System.Drawing.Point(6, 82);
+            this.checkBoxWater.Name = "checkBoxWater";
+            this.checkBoxWater.Size = new System.Drawing.Size(52, 19);
+            this.checkBoxWater.TabIndex = 15;
+            this.checkBoxWater.Text = "Вода";
+            this.checkBoxWater.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -271,6 +412,8 @@
             this.groupBoxPetrolChecksum.PerformLayout();
             this.groupBoxCafe.ResumeLayout(false);
             this.groupBoxCafe.PerformLayout();
+            this.groupBoxCafeSum.ResumeLayout(false);
+            this.groupBoxCafeSum.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -281,7 +424,7 @@
         private GroupBox groupBoxCafe;
         private GroupBox groupBoxTotalAmountPayable;
         private GroupBox groupBoxPetrolChecksum;
-        private GroupBox groupBox1;
+        private GroupBox groupBoxCafeSum;
         private ComboBox comboBoxBenzin;
         private Label labelBenzin;
         private Label labelBenzinPrice;
@@ -296,5 +439,18 @@
         private Label labelChangeBenzinPrice;
         private TextBox textBoxInputBenzinPrice;
         private Label SUM;
+        private TextBox textBoxSomeOtherAmount;
+        private TextBox textBoxSomeOtherPrice;
+        private CheckBox checkBoxSomeOther;
+        private TextBox textBoxWaterAmount;
+        private TextBox textBoxWaterPrice;
+        private CheckBox checkBoxWater;
+        private TextBox textBoxBeerAmount;
+        private TextBox textBoxBeerPrice;
+        private CheckBox checkBoxBeer;
+        private TextBox textBoxHotDogAmount;
+        private TextBox textBoxHotDogPrice;
+        private CheckBox checkBoxHotDog;
+        private Label CAFESUM;
     }
 }

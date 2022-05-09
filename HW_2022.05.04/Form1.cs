@@ -2,7 +2,7 @@ namespace HW_2022._05._04
 {
     public partial class Form1 : Form
     {
-        private Dictionary<string, double> price;
+        private Dictionary<string, (string Name, double Price)> price; //Коллекция для хранения видов бензина
 
         public Form1()
         {
@@ -11,39 +11,39 @@ namespace HW_2022._05._04
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            price = new Dictionary<string, double>()
+            price = new Dictionary<string, (string name, double price)>()
             {
-                ["Бензин премиум"] = 95,
-                ["Бензин люкс"] = 80,
-                ["Бензин стандарт"] = 70,
-                ["Бензин эконом"] = 50,
-                ["Самогон"] = 35
+                ["Бензин премиум"] = ("Бензин премиум", 95),
+                ["Бензин люкс"] = ("Бензин люкс", 80),
+                ["Бензин стандарт"] = ("Бензин стандарт", 70),
+                ["Бензин эконом"] = ("Бензин эконом", 50),
+                ["Самогон"] = ("Самогон", 35)
             };
+            foreach(var i in price) //Добавляем на комбоБокс виды бензина
+            {
+                comboBoxBenzin.Items.Add(i.Value.Name);
+            }
             comboBoxBenzin.SelectedItem = "Бензин премиум";
             radioButtonAmount.Checked = true;
         }
 
         private void comboBoxBenzin_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (comboBoxBenzin.SelectedItem.ToString() == "Бензин премиум")
+            foreach (var i in price)
             {
-                textBoxBenzinPrice.Text = price["Бензин премиум"].ToString();
-            }
-            else if (comboBoxBenzin.SelectedItem.ToString() == "Бензин люкс")
-            {
-                textBoxBenzinPrice.Text = price["Бензин люкс"].ToString();
-            }
-            else if (comboBoxBenzin.SelectedItem.ToString() == "Бензин стандарт")
-            {
-                textBoxBenzinPrice.Text = price["Бензин стандарт"].ToString();
-            }
-            else if (comboBoxBenzin.SelectedItem.ToString() == "Бензин эконом")
-            {
-                textBoxBenzinPrice.Text = price["Бензин эконом"].ToString();
-            }
-            else if (comboBoxBenzin.SelectedItem.ToString() == "Самогон")
-            {
-                textBoxBenzinPrice.Text = price["Самогон"].ToString();
+                if(comboBoxBenzin.SelectedItem.ToString() == i.Value.Name)
+                {
+                    textBoxBenzinPrice.Text = i.Value.Price.ToString();
+                    if(!String.IsNullOrEmpty(textBoxInputBenzinLitres.Text)) //Также меняем вывод цены при смене выбранного вида бензина
+                    {
+                        SUM.Text = (Convert.ToDouble(textBoxInputBenzinLitres.Text) * i.Value.Price).ToString() + " грн.";
+                    }
+                    if (!String.IsNullOrEmpty(textBoxInputBenzinPrice.Text))
+                    {
+                        SUM.Text = (Convert.ToDouble(textBoxInputBenzinPrice.Text) / i.Value.Price).ToString() + " л.";
+                    }
+                    break;
+                }
             }
         }
 
@@ -73,12 +73,37 @@ namespace HW_2022._05._04
         {
             try
             {
-                SUM.Text = (Convert.ToDouble(textBoxInputBenzinLitres.Text) * Convert.ToDouble(10)).ToString();
-                //Ты тут. Решить проблему. Возможно, попробовать привязку
+                foreach (var i in price)
+                {
+                    if(comboBoxBenzin.SelectedItem.ToString() == i.Value.Name)
+                    {
+                        SUM.Text = (Convert.ToDouble(textBoxInputBenzinLitres.Text) * i.Value.Price).ToString() + " грн.";
+                        break;
+                    }
+                }
             }
             catch
             {
                 SUM.Text = "0 грн";
+            }
+        }
+
+        private void textBoxInputBenzinPrice_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                foreach (var i in price)
+                {
+                    if (comboBoxBenzin.SelectedItem.ToString() == i.Value.Name)
+                    {
+                        SUM.Text = (Convert.ToDouble(textBoxInputBenzinPrice.Text) / i.Value.Price).ToString("F" + 2) + " л.";
+                        break;
+                    }
+                }
+            }
+            catch
+            {
+                SUM.Text = "0 л";
             }
         }
     }
