@@ -20,7 +20,7 @@ namespace HW_2022._05._04
         private double petrolSum;
         private double petrolSumLitres;
         private double cafeSum;
-
+        private double totalSum;
 
         public Form1()
         {
@@ -28,6 +28,7 @@ namespace HW_2022._05._04
             petrolSum = 0;
             cafeSum = 0;
             petrolSumLitres = 0;
+            totalSum = 0;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -72,6 +73,8 @@ namespace HW_2022._05._04
             textBoxBeerPrice.Text = cafePrices["Пиво"].Price.ToString();
             textBoxWaterPrice.Text = cafePrices["Вода"].Price.ToString();
             textBoxSomeOtherPrice.Text = cafePrices["Я от шерифа"].Price.ToString();
+
+            labelTotalSum.Text = totalSum.ToString("F" + 2) + " грн";
         }
 
         private void comboBoxBenzin_SelectedIndexChanged(object sender, EventArgs e)
@@ -263,6 +266,12 @@ namespace HW_2022._05._04
             }
             cafeSum = totalPrice;
             CAFESUM.Text = cafeSum.ToString("F" + 2) + " грн";
+        }
+
+        private void buttonCalc_Click(object sender, EventArgs e)
+        {
+            totalSum = cafeSum + petrolSum;
+            labelTotalSum.Text = totalSum.ToString("F" + 2) + " грн";
         }
     }
 }

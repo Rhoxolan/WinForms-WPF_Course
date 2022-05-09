@@ -60,6 +60,9 @@
             this.groupBoxCafeSum = new System.Windows.Forms.GroupBox();
             this.CAFESUM = new System.Windows.Forms.Label();
             this.groupBoxTotalAmountPayable = new System.Windows.Forms.GroupBox();
+            this.buttonCalc = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.labelTotalSum = new System.Windows.Forms.Label();
             this.groupBoxPetrol.SuspendLayout();
             this.groupBoxAmountPrice.SuspendLayout();
             this.groupBoxPetrolChecksum.SuspendLayout();
@@ -69,6 +72,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBeer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownHotDog)).BeginInit();
             this.groupBoxCafeSum.SuspendLayout();
+            this.groupBoxTotalAmountPayable.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBoxPetrol
@@ -396,12 +401,47 @@
             // 
             // groupBoxTotalAmountPayable
             // 
+            this.groupBoxTotalAmountPayable.Controls.Add(this.labelTotalSum);
+            this.groupBoxTotalAmountPayable.Controls.Add(this.buttonCalc);
+            this.groupBoxTotalAmountPayable.Controls.Add(this.pictureBox1);
             this.groupBoxTotalAmountPayable.Location = new System.Drawing.Point(12, 326);
             this.groupBoxTotalAmountPayable.Name = "groupBoxTotalAmountPayable";
             this.groupBoxTotalAmountPayable.Size = new System.Drawing.Size(468, 100);
             this.groupBoxTotalAmountPayable.TabIndex = 2;
             this.groupBoxTotalAmountPayable.TabStop = false;
             this.groupBoxTotalAmountPayable.Text = "Сумма к оплате";
+            // 
+            // buttonCalc
+            // 
+            this.buttonCalc.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonCalc.Location = new System.Drawing.Point(108, 49);
+            this.buttonCalc.Name = "buttonCalc";
+            this.buttonCalc.Size = new System.Drawing.Size(103, 45);
+            this.buttonCalc.TabIndex = 1;
+            this.buttonCalc.Text = "Рассчитать";
+            this.buttonCalc.UseVisualStyleBackColor = true;
+            this.buttonCalc.Click += new System.EventHandler(this.buttonCalc_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::HW_2022._05._04.Properties.Resources.printer_receipt_simple_icon_cut_circle_with_gray_and_blue_lay_400_152633061;
+            this.pictureBox1.Location = new System.Drawing.Point(6, 22);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(96, 72);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // labelTotalSum
+            // 
+            this.labelTotalSum.AutoSize = true;
+            this.labelTotalSum.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelTotalSum.Location = new System.Drawing.Point(280, 42);
+            this.labelTotalSum.Name = "labelTotalSum";
+            this.labelTotalSum.Size = new System.Drawing.Size(105, 45);
+            this.labelTotalSum.TabIndex = 2;
+            this.labelTotalSum.Text = "label3";
+            this.labelTotalSum.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // Form1
             // 
@@ -430,6 +470,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownHotDog)).EndInit();
             this.groupBoxCafeSum.ResumeLayout(false);
             this.groupBoxCafeSum.PerformLayout();
+            this.groupBoxTotalAmountPayable.ResumeLayout(false);
+            this.groupBoxTotalAmountPayable.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -468,5 +511,8 @@
         private NumericUpDown numericUpDownWater;
         private NumericUpDown numericUpDownBeer;
         private NumericUpDown numericUpDownHotDog;
+        private PictureBox pictureBox1;
+        private Button buttonCalc;
+        private Label labelTotalSum;
     }
 }
