@@ -386,9 +386,9 @@
             this.CAFESUM.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.CAFESUM.Location = new System.Drawing.Point(6, 44);
             this.CAFESUM.Name = "CAFESUM";
-            this.CAFESUM.Size = new System.Drawing.Size(37, 45);
+            this.CAFESUM.Size = new System.Drawing.Size(105, 45);
             this.CAFESUM.TabIndex = 1;
-            this.CAFESUM.Text = "0";
+            this.CAFESUM.Text = "label2";
             this.CAFESUM.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // groupBoxTotalAmountPayable
