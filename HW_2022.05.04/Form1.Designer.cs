@@ -254,6 +254,7 @@
             this.numericUpDownSomeOther.Name = "numericUpDownSomeOther";
             this.numericUpDownSomeOther.Size = new System.Drawing.Size(73, 23);
             this.numericUpDownSomeOther.TabIndex = 23;
+            this.numericUpDownSomeOther.ValueChanged += new System.EventHandler(this.numericUpDownSomeOther_ValueChanged);
             // 
             // numericUpDownWater
             // 
@@ -261,6 +262,7 @@
             this.numericUpDownWater.Name = "numericUpDownWater";
             this.numericUpDownWater.Size = new System.Drawing.Size(73, 23);
             this.numericUpDownWater.TabIndex = 22;
+            this.numericUpDownWater.ValueChanged += new System.EventHandler(this.numericUpDownWater_ValueChanged);
             // 
             // numericUpDownBeer
             // 
@@ -268,6 +270,7 @@
             this.numericUpDownBeer.Name = "numericUpDownBeer";
             this.numericUpDownBeer.Size = new System.Drawing.Size(73, 23);
             this.numericUpDownBeer.TabIndex = 21;
+            this.numericUpDownBeer.ValueChanged += new System.EventHandler(this.numericUpDownBeer_ValueChanged);
             // 
             // numericUpDownHotDog
             // 
