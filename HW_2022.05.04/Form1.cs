@@ -11,6 +11,7 @@ namespace HW_2022._05._04
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            //АЗС
             price = new Dictionary<string, (string name, double price)>()
             {
                 ["Бензин премиум"] = ("Бензин премиум", 95),
@@ -25,6 +26,13 @@ namespace HW_2022._05._04
             }
             comboBoxBenzin.SelectedItem = "Бензин премиум";
             radioButtonAmount.Checked = true;
+
+            //Кафе
+            numericUpDownHotDog.Enabled = false;
+            numericUpDownWater.Enabled = false;
+            numericUpDownSomeOther.Enabled = false;
+            numericUpDownBeer.Enabled = false;
+
         }
 
         private void comboBoxBenzin_SelectedIndexChanged(object sender, EventArgs e)
@@ -105,6 +113,60 @@ namespace HW_2022._05._04
             {
                 SUM.Text = "0 л";
             }
+        }
+
+        private void checkBoxHotDog_CheckedChanged(object sender, EventArgs e)
+        {
+            if(checkBoxHotDog.Checked)
+            {
+                numericUpDownHotDog.Enabled = true;
+            }
+            else
+            {
+                numericUpDownHotDog.Enabled = false;
+            }
+        }
+
+        private void checkBoxBeer_CheckedChanged(object sender, EventArgs e)
+        {
+            if(checkBoxBeer.Checked)
+            {
+                numericUpDownBeer.Enabled = true;
+            }
+            else
+            {
+                numericUpDownBeer.Enabled= false;
+            }
+        }
+
+        private void checkBoxWater_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBoxWater.Checked)
+            {
+                numericUpDownWater.Enabled = true;
+            }
+            else
+            {
+                numericUpDownWater.Enabled = false;
+            }
+        }
+
+        private void checkBoxSomeOther_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBoxSomeOther.Checked)
+            {
+                numericUpDownSomeOther.Enabled = true;
+            }
+            else
+            {
+                numericUpDownSomeOther.Enabled = false;
+            }
+        }
+
+        private void numericUpDownHotDog_ValueChanged(object sender, EventArgs e)
+        {
+            CAFESUM.Text = (Convert.ToDecimal(CAFESUM.Text) + (numericUpDownHotDog.Value * 27)).ToString("F" + 2);
+            //Ты тут. Создать переменные с суммами и оперировать ими. Решить проблему с обнулением цены.
         }
     }
 }
