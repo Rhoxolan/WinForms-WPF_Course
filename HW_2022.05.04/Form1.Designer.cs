@@ -60,9 +60,11 @@
             this.groupBoxCafeSum = new System.Windows.Forms.GroupBox();
             this.CAFESUM = new System.Windows.Forms.Label();
             this.groupBoxTotalAmountPayable = new System.Windows.Forms.GroupBox();
+            this.labelTotalSum = new System.Windows.Forms.Label();
             this.buttonCalc = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.labelTotalSum = new System.Windows.Forms.Label();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.buttonCleaned = new System.Windows.Forms.Button();
             this.groupBoxPetrol.SuspendLayout();
             this.groupBoxAmountPrice.SuspendLayout();
             this.groupBoxPetrolChecksum.SuspendLayout();
@@ -401,6 +403,7 @@
             // 
             // groupBoxTotalAmountPayable
             // 
+            this.groupBoxTotalAmountPayable.Controls.Add(this.buttonCleaned);
             this.groupBoxTotalAmountPayable.Controls.Add(this.labelTotalSum);
             this.groupBoxTotalAmountPayable.Controls.Add(this.buttonCalc);
             this.groupBoxTotalAmountPayable.Controls.Add(this.pictureBox1);
@@ -411,12 +414,23 @@
             this.groupBoxTotalAmountPayable.TabStop = false;
             this.groupBoxTotalAmountPayable.Text = "Сумма к оплате";
             // 
+            // labelTotalSum
+            // 
+            this.labelTotalSum.AutoSize = true;
+            this.labelTotalSum.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelTotalSum.Location = new System.Drawing.Point(280, 42);
+            this.labelTotalSum.Name = "labelTotalSum";
+            this.labelTotalSum.Size = new System.Drawing.Size(105, 45);
+            this.labelTotalSum.TabIndex = 2;
+            this.labelTotalSum.Text = "label3";
+            this.labelTotalSum.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // buttonCalc
             // 
             this.buttonCalc.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonCalc.Location = new System.Drawing.Point(108, 49);
+            this.buttonCalc.Location = new System.Drawing.Point(108, 54);
             this.buttonCalc.Name = "buttonCalc";
-            this.buttonCalc.Size = new System.Drawing.Size(103, 45);
+            this.buttonCalc.Size = new System.Drawing.Size(103, 40);
             this.buttonCalc.TabIndex = 1;
             this.buttonCalc.Text = "Рассчитать";
             this.buttonCalc.UseVisualStyleBackColor = true;
@@ -432,16 +446,16 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // labelTotalSum
+            // buttonCleaned
             // 
-            this.labelTotalSum.AutoSize = true;
-            this.labelTotalSum.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelTotalSum.Location = new System.Drawing.Point(280, 42);
-            this.labelTotalSum.Name = "labelTotalSum";
-            this.labelTotalSum.Size = new System.Drawing.Size(105, 45);
-            this.labelTotalSum.TabIndex = 2;
-            this.labelTotalSum.Text = "label3";
-            this.labelTotalSum.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonCleaned.Font = new System.Drawing.Font("Segoe UI Semibold", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buttonCleaned.Location = new System.Drawing.Point(108, 22);
+            this.buttonCleaned.Name = "buttonCleaned";
+            this.buttonCleaned.Size = new System.Drawing.Size(103, 26);
+            this.buttonCleaned.TabIndex = 3;
+            this.buttonCleaned.Text = "Очистить форму";
+            this.buttonCleaned.UseVisualStyleBackColor = true;
+            this.buttonCleaned.Click += new System.EventHandler(this.buttonCleaned_Click);
             // 
             // Form1
             // 
@@ -455,6 +469,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Form1";
             this.Text = "BestOil";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBoxPetrol.ResumeLayout(false);
             this.groupBoxPetrol.PerformLayout();
@@ -514,5 +529,7 @@
         private PictureBox pictureBox1;
         private Button buttonCalc;
         private Label labelTotalSum;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private Button buttonCleaned;
     }
 }

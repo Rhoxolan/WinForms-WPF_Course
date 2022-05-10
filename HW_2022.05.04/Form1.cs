@@ -1,3 +1,5 @@
+using System.Text;
+
 namespace HW_2022._05._04
 {
     public partial class Form1 : Form
@@ -22,19 +24,21 @@ namespace HW_2022._05._04
         private double cafeSum;
         private double totalSum;
         private List<Cheque> cheques;
+        private static System.Windows.Forms.Timer _timer; //Таймер для вывода запроса об очистке формы
 
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
             petrolSum = 0;
             cafeSum = 0;
             petrolSumLitres = 0;
             totalSum = 0;
             cheques = new();
-        }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
             //АЗС
             price = new Dictionary<string, (string name, double price)>()
             {
@@ -276,7 +280,31 @@ namespace HW_2022._05._04
             labelTotalSum.Text = totalSum.ToString("F" + 2) + " грн";
             cheques.Add(new(DateTime.Now, totalSum));
         }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            StringBuilder showChecks = new();
+            foreach(var i in cheques)
+            {
+                showChecks.AppendLine(i.ToString());
+            }
+            if (!String.IsNullOrEmpty(showChecks.ToString()))
+            {
+                MessageBox.Show(showChecks.ToString(), "Чеки за эту сессию");
+            }
+        }
+
+        private void buttonCleaned_Click(object sender, EventArgs e)
+        {
+            Form1_Load(null, null);
+        }
     }
 
-    internal record Cheque(DateTime CheckTime, double CheckSum); //Запись для зранения данных чека
+    internal record Cheque(DateTime CheckTime, double CheckSum) //Запись для зранения данных чека
+    {
+        public override string ToString()
+        {
+            return $"{CheckTime}: {CheckSum} UAH";
+        }
+    }
 }
