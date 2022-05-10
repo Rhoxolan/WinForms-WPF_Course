@@ -21,6 +21,7 @@ namespace HW_2022._05._04
         private double petrolSumLitres;
         private double cafeSum;
         private double totalSum;
+        private List<Cheque> cheques;
 
         public Form1()
         {
@@ -29,6 +30,7 @@ namespace HW_2022._05._04
             cafeSum = 0;
             petrolSumLitres = 0;
             totalSum = 0;
+            cheques = new();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -60,10 +62,10 @@ namespace HW_2022._05._04
             CAFESUM.Text = cafeSum.ToString("F" + 2) + " грн";
             cafePrices = new Dictionary<string, CafeProduct>()
             {
-                ["Хот-Дог"] = new ("Хот-Дог", 27, 0),
-                ["Пиво"] = new ("Пиво", 30, 0),
-                ["Вода"] = new ("Вода", 10, 0),
-                ["Я от шерифа"] = new ("Я от шерифа", 100, 0)
+                ["Хот-Дог"] = new("Хот-Дог", 27, 0),
+                ["Пиво"] = new("Пиво", 30, 0),
+                ["Вода"] = new("Вода", 10, 0),
+                ["Я от шерифа"] = new("Я от шерифа", 100, 0)
             };
             checkBoxHotDog.Text = cafePrices["Хот-Дог"].Name;
             checkBoxBeer.Text = cafePrices["Пиво"].Name;
@@ -224,7 +226,7 @@ namespace HW_2022._05._04
         {
             cafePrices["Хот-Дог"].TotalPrice = cafePrices["Хот-Дог"].Price * (double)numericUpDownHotDog.Value;
             double totalPrice = 0;
-            foreach(var i in cafePrices)
+            foreach (var i in cafePrices)
             {
                 totalPrice += i.Value.TotalPrice;
             }
@@ -272,6 +274,9 @@ namespace HW_2022._05._04
         {
             totalSum = cafeSum + petrolSum;
             labelTotalSum.Text = totalSum.ToString("F" + 2) + " грн";
+            cheques.Add(new(DateTime.Now, totalSum));
         }
     }
+
+    internal record Cheque(DateTime CheckTime, double CheckSum); //Запись для зранения данных чека
 }
