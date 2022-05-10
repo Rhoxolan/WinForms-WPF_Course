@@ -29,15 +29,16 @@ namespace HW_2022._05._04
         public Form1()
         {
             InitializeComponent();
+            cheques = new();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            _timer = new();
             petrolSum = 0;
             cafeSum = 0;
             petrolSumLitres = 0;
             totalSum = 0;
-            cheques = new();
 
             //АЗС
             price = new Dictionary<string, (string name, double price)>()
@@ -279,6 +280,22 @@ namespace HW_2022._05._04
             totalSum = cafeSum + petrolSum;
             labelTotalSum.Text = totalSum.ToString("F" + 2) + " грн";
             cheques.Add(new(DateTime.Now, totalSum));
+            _timer.Tick += _timer_Tick;
+            _timer.Interval = 10000;
+            _timer.Start();
+        }
+
+        private void _timer_Tick(object? sender, EventArgs e)
+        {
+            _timer.Stop();
+            if(MessageBox.Show("Очистить форму?", "Очистка формы", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                Form1_Load(null, null);
+            }
+            else
+            {
+                _timer.Start();
+            }
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
@@ -296,6 +313,7 @@ namespace HW_2022._05._04
 
         private void buttonCleaned_Click(object sender, EventArgs e)
         {
+            _timer.Stop();
             Form1_Load(null, null);
         }
     }
