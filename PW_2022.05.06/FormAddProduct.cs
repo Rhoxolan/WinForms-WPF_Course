@@ -13,6 +13,7 @@ namespace PW_2022._05._06
     public partial class FormAddProduct : Form
     {
         private BindingList<Product>? products;
+        int SelectedIndex = -1;
 
         public FormAddProduct()
         {
@@ -26,9 +27,20 @@ namespace PW_2022._05._06
             InitializeComponent();
         }
 
+        public FormAddProduct(BindingList<Product>? products, int index)
+        {
+            this.products = products;
+            this.SelectedIndex = index;
+            InitializeComponent();
+        }
+
         private void buttonOK_Click(object sender, EventArgs e)
         {
-            if(products != null)
+            if (SelectedIndex != -1 && products != null)
+            {
+                products[SelectedIndex] = new(textBoxName.Text, (double)numericUpDownPrice.Value);
+            }
+            else if (products != null)
             {
                 products.Add(new(textBoxName.Text, (double)numericUpDownPrice.Value));
             }

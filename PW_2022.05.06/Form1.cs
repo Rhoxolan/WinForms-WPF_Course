@@ -34,9 +34,39 @@ namespace PW_2022._05._06
 
         private void buttonAdd_Click(object sender, EventArgs e)
         {
-            FormAddProduct addProduct = new(products);
-            addProduct.ShowDialog();
-            listBoxTaskThree.Refresh();
+            if (products != null)
+            {
+                FormAddProduct addProduct = new(products);
+                addProduct.ShowDialog();
+            }
+        }
+
+        private void buttonEdit_Click(object sender, EventArgs e)
+        {
+            if (products != null && products.Count > 0 && listBoxTaskThree.SelectedIndex != -1)
+            {
+                FormAddProduct addProduct = new(products, listBoxTaskThree.SelectedIndex);
+                addProduct.ShowDialog();
+            }
+        }
+
+        private void buttonDel_Click(object sender, EventArgs e)
+        {
+            if (products != null && listBoxTaskThree.SelectedIndex != -1)
+            {
+                products.RemoveAt(listBoxTaskThree.SelectedIndex);
+            }
+        }
+
+        private void buttonClean_Click(object sender, EventArgs e)
+        {
+            if (products != null)
+            {
+                for (int i = products.Count - 1; i >= 0; i--)
+                {
+                    products.RemoveAt(i);
+                }
+            }
         }
     }
 
