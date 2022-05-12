@@ -315,11 +315,6 @@ namespace HW_2022._05._06
             }
         }
 
-        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
-        {
-
-        }
-
         private void buttonCleaned_Click(object sender, EventArgs e)
         {
             _timer.Stop();
@@ -360,9 +355,17 @@ namespace HW_2022._05._06
             Form1_Load(null, null);
         }
 
-        private void notifyIcon1_Click(object sender, EventArgs e)
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            this.WindowState = FormWindowState.Normal;
+            StringBuilder showChecks = new();
+            foreach (var i in cheques)
+            {
+                showChecks.AppendLine(i.ToString());
+            }
+            if (!String.IsNullOrEmpty(showChecks.ToString()))
+            {
+                MessageBox.Show(showChecks.ToString(), "Чеки за эту сессию");
+            }
         }
     }
 

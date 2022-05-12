@@ -57,638 +57,1007 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="checkBoxBeer.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;SUM.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="checkBoxWater.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 19</value>
+  </data>
+  <data name="textBoxWaterPrice.Location" type="System.Drawing.Point, System.Drawing">
+    <value>82, 80</value>
+  </data>
+  <data name="&gt;&gt;укрToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxSomeOtherPrice.Name" xml:space="preserve">
+    <value>textBoxSomeOtherPrice</value>
+  </data>
+  <data name="&gt;&gt;labelChangeBenzinPrice.Parent" xml:space="preserve">
+    <value>groupBoxPetrol</value>
+  </data>
+  <data name="groupBoxPetrol.Text" xml:space="preserve">
+    <value>АЗС</value>
+  </data>
+  <data name="&gt;&gt;groupBoxPetrol.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
   <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="checkBoxHotDog.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 19</value>
+  <data name="&gt;&gt;labelLitr.Parent" xml:space="preserve">
+    <value>groupBoxPetrol</value>
   </data>
-  <data name="groupBoxAmountPrice.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 124</value>
+  <data name="textBoxHotDogPrice.Location" type="System.Drawing.Point, System.Drawing">
+    <value>82, 22</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="checkBoxWater.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
+  <data name="русToolStripMenuItem.Text" xml:space="preserve">
+    <value>Рус</value>
   </data>
-  <data name="&gt;&gt;buttonCalc.Name" xml:space="preserve">
-    <value>buttonCalc</value>
+  <data name="groupBoxAmountPrice.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
-  <data name="labelLitres.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-21, 106</value>
-  </data>
-  <data name="&gt;&gt;textBoxWaterPrice.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="numericUpDownBeer.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="labelUAH.Text" xml:space="preserve">
-    <value>грн</value>
-  </data>
-  <data name="&gt;&gt;textBoxHotDogPrice.Name" xml:space="preserve">
-    <value>textBoxHotDogPrice</value>
-  </data>
-  <data name="&gt;&gt;buttonCleaned.Parent" xml:space="preserve">
-    <value>groupBoxTotalAmountPayable</value>
-  </data>
-  <data name="&gt;&gt;numericUpDownSomeOther.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;numericUpDownHotDog.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxWaterPrice.Name" xml:space="preserve">
-    <value>textBoxWaterPrice</value>
-  </data>
-  <data name="labelTotalSum.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;numericUpDownBeer.ZOrder" xml:space="preserve">
     <value>2</value>
-  </data>
-  <data name="&gt;&gt;numericUpDownBeer.Name" xml:space="preserve">
-    <value>numericUpDownBeer</value>
-  </data>
-  <data name="labelTotalSum.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="textBoxWaterPrice.Text" xml:space="preserve">
-    <value>10 грн</value>
-  </data>
-  <data name="&gt;&gt;groupBoxPetrolChecksum.Name" xml:space="preserve">
-    <value>groupBoxPetrolChecksum</value>
-  </data>
-  <data name="buttonCalc.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 12pt</value>
-  </data>
-  <data name="&gt;&gt;checkBoxWater.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="labelBenzin.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="radioButtonAmount.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelBenzinPrice.Text" xml:space="preserve">
-    <value>Цена</value>
-  </data>
-  <data name="&gt;&gt;radioButtonPrice.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBoxBenzin.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelChangeBenzinPrice.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="textBoxSomeOtherPrice.Location" type="System.Drawing.Point, System.Drawing">
-    <value>82, 109</value>
-  </data>
-  <data name="&gt;&gt;radioButtonPrice.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="labelBenzin.Text" xml:space="preserve">
-    <value>Бензин</value>
-  </data>
-  <data name="labelLitr.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="labelBenzin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 25</value>
-  </data>
-  <data name="&gt;&gt;labelLitr.Name" xml:space="preserve">
-    <value>labelLitr</value>
-  </data>
-  <data name="&gt;&gt;labelTotalSum.Parent" xml:space="preserve">
-    <value>groupBoxTotalAmountPayable</value>
-  </data>
-  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 72</value>
-  </data>
-  <data name="&gt;&gt;labelLitres.Parent" xml:space="preserve">
-    <value>groupBoxCafe</value>
-  </data>
-  <data name="&gt;&gt;labelUAH.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="radioButtonAmount.Text" xml:space="preserve">
-    <value>Количество</value>
-  </data>
-  <data name="&gt;&gt;groupBoxCafeSum.Name" xml:space="preserve">
-    <value>groupBoxCafeSum</value>
-  </data>
-  <data name="&gt;&gt;labelLitr.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numericUpDownWater.Name" xml:space="preserve">
-    <value>numericUpDownWater</value>
-  </data>
-  <data name="&gt;&gt;labelBenzin.Name" xml:space="preserve">
-    <value>labelBenzin</value>
-  </data>
-  <data name="labelChangeBenzinPrice.Size" type="System.Drawing.Size, System.Drawing">
-    <value>26, 15</value>
-  </data>
-  <data name="&gt;&gt;textBoxHotDogPrice.Parent" xml:space="preserve">
-    <value>groupBoxCafe</value>
-  </data>
-  <data name="&gt;&gt;groupBoxCafe.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;statusStrip1.Name" xml:space="preserve">
-    <value>statusStrip1</value>
-  </data>
-  <data name="&gt;&gt;checkBoxWater.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelBenzinPrice.Name" xml:space="preserve">
-    <value>labelBenzinPrice</value>
-  </data>
-  <data name="labelChangeBenzinPrice.Location" type="System.Drawing.Point, System.Drawing">
-    <value>200, 135</value>
-  </data>
-  <data name="textBoxBenzinPrice.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="labelTotalSum.Location" type="System.Drawing.Point, System.Drawing">
-    <value>280, 42</value>
-  </data>
-  <data name="textBoxInputBenzinPrice.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 23</value>
-  </data>
-  <data name="&gt;&gt;toolStripStatusLabelDayOfTheWeek.Name" xml:space="preserve">
-    <value>toolStripStatusLabelDayOfTheWeek</value>
-  </data>
-  <data name="&gt;&gt;checkBoxSomeOther.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBoxBenzin.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="numericUpDownHotDog.Location" type="System.Drawing.Point, System.Drawing">
-    <value>153, 22</value>
-  </data>
-  <data name="toolStripStatusLabelDayOfTheWeek.Size" type="System.Drawing.Size, System.Drawing">
-    <value>118, 17</value>
-  </data>
-  <data name="CAFESUM.Size" type="System.Drawing.Size, System.Drawing">
-    <value>105, 45</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>
   </data>
-  <data name="labelBenzinPrice.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="groupBoxPetrolChecksum.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="checkBoxWater.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 82</value>
-  </data>
-  <data name="groupBoxAmountPrice.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 80</value>
-  </data>
-  <data name="buttonCalc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>103, 40</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>7, 15</value>
-  </data>
-  <data name="&gt;&gt;checkBoxBeer.Parent" xml:space="preserve">
-    <value>groupBoxCafe</value>
-  </data>
-  <data name="&gt;&gt;checkBoxSomeOther.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="groupBoxCafeSum.Size" type="System.Drawing.Size, System.Drawing">
-    <value>220, 92</value>
-  </data>
-  <data name="buttonCalc.Location" type="System.Drawing.Point, System.Drawing">
-    <value>108, 54</value>
-  </data>
-  <data name="&gt;&gt;checkBoxBeer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="numericUpDownWater.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
-  </data>
-  <data name="&gt;&gt;CAFESUM.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toolStripStatusLabelDayOfTheWeek.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="textBoxSomeOtherPrice.Text" xml:space="preserve">
-    <value>100 грн</value>
-  </data>
-  <data name="&gt;&gt;checkBoxBeer.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="textBoxBeerPrice.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;radioButtonAmount.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;SUM.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;checkBoxHotDog.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;statusStrip1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="comboBoxBenzin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 23</value>
-  </data>
-  <data name="&gt;&gt;textBoxInputBenzinPrice.Name" xml:space="preserve">
-    <value>textBoxInputBenzinPrice</value>
+  <data name="&gt;&gt;checkBoxWater.Name" xml:space="preserve">
+    <value>checkBoxWater</value>
   </data>
   <data name="groupBoxPetrol.Size" type="System.Drawing.Size, System.Drawing">
     <value>232, 308</value>
   </data>
-  <data name="labelBenzinPrice.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="numericUpDownWater.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 23</value>
   </data>
-  <data name="&gt;&gt;textBoxHotDogPrice.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="checkBoxSomeOther.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 35</value>
   </data>
-  <data name="укрToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+  <data name="&gt;&gt;radioButtonAmount.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="&gt;&gt;textBoxInputBenzinLitres.Name" xml:space="preserve">
-    <value>textBoxInputBenzinLitres</value>
-  </data>
-  <data name="checkBoxSomeOther.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 111</value>
-  </data>
-  <data name="&gt;&gt;labelUAH.Parent" xml:space="preserve">
-    <value>groupBoxPetrol</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>BestOil</value>
-  </data>
-  <data name="checkBoxHotDog.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;checkBoxWater.Name" xml:space="preserve">
-    <value>checkBoxWater</value>
-  </data>
-  <data name="checkBoxSomeOther.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 6.75pt</value>
-  </data>
-  <data name="&gt;&gt;SUM.Parent" xml:space="preserve">
-    <value>groupBoxPetrolChecksum</value>
-  </data>
-  <data name="labelLitr.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="checkBoxBeer.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;buttonCleaned.Name" xml:space="preserve">
-    <value>buttonCleaned</value>
-  </data>
-  <data name="&gt;&gt;toolStripStatusLabelTime.Name" xml:space="preserve">
-    <value>toolStripStatusLabelTime</value>
-  </data>
-  <data name="&gt;&gt;buttonCalc.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxBenzinPrice.Name" xml:space="preserve">
-    <value>textBoxBenzinPrice</value>
-  </data>
-  <data name="&gt;&gt;numericUpDownBeer.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;radioButtonAmount.Parent" xml:space="preserve">
-    <value>groupBoxAmountPrice</value>
-  </data>
-  <data name="&gt;&gt;groupBoxCafe.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelBenzinPrice.Parent" xml:space="preserve">
-    <value>groupBoxPetrol</value>
-  </data>
-  <data name="checkBoxBeer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 53</value>
-  </data>
-  <data name="&gt;&gt;groupBoxPetrol.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="checkBoxWater.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 19</value>
-  </data>
-  <data name="&gt;&gt;statusStrip1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;labelChangeBenzinPrice.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="labelLitr.Location" type="System.Drawing.Point, System.Drawing">
-    <value>200, 106</value>
-  </data>
-  <data name="labelLitr.Text" xml:space="preserve">
-    <value>л.</value>
-  </data>
-  <data name="&gt;&gt;notifyIcon1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NotifyIcon, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxSomeOtherPrice.Parent" xml:space="preserve">
-    <value>groupBoxCafe</value>
-  </data>
-  <data name="groupBoxPetrol.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="checkBoxBeer.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;русToolStripMenuItem.Name" xml:space="preserve">
-    <value>русToolStripMenuItem</value>
+  <data name="textBoxHotDogPrice.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 23</value>
   </data>
   <data name="&gt;&gt;textBoxBeerPrice.Name" xml:space="preserve">
     <value>textBoxBeerPrice</value>
   </data>
-  <data name="textBoxBenzinPrice.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 23</value>
-  </data>
-  <data name="&gt;&gt;groupBoxCafe.Name" xml:space="preserve">
-    <value>groupBoxCafe</value>
-  </data>
-  <data name="&gt;&gt;checkBoxHotDog.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numericUpDownSomeOther.Name" xml:space="preserve">
-    <value>numericUpDownSomeOther</value>
-  </data>
-  <data name="numericUpDownSomeOther.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 23</value>
-  </data>
-  <data name="toolStripDropDownButtonLanguage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 20</value>
-  </data>
-  <data name="&gt;&gt;textBoxBeerPrice.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toolStripStatusLabelTime.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonCalc.Parent" xml:space="preserve">
-    <value>groupBoxTotalAmountPayable</value>
-  </data>
-  <data name="buttonCleaned.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI Semibold, 6.75pt, style=Bold</value>
-  </data>
-  <data name="&gt;&gt;labelTotalSum.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;CAFESUM.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;groupBoxTotalAmountPayable.Name" xml:space="preserve">
     <value>groupBoxTotalAmountPayable</value>
   </data>
-  <data name="textBoxSomeOtherPrice.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 23</value>
+  <data name="&gt;&gt;textBoxInputBenzinPrice.Name" xml:space="preserve">
+    <value>textBoxInputBenzinPrice</value>
   </data>
-  <data name="numericUpDownHotDog.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 23</value>
-  </data>
-  <data name="SUM.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;numericUpDownWater.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="SUM.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="CAFESUM.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;radioButtonAmount.Name" xml:space="preserve">
-    <value>radioButtonAmount</value>
-  </data>
-  <data name="buttonCleaned.Size" type="System.Drawing.Size, System.Drawing">
-    <value>103, 26</value>
-  </data>
-  <data name="groupBoxPetrol.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
-  </data>
-  <data name="toolStripDropDownButtonLanguage.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
-  </data>
-  <data name="&gt;&gt;textBoxInputBenzinLitres.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;notifyIcon1.Name" xml:space="preserve">
-    <value>notifyIcon1</value>
-  </data>
-  <data name="&gt;&gt;groupBoxCafe.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;groupBoxTotalAmountPayable.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="labelChangeBenzinPrice.Text" xml:space="preserve">
-    <value>грн</value>
-  </data>
-  <data name="labelTotalSum.Size" type="System.Drawing.Size, System.Drawing">
-    <value>105, 45</value>
-  </data>
-  <data name="labelChangeBenzinPrice.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;SUM.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;labelLitres.Name" xml:space="preserve">
-    <value>labelLitres</value>
-  </data>
-  <data name="&gt;&gt;groupBoxPetrol.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="русToolStripMenuItem.Text" xml:space="preserve">
-    <value>Рус</value>
-  </data>
-  <data name="labelBenzin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 15</value>
-  </data>
-  <data name="numericUpDownHotDog.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="&gt;&gt;labelBenzin.Parent" xml:space="preserve">
-    <value>groupBoxPetrol</value>
+  <data name="&gt;&gt;textBoxBeerPrice.Parent" xml:space="preserve">
+    <value>groupBoxCafe</value>
   </data>
   <data name="SUM.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="radioButtonAmount.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 19</value>
+  <data name="&gt;&gt;groupBoxAmountPrice.Name" xml:space="preserve">
+    <value>groupBoxAmountPrice</value>
   </data>
-  <data name="&gt;&gt;checkBoxHotDog.Name" xml:space="preserve">
-    <value>checkBoxHotDog</value>
+  <data name="toolStripDropDownButtonLanguage.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
   </data>
-  <data name="&gt;&gt;labelBenzinPrice.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="toolStripDropDownButtonLanguage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 20</value>
   </data>
-  <data name="groupBoxCafeSum.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="checkBoxSomeOther.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
   </data>
-  <data name="&gt;&gt;labelLitr.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="labelBenzin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 15</value>
   </data>
-  <data name="&gt;&gt;labelTotalSum.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;textBoxWaterPrice.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;укрToolStripMenuItem.Name" xml:space="preserve">
-    <value>укрToolStripMenuItem</value>
+  <data name="&gt;&gt;numericUpDownSomeOther.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;groupBoxPetrolChecksum.Parent" xml:space="preserve">
-    <value>groupBoxPetrol</value>
+  <data name="&gt;&gt;numericUpDownWater.Name" xml:space="preserve">
+    <value>numericUpDownWater</value>
   </data>
-  <data name="checkBoxHotDog.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="checkBoxBeer.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
   </data>
-  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
-    <value>groupBoxTotalAmountPayable</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>BestOil</value>
   </data>
-  <data name="&gt;&gt;checkBoxSomeOther.Name" xml:space="preserve">
-    <value>checkBoxSomeOther</value>
+  <data name="&gt;&gt;numericUpDownWater.Parent" xml:space="preserve">
+    <value>groupBoxCafe</value>
   </data>
   <data name="&gt;&gt;labelBenzinPrice.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="&gt;&gt;CAFESUM.Name" xml:space="preserve">
-    <value>CAFESUM</value>
+  <data name="numericUpDownSomeOther.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
   </data>
-  <data name="toolStripStatusLabelTime.Text" xml:space="preserve">
-    <value>toolStripStatusLabel1</value>
+  <data name="checkBoxBeer.Text" xml:space="preserve">
+    <value>Пиво</value>
   </data>
-  <data name="textBoxInputBenzinLitres.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 23</value>
-  </data>
-  <data name="textBoxInputBenzinPrice.Location" type="System.Drawing.Point, System.Drawing">
-    <value>132, 127</value>
-  </data>
-  <data name="toolStripDropDownButtonLanguage.Text" xml:space="preserve">
-    <value>Язык</value>
-  </data>
-  <data name="&gt;&gt;textBoxBenzinPrice.Parent" xml:space="preserve">
-    <value>groupBoxPetrol</value>
-  </data>
-  <data name="&gt;&gt;checkBoxWater.Parent" xml:space="preserve">
-    <value>groupBoxCafe</value>
-  </data>
-  <data name="&gt;&gt;numericUpDownSomeOther.Parent" xml:space="preserve">
-    <value>groupBoxCafe</value>
-  </data>
-  <data name="labelLitres.Text" xml:space="preserve">
-    <value>л.</value>
-  </data>
-  <data name="&gt;&gt;toolStripDropDownButtonLanguage.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripDropDownButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;укрToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBoxPetrolChecksum.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="groupBoxCafeSum.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 210</value>
-  </data>
-  <data name="&gt;&gt;comboBoxBenzin.Name" xml:space="preserve">
-    <value>comboBoxBenzin</value>
-  </data>
-  <data name="groupBoxTotalAmountPayable.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 326</value>
-  </data>
-  <data name="textBoxWaterPrice.Location" type="System.Drawing.Point, System.Drawing">
-    <value>82, 80</value>
-  </data>
-  <data name="radioButtonAmount.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;textBoxInputBenzinPrice.Parent" xml:space="preserve">
-    <value>groupBoxPetrol</value>
-  </data>
-  <data name="checkBoxHotDog.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 24</value>
-  </data>
-  <data name="toolStripStatusLabelDayOfTheWeek.Text" xml:space="preserve">
-    <value>toolStripStatusLabel1</value>
-  </data>
-  <data name="numericUpDownSomeOther.Location" type="System.Drawing.Point, System.Drawing">
-    <value>153, 109</value>
-  </data>
-  <data name="&gt;&gt;groupBoxAmountPrice.Parent" xml:space="preserve">
-    <value>groupBoxPetrol</value>
-  </data>
-  <data name="comboBoxBenzin.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="buttonCalc.Text" xml:space="preserve">
-    <value>Рассчитать</value>
-  </data>
-  <data name="buttonCleaned.Location" type="System.Drawing.Point, System.Drawing">
-    <value>108, 22</value>
-  </data>
-  <data name="labelLitres.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="radioButtonPrice.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 47</value>
-  </data>
-  <data name="labelUAH.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="toolStripStatusLabelTime.Size" type="System.Drawing.Size, System.Drawing">
-    <value>118, 17</value>
-  </data>
-  <data name="groupBoxPetrolChecksum.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 210</value>
-  </data>
-  <data name="checkBoxBeer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 19</value>
-  </data>
-  <data name="CAFESUM.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="groupBoxCafe.Location" type="System.Drawing.Point, System.Drawing">
-    <value>250, 12</value>
+  <data name="textBoxBeerPrice.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 23</value>
   </data>
   <data name="groupBoxPetrolChecksum.Text" xml:space="preserve">
     <value>К оплате</value>
   </data>
-  <data name="groupBoxCafeSum.Text" xml:space="preserve">
-    <value>К оплате</value>
+  <data name="&gt;&gt;checkBoxBeer.ZOrder" xml:space="preserve">
+    <value>9</value>
   </data>
-  <data name="русToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+  <data name="radioButtonPrice.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
-  <data name="&gt;&gt;labelTotalSum.Name" xml:space="preserve">
-    <value>labelTotalSum</value>
+  <data name="textBoxBenzinPrice.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 23</value>
+  </data>
+  <data name="textBoxSomeOtherPrice.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;textBoxWaterPrice.Name" xml:space="preserve">
+    <value>textBoxWaterPrice</value>
+  </data>
+  <data name="&gt;&gt;groupBoxTotalAmountPayable.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="buttonCalc.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="labelTotalSum.Text" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;groupBoxCafe.Name" xml:space="preserve">
+    <value>groupBoxCafe</value>
+  </data>
+  <data name="&gt;&gt;groupBoxAmountPrice.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;textBoxInputBenzinPrice.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelBenzin.Parent" xml:space="preserve">
+    <value>groupBoxPetrol</value>
+  </data>
+  <data name="&gt;&gt;buttonCleaned.Parent" xml:space="preserve">
+    <value>groupBoxTotalAmountPayable</value>
+  </data>
+  <data name="labelUAH.Text" xml:space="preserve">
+    <value>грн</value>
+  </data>
+  <data name="checkBoxWater.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 82</value>
+  </data>
+  <data name="&gt;&gt;SUM.Parent" xml:space="preserve">
+    <value>groupBoxPetrolChecksum</value>
+  </data>
+  <data name="labelBenzin.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="groupBoxTotalAmountPayable.Text" xml:space="preserve">
+    <value>Сумма к оплате</value>
+  </data>
+  <data name="&gt;&gt;SUM.Name" xml:space="preserve">
+    <value>SUM</value>
+  </data>
+  <data name="labelBenzinPrice.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
   <data name="labelLitres.Size" type="System.Drawing.Size, System.Drawing">
     <value>17, 15</value>
   </data>
+  <data name="&gt;&gt;labelBenzin.Name" xml:space="preserve">
+    <value>labelBenzin</value>
+  </data>
+  <data name="&gt;&gt;textBoxSomeOtherPrice.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;textBoxInputBenzinLitres.Name" xml:space="preserve">
+    <value>textBoxInputBenzinLitres</value>
+  </data>
+  <data name="&gt;&gt;groupBoxPetrol.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelLitres.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;русToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBoxBenzinPrice.Location" type="System.Drawing.Point, System.Drawing">
+    <value>58, 51</value>
+  </data>
+  <data name="labelChangeBenzinPrice.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="textBoxInputBenzinLitres.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 23</value>
+  </data>
+  <data name="SUM.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 45</value>
+  </data>
+  <data name="&gt;&gt;radioButtonAmount.Name" xml:space="preserve">
+    <value>radioButtonAmount</value>
+  </data>
+  <data name="&gt;&gt;radioButtonPrice.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripStatusLabelDayOfTheWeek.Name" xml:space="preserve">
+    <value>toolStripStatusLabelDayOfTheWeek</value>
+  </data>
+  <data name="&gt;&gt;comboBoxBenzin.Name" xml:space="preserve">
+    <value>comboBoxBenzin</value>
+  </data>
+  <data name="&gt;&gt;textBoxSomeOtherPrice.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxWaterPrice.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;groupBoxTotalAmountPayable.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="groupBoxCafe.Text" xml:space="preserve">
+    <value>Кафе</value>
+  </data>
+  <data name="groupBoxCafe.Size" type="System.Drawing.Size, System.Drawing">
+    <value>232, 308</value>
+  </data>
+  <data name="labelLitr.Location" type="System.Drawing.Point, System.Drawing">
+    <value>200, 106</value>
+  </data>
+  <data name="&gt;&gt;CAFESUM.Name" xml:space="preserve">
+    <value>CAFESUM</value>
+  </data>
+  <data name="radioButtonAmount.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;textBoxSomeOtherPrice.Parent" xml:space="preserve">
+    <value>groupBoxCafe</value>
+  </data>
+  <data name="labelLitres.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="groupBoxPetrol.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="checkBoxHotDog.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="textBoxInputBenzinLitres.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
   <data name="&gt;&gt;numericUpDownHotDog.Name" xml:space="preserve">
     <value>numericUpDownHotDog</value>
   </data>
-  <data name="groupBoxTotalAmountPayable.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="&gt;&gt;numericUpDownHotDog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="groupBoxCafeSum.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 210</value>
+  </data>
+  <data name="&gt;&gt;groupBoxCafeSum.Name" xml:space="preserve">
+    <value>groupBoxCafeSum</value>
+  </data>
+  <data name="labelTotalSum.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 24pt</value>
+  </data>
+  <data name="textBoxWaterPrice.Text" xml:space="preserve">
+    <value>10 грн</value>
+  </data>
+  <data name="numericUpDownWater.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="groupBoxCafe.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;groupBoxPetrolChecksum.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxCafe.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="numericUpDownSomeOther.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 23</value>
+  </data>
+  <data name="&gt;&gt;русToolStripMenuItem.Name" xml:space="preserve">
+    <value>русToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;checkBoxBeer.Name" xml:space="preserve">
+    <value>checkBoxBeer</value>
+  </data>
+  <data name="&gt;&gt;textBoxBenzinPrice.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="statusStrip1.Text" xml:space="preserve">
+    <value>statusStrip1</value>
+  </data>
+  <data name="&gt;&gt;labelLitres.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;buttonCalc.Name" xml:space="preserve">
+    <value>buttonCalc</value>
+  </data>
+  <data name="labelBenzinPrice.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 15</value>
+  </data>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 72</value>
+  </data>
+  <data name="&gt;&gt;groupBoxCafeSum.Parent" xml:space="preserve">
+    <value>groupBoxCafe</value>
+  </data>
+  <data name="textBoxHotDogPrice.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;textBoxBenzinPrice.Parent" xml:space="preserve">
+    <value>groupBoxPetrol</value>
+  </data>
+  <data name="&gt;&gt;textBoxBeerPrice.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="radioButtonAmount.Text" xml:space="preserve">
+    <value>Количество</value>
+  </data>
+  <data name="statusStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;radioButtonAmount.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelLitres.Text" xml:space="preserve">
+    <value>л.</value>
+  </data>
+  <data name="buttonCalc.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="&gt;&gt;checkBoxSomeOther.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="checkBoxWater.Text" xml:space="preserve">
+    <value>Вода</value>
+  </data>
+  <data name="statusStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 431</value>
+  </data>
+  <data name="numericUpDownHotDog.Location" type="System.Drawing.Point, System.Drawing">
+    <value>153, 22</value>
+  </data>
+  <data name="buttonCalc.Text" xml:space="preserve">
+    <value>Рассчитать</value>
+  </data>
+  <data name="radioButtonPrice.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 47</value>
+  </data>
+  <data name="&gt;&gt;labelChangeBenzinPrice.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;groupBoxPetrolChecksum.Name" xml:space="preserve">
+    <value>groupBoxPetrolChecksum</value>
+  </data>
+  <data name="buttonCleaned.Text" xml:space="preserve">
+    <value>Очистить форму</value>
+  </data>
+  <data name="&gt;&gt;backgroundWorker1.Type" xml:space="preserve">
+    <value>System.ComponentModel.BackgroundWorker, System.ComponentModel.EventBasedAsync, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="checkBoxSomeOther.Text" xml:space="preserve">
+    <value>Я от Шерифа</value>
+  </data>
+  <data name="labelLitr.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelLitres.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-21, 106</value>
+  </data>
+  <data name="&gt;&gt;textBoxBenzinPrice.Name" xml:space="preserve">
+    <value>textBoxBenzinPrice</value>
+  </data>
+  <data name="labelTotalSum.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;checkBoxSomeOther.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelChangeBenzinPrice.Location" type="System.Drawing.Point, System.Drawing">
+    <value>200, 135</value>
+  </data>
+  <data name="labelChangeBenzinPrice.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 15</value>
+  </data>
+  <data name="buttonCleaned.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 26</value>
+  </data>
+  <data name="buttonCleaned.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 6.75pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;checkBoxHotDog.Name" xml:space="preserve">
+    <value>checkBoxHotDog</value>
+  </data>
+  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;toolStripDropDownButtonLanguage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripDropDownButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="укрToolStripMenuItem.Text" xml:space="preserve">
+    <value>Укр</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownWater.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="groupBoxCafeSum.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 92</value>
+  </data>
+  <data name="textBoxBeerPrice.Text" xml:space="preserve">
+    <value>30 грн</value>
+  </data>
+  <data name="&gt;&gt;notifyIcon1.Name" xml:space="preserve">
+    <value>notifyIcon1</value>
+  </data>
+  <data name="&gt;&gt;textBoxInputBenzinLitres.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="numericUpDownBeer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 23</value>
+  </data>
+  <data name="&gt;&gt;textBoxHotDogPrice.Name" xml:space="preserve">
+    <value>textBoxHotDogPrice</value>
+  </data>
+  <data name="&gt;&gt;textBoxBeerPrice.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButtonAmount.Parent" xml:space="preserve">
+    <value>groupBoxAmountPrice</value>
+  </data>
+  <data name="&gt;&gt;groupBoxTotalAmountPayable.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="radioButtonPrice.Text" xml:space="preserve">
+    <value>Цена</value>
+  </data>
+  <data name="numericUpDownWater.Location" type="System.Drawing.Point, System.Drawing">
+    <value>153, 82</value>
+  </data>
+  <data name="&gt;&gt;groupBoxCafe.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;checkBoxBeer.Parent" xml:space="preserve">
+    <value>groupBoxCafe</value>
+  </data>
+  <data name="comboBoxBenzin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 23</value>
+  </data>
+  <data name="labelBenzin.Text" xml:space="preserve">
+    <value>Бензин</value>
+  </data>
+  <data name="groupBoxTotalAmountPayable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 326</value>
+  </data>
+  <data name="&gt;&gt;labelTotalSum.Name" xml:space="preserve">
+    <value>labelTotalSum</value>
+  </data>
+  <data name="textBoxSomeOtherPrice.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 23</value>
+  </data>
+  <data name="checkBoxHotDog.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="radioButtonPrice.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;checkBoxWater.Parent" xml:space="preserve">
+    <value>groupBoxCafe</value>
+  </data>
+  <data name="toolStripDropDownButtonLanguage.Text" xml:space="preserve">
+    <value>Язык</value>
+  </data>
+  <data name="&gt;&gt;backgroundWorker1.Name" xml:space="preserve">
+    <value>backgroundWorker1</value>
+  </data>
+  <data name="&gt;&gt;groupBoxPetrol.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;textBoxHotDogPrice.Parent" xml:space="preserve">
+    <value>groupBoxCafe</value>
+  </data>
+  <data name="groupBoxPetrolChecksum.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="labelTotalSum.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 45</value>
+  </data>
+  <data name="numericUpDownBeer.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;groupBoxAmountPrice.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="checkBoxHotDog.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 24</value>
+  </data>
+  <data name="textBoxBenzinPrice.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;groupBoxCafe.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBoxInputBenzinPrice.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 23</value>
+  </data>
+  <data name="&gt;&gt;labelLitres.Name" xml:space="preserve">
+    <value>labelLitres</value>
+  </data>
+  <data name="labelBenzinPrice.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="groupBoxPetrolChecksum.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 92</value>
+  </data>
+  <data name="checkBoxHotDog.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 19</value>
+  </data>
+  <data name="&gt;&gt;labelBenzinPrice.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;numericUpDownHotDog.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="groupBoxPetrol.Text" xml:space="preserve">
-    <value>АЗС</value>
+  <data name="&gt;&gt;statusStrip1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownSomeOther.Name" xml:space="preserve">
+    <value>numericUpDownSomeOther</value>
+  </data>
+  <data name="укрToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="CAFESUM.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="comboBoxBenzin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>58, 22</value>
+  </data>
+  <data name="&gt;&gt;CAFESUM.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="radioButtonAmount.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="CAFESUM.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="textBoxInputBenzinPrice.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;labelUAH.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="toolStripStatusLabelDayOfTheWeek.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 17</value>
+  </data>
+  <data name="buttonCleaned.Location" type="System.Drawing.Point, System.Drawing">
+    <value>108, 22</value>
+  </data>
+  <data name="&gt;&gt;labelUAH.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;buttonCalc.Parent" xml:space="preserve">
+    <value>groupBoxTotalAmountPayable</value>
+  </data>
+  <data name="&gt;&gt;checkBoxBeer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="checkBoxBeer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 19</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownWater.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;textBoxWaterPrice.Parent" xml:space="preserve">
+    <value>groupBoxCafe</value>
+  </data>
+  <data name="SUM.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;textBoxHotDogPrice.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="русToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="labelChangeBenzinPrice.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="labelTotalSum.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="CAFESUM.Text" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;labelLitr.Name" xml:space="preserve">
+    <value>labelLitr</value>
+  </data>
+  <data name="toolStripStatusLabelDayOfTheWeek.Text" xml:space="preserve">
+    <value>toolStripStatusLabel1</value>
+  </data>
+  <data name="groupBoxTotalAmountPayable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>468, 100</value>
+  </data>
+  <data name="&gt;&gt;radioButtonPrice.Name" xml:space="preserve">
+    <value>radioButtonPrice</value>
+  </data>
+  <data name="SUM.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 44</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownHotDog.Parent" xml:space="preserve">
+    <value>groupBoxCafe</value>
+  </data>
+  <data name="&gt;&gt;groupBoxCafeSum.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonCalc.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="toolStripStatusLabelTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 17</value>
+  </data>
+  <data name="textBoxInputBenzinLitres.Location" type="System.Drawing.Point, System.Drawing">
+    <value>132, 98</value>
+  </data>
+  <data name="&gt;&gt;labelBenzin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxPetrolChecksum.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="labelTotalSum.Location" type="System.Drawing.Point, System.Drawing">
+    <value>280, 42</value>
+  </data>
+  <data name="textBoxWaterPrice.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 23</value>
+  </data>
+  <data name="&gt;&gt;labelUAH.Name" xml:space="preserve">
+    <value>labelUAH</value>
+  </data>
+  <data name="SUM.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 24pt</value>
+  </data>
+  <data name="textBoxSomeOtherPrice.Text" xml:space="preserve">
+    <value>100 грн</value>
+  </data>
+  <data name="&gt;&gt;checkBoxHotDog.Parent" xml:space="preserve">
+    <value>groupBoxCafe</value>
+  </data>
+  <data name="checkBoxSomeOther.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 111</value>
+  </data>
+  <data name="&gt;&gt;labelChangeBenzinPrice.Name" xml:space="preserve">
+    <value>labelChangeBenzinPrice</value>
+  </data>
+  <data name="&gt;&gt;groupBoxPetrol.Name" xml:space="preserve">
+    <value>groupBoxPetrol</value>
+  </data>
+  <data name="numericUpDownHotDog.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 23</value>
+  </data>
+  <data name="groupBoxCafeSum.Text" xml:space="preserve">
+    <value>К оплате</value>
+  </data>
+  <data name="&gt;&gt;toolStripStatusLabelDayOfTheWeek.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxInputBenzinLitres.Parent" xml:space="preserve">
+    <value>groupBoxPetrol</value>
+  </data>
+  <data name="CAFESUM.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 44</value>
+  </data>
+  <data name="&gt;&gt;comboBoxBenzin.Parent" xml:space="preserve">
+    <value>groupBoxPetrol</value>
+  </data>
+  <data name="labelBenzin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 25</value>
+  </data>
+  <data name="&gt;&gt;statusStrip1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="labelBenzinPrice.Text" xml:space="preserve">
+    <value>Цена</value>
+  </data>
+  <data name="buttonCleaned.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="checkBoxHotDog.Text" xml:space="preserve">
+    <value>Хот-Дог</value>
+  </data>
+  <data name="&gt;&gt;groupBoxPetrolChecksum.Parent" xml:space="preserve">
+    <value>groupBoxPetrol</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBoxHotDog.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
+  </data>
+  <data name="groupBoxAmountPrice.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 124</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+    <value>groupBoxTotalAmountPayable</value>
+  </data>
+  <data name="checkBoxSomeOther.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 6.75pt</value>
+  </data>
+  <data name="labelChangeBenzinPrice.Text" xml:space="preserve">
+    <value>грн</value>
+  </data>
+  <data name="numericUpDownHotDog.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="labelLitr.Size" type="System.Drawing.Size, System.Drawing">
+    <value>17, 15</value>
+  </data>
+  <data name="labelBenzin.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;checkBoxHotDog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripStatusLabelTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelUAH.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="CAFESUM.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 24pt</value>
+  </data>
+  <data name="labelLitr.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;checkBoxSomeOther.Parent" xml:space="preserve">
+    <value>groupBoxCafe</value>
+  </data>
+  <data name="checkBoxWater.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="textBoxSomeOtherPrice.Location" type="System.Drawing.Point, System.Drawing">
+    <value>82, 109</value>
+  </data>
+  <data name="numericUpDownSomeOther.Location" type="System.Drawing.Point, System.Drawing">
+    <value>153, 109</value>
+  </data>
+  <data name="toolStripStatusLabelTime.Text" xml:space="preserve">
+    <value>toolStripStatusLabel1</value>
+  </data>
+  <data name="labelBenzinPrice.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 54</value>
+  </data>
+  <data name="&gt;&gt;textBoxInputBenzinPrice.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;radioButtonPrice.Parent" xml:space="preserve">
+    <value>groupBoxAmountPrice</value>
+  </data>
+  <data name="&gt;&gt;checkBoxWater.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="checkBoxWater.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CAFESUM.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 45</value>
+  </data>
+  <data name="numericUpDownBeer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>153, 53</value>
+  </data>
+  <data name="groupBoxAmountPrice.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 80</value>
+  </data>
+  <data name="&gt;&gt;checkBoxSomeOther.Name" xml:space="preserve">
+    <value>checkBoxSomeOther</value>
+  </data>
+  <data name="buttonCalc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 40</value>
+  </data>
+  <data name="&gt;&gt;groupBoxCafeSum.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>494, 453</value>
+  </data>
+  <data name="&gt;&gt;labelBenzinPrice.Name" xml:space="preserve">
+    <value>labelBenzinPrice</value>
+  </data>
+  <data name="&gt;&gt;radioButtonPrice.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;SUM.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;CAFESUM.Parent" xml:space="preserve">
+    <value>groupBoxCafeSum</value>
+  </data>
+  <data name="groupBoxCafe.Location" type="System.Drawing.Point, System.Drawing">
+    <value>250, 12</value>
+  </data>
+  <data name="&gt;&gt;buttonCleaned.Name" xml:space="preserve">
+    <value>buttonCleaned</value>
+  </data>
+  <data name="labelLitr.Text" xml:space="preserve">
+    <value>л.</value>
+  </data>
+  <data name="&gt;&gt;statusStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelLitr.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownBeer.Parent" xml:space="preserve">
+    <value>groupBoxCafe</value>
+  </data>
+  <data name="&gt;&gt;comboBoxBenzin.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;buttonCleaned.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="radioButtonAmount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 19</value>
+  </data>
+  <data name="textBoxWaterPrice.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;labelLitr.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="comboBoxBenzin.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;labelTotalSum.Parent" xml:space="preserve">
+    <value>groupBoxTotalAmountPayable</value>
+  </data>
+  <data name="groupBoxCafeSum.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 15</value>
+  </data>
+  <data name="&gt;&gt;checkBoxWater.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelBenzinPrice.Parent" xml:space="preserve">
+    <value>groupBoxPetrol</value>
+  </data>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 22</value>
+  </data>
+  <data name="labelTotalSum.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;toolStripStatusLabelTime.Name" xml:space="preserve">
+    <value>toolStripStatusLabelTime</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Form1</value>
+  </data>
+  <data name="&gt;&gt;textBoxInputBenzinLitres.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelBenzin.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="labelUAH.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 15</value>
+  </data>
+  <data name="&gt;&gt;textBoxHotDogPrice.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="groupBoxTotalAmountPayable.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;buttonCleaned.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelChangeBenzinPrice.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxInputBenzinPrice.Parent" xml:space="preserve">
+    <value>groupBoxPetrol</value>
+  </data>
+  <data name="textBoxBeerPrice.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownSomeOther.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;labelUAH.Parent" xml:space="preserve">
+    <value>groupBoxPetrol</value>
+  </data>
+  <data name="textBoxInputBenzinPrice.Location" type="System.Drawing.Point, System.Drawing">
+    <value>132, 127</value>
+  </data>
+  <data name="&gt;&gt;groupBoxAmountPrice.Parent" xml:space="preserve">
+    <value>groupBoxPetrol</value>
+  </data>
+  <data name="&gt;&gt;textBoxBenzinPrice.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownSomeOther.Parent" xml:space="preserve">
+    <value>groupBoxCafe</value>
+  </data>
+  <data name="&gt;&gt;notifyIcon1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NotifyIcon, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonCalc.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="textBoxBeerPrice.Location" type="System.Drawing.Point, System.Drawing">
+    <value>82, 51</value>
   </data>
   <data name="SUM.Text" xml:space="preserve">
     <value>label1</value>
+  </data>
+  <data name="labelLitres.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="statusStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>494, 22</value>
+  </data>
+  <data name="groupBoxPetrol.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;statusStrip1.Name" xml:space="preserve">
+    <value>statusStrip1</value>
+  </data>
+  <data name="checkBoxBeer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 53</value>
+  </data>
+  <data name="&gt;&gt;labelLitres.Parent" xml:space="preserve">
+    <value>groupBoxCafe</value>
+  </data>
+  <data name="radioButtonPrice.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 19</value>
+  </data>
+  <data name="&gt;&gt;labelTotalSum.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="labelUAH.Location" type="System.Drawing.Point, System.Drawing">
+    <value>185, 59</value>
+  </data>
+  <data name="SUM.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;comboBoxBenzin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;укрToolStripMenuItem.Name" xml:space="preserve">
+    <value>укрToolStripMenuItem</value>
+  </data>
+  <data name="textBoxHotDogPrice.Text" xml:space="preserve">
+    <value>27 грн</value>
+  </data>
+  <data name="radioButtonAmount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 22</value>
+  </data>
+  <data name="&gt;&gt;labelTotalSum.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="toolStripDropDownButtonLanguage.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -701,406 +1070,37 @@
   <data name="&gt;&gt;numericUpDownBeer.Type" xml:space="preserve">
     <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="SUM.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 44</value>
+  <data name="buttonCalc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>108, 54</value>
   </data>
-  <data name="&gt;&gt;CAFESUM.Parent" xml:space="preserve">
-    <value>groupBoxCafeSum</value>
-  </data>
-  <data name="&gt;&gt;textBoxSomeOtherPrice.Name" xml:space="preserve">
-    <value>textBoxSomeOtherPrice</value>
-  </data>
-  <data name="&gt;&gt;labelChangeBenzinPrice.Name" xml:space="preserve">
-    <value>labelChangeBenzinPrice</value>
-  </data>
-  <data name="&gt;&gt;checkBoxBeer.Name" xml:space="preserve">
-    <value>checkBoxBeer</value>
-  </data>
-  <data name="statusStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>494, 22</value>
-  </data>
-  <data name="&gt;&gt;checkBoxHotDog.Parent" xml:space="preserve">
-    <value>groupBoxCafe</value>
-  </data>
-  <data name="&gt;&gt;backgroundWorker1.Type" xml:space="preserve">
-    <value>System.ComponentModel.BackgroundWorker, System.ComponentModel.EventBasedAsync, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="labelTotalSum.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 24pt</value>
-  </data>
-  <data name="labelTotalSum.AutoSize" type="System.Boolean, mscorlib">
+  <data name="labelUAH.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="groupBoxAmountPrice.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="labelUAH.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="buttonCalc.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;buttonCleaned.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;radioButtonPrice.Name" xml:space="preserve">
-    <value>radioButtonPrice</value>
-  </data>
-  <data name="&gt;&gt;textBoxHotDogPrice.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="checkBoxWater.Text" xml:space="preserve">
-    <value>Вода</value>
-  </data>
-  <data name="labelLitr.Size" type="System.Drawing.Size, System.Drawing">
-    <value>17, 15</value>
-  </data>
-  <data name="radioButtonPrice.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="CAFESUM.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="groupBoxCafe.Text" xml:space="preserve">
-    <value>Кафе</value>
-  </data>
-  <data name="&gt;&gt;textBoxBenzinPrice.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;backgroundWorker1.Name" xml:space="preserve">
-    <value>backgroundWorker1</value>
-  </data>
-  <data name="&gt;&gt;textBoxWaterPrice.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;groupBoxCafeSum.Parent" xml:space="preserve">
-    <value>groupBoxCafe</value>
-  </data>
-  <data name="&gt;&gt;groupBoxAmountPrice.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="statusStrip1.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="groupBoxTotalAmountPayable.Text" xml:space="preserve">
-    <value>Сумма к оплате</value>
-  </data>
-  <data name="&gt;&gt;buttonCleaned.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;radioButtonPrice.Parent" xml:space="preserve">
-    <value>groupBoxAmountPrice</value>
-  </data>
-  <data name="textBoxWaterPrice.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 23</value>
+  <data name="groupBoxPetrolChecksum.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 210</value>
   </data>
   <data name="&gt;&gt;toolStripDropDownButtonLanguage.Name" xml:space="preserve">
     <value>toolStripDropDownButtonLanguage</value>
   </data>
-  <data name="&gt;&gt;numericUpDownWater.Parent" xml:space="preserve">
-    <value>groupBoxCafe</value>
-  </data>
-  <data name="checkBoxSomeOther.Text" xml:space="preserve">
-    <value>Я от Шерифа</value>
-  </data>
-  <data name="textBoxBenzinPrice.Location" type="System.Drawing.Point, System.Drawing">
-    <value>58, 51</value>
-  </data>
-  <data name="&gt;&gt;SUM.Name" xml:space="preserve">
-    <value>SUM</value>
-  </data>
-  <data name="labelTotalSum.Text" xml:space="preserve">
-    <value>label3</value>
-  </data>
-  <data name="&gt;&gt;labelChangeBenzinPrice.Parent" xml:space="preserve">
-    <value>groupBoxPetrol</value>
-  </data>
-  <data name="CAFESUM.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 44</value>
-  </data>
-  <data name="groupBoxCafe.TabIndex" type="System.Int32, mscorlib">
+  <data name="CAFESUM.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="CAFESUM.Text" xml:space="preserve">
-    <value>label2</value>
-  </data>
-  <data name="&gt;&gt;русToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>494, 453</value>
-  </data>
-  <data name="textBoxHotDogPrice.Location" type="System.Drawing.Point, System.Drawing">
-    <value>82, 22</value>
-  </data>
-  <data name="&gt;&gt;groupBoxPetrol.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;comboBoxBenzin.Parent" xml:space="preserve">
-    <value>groupBoxPetrol</value>
-  </data>
-  <data name="&gt;&gt;labelUAH.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="textBoxInputBenzinLitres.Location" type="System.Drawing.Point, System.Drawing">
-    <value>132, 98</value>
-  </data>
-  <data name="&gt;&gt;numericUpDownBeer.Parent" xml:space="preserve">
-    <value>groupBoxCafe</value>
-  </data>
-  <data name="textBoxBeerPrice.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 23</value>
-  </data>
-  <data name="&gt;&gt;groupBoxTotalAmountPayable.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="numericUpDownSomeOther.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
-  </data>
-  <data name="&gt;&gt;checkBoxSomeOther.Parent" xml:space="preserve">
-    <value>groupBoxCafe</value>
-  </data>
-  <data name="numericUpDownBeer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>153, 53</value>
-  </data>
-  <data name="&gt;&gt;numericUpDownSomeOther.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>Form1</value>
-  </data>
-  <data name="&gt;&gt;groupBoxAmountPrice.Name" xml:space="preserve">
-    <value>groupBoxAmountPrice</value>
-  </data>
-  <data name="&gt;&gt;textBoxWaterPrice.Parent" xml:space="preserve">
-    <value>groupBoxCafe</value>
-  </data>
-  <data name="&gt;&gt;buttonCalc.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="checkBoxWater.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="checkBoxSomeOther.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="&gt;&gt;labelLitres.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="groupBoxPetrolChecksum.Size" type="System.Drawing.Size, System.Drawing">
-    <value>220, 92</value>
-  </data>
-  <data name="textBoxSomeOtherPrice.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="groupBoxTotalAmountPayable.Size" type="System.Drawing.Size, System.Drawing">
-    <value>468, 100</value>
-  </data>
-  <data name="&gt;&gt;CAFESUM.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="textBoxHotDogPrice.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 23</value>
-  </data>
-  <data name="&gt;&gt;textBoxSomeOtherPrice.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="buttonCleaned.Text" xml:space="preserve">
-    <value>Очистить форму</value>
-  </data>
-  <data name="labelBenzin.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="labelUAH.Location" type="System.Drawing.Point, System.Drawing">
-    <value>185, 59</value>
-  </data>
-  <data name="checkBoxHotDog.Text" xml:space="preserve">
-    <value>Хот-Дог</value>
-  </data>
-  <data name="labelLitres.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="radioButtonPrice.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="comboBoxBenzin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>58, 22</value>
-  </data>
-  <data name="&gt;&gt;groupBoxPetrol.Name" xml:space="preserve">
-    <value>groupBoxPetrol</value>
-  </data>
-  <data name="&gt;&gt;numericUpDownHotDog.Parent" xml:space="preserve">
-    <value>groupBoxCafe</value>
-  </data>
-  <data name="&gt;&gt;textBoxBenzinPrice.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="groupBoxCafe.Size" type="System.Drawing.Size, System.Drawing">
-    <value>232, 308</value>
-  </data>
-  <data name="radioButtonPrice.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 19</value>
-  </data>
-  <data name="&gt;&gt;statusStrip1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="labelChangeBenzinPrice.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="labelUAH.Size" type="System.Drawing.Size, System.Drawing">
-    <value>26, 15</value>
-  </data>
-  <data name="&gt;&gt;textBoxInputBenzinPrice.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="radioButtonPrice.Text" xml:space="preserve">
-    <value>Цена</value>
-  </data>
-  <data name="statusStrip1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 431</value>
-  </data>
-  <data name="textBoxInputBenzinPrice.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="radioButtonAmount.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 22</value>
-  </data>
-  <data name="&gt;&gt;groupBoxAmountPrice.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelBenzin.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="textBoxInputBenzinLitres.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;textBoxInputBenzinLitres.Parent" xml:space="preserve">
-    <value>groupBoxPetrol</value>
-  </data>
-  <data name="textBoxWaterPrice.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;textBoxBeerPrice.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;labelLitres.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="checkBoxBeer.Text" xml:space="preserve">
-    <value>Пиво</value>
-  </data>
-  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 22</value>
-  </data>
-  <data name="&gt;&gt;textBoxInputBenzinLitres.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="укрToolStripMenuItem.Text" xml:space="preserve">
-    <value>Укр</value>
-  </data>
-  <data name="buttonCleaned.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;numericUpDownWater.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="numericUpDownWater.Location" type="System.Drawing.Point, System.Drawing">
-    <value>153, 82</value>
-  </data>
-  <data name="textBoxBeerPrice.Location" type="System.Drawing.Point, System.Drawing">
-    <value>82, 51</value>
-  </data>
-  <data name="CAFESUM.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 24pt</value>
-  </data>
-  <data name="SUM.Size" type="System.Drawing.Size, System.Drawing">
-    <value>105, 45</value>
-  </data>
-  <data name="SUM.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 24pt</value>
-  </data>
-  <data name="statusStrip1.Text" xml:space="preserve">
-    <value>statusStrip1</value>
-  </data>
-  <data name="numericUpDownWater.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 23</value>
-  </data>
-  <data name="numericUpDownBeer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 23</value>
-  </data>
-  <data name="&gt;&gt;textBoxInputBenzinPrice.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
-    <value>pictureBox1</value>
-  </data>
-  <data name="&gt;&gt;groupBoxPetrolChecksum.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;labelUAH.Name" xml:space="preserve">
-    <value>labelUAH</value>
-  </data>
-  <data name="&gt;&gt;radioButtonAmount.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="checkBoxSomeOther.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 35</value>
-  </data>
-  <data name="&gt;&gt;groupBoxTotalAmountPayable.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBoxCafeSum.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;textBoxSomeOtherPrice.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="labelBenzinPrice.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 15</value>
-  </data>
-  <data name="&gt;&gt;textBoxBeerPrice.Parent" xml:space="preserve">
-    <value>groupBoxCafe</value>
-  </data>
-  <data name="textBoxHotDogPrice.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="labelBenzinPrice.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 54</value>
-  </data>
-  <data name="textBoxBeerPrice.Text" xml:space="preserve">
-    <value>30 грн</value>
-  </data>
-  <data name="&gt;&gt;labelBenzin.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBoxCafeSum.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelLitr.Parent" xml:space="preserve">
-    <value>groupBoxPetrol</value>
-  </data>
-  <data name="textBoxHotDogPrice.Text" xml:space="preserve">
-    <value>27 грн</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
+  <data name="&gt;&gt;numericUpDownBeer.Name" xml:space="preserve">
+    <value>numericUpDownBeer</value>
+  </data>
+  <metadata name="notifyIcon1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>297, 17</value>
   </metadata>
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, System.Private.CoreLib, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
     <value>uk-UA</value>
   </metadata>
-  <metadata name="backgroundWorker1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="notifyIcon1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>297, 17</value>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
   </metadata>
   <metadata name="statusStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>181, 17</value>
+  </metadata>
+  <metadata name="backgroundWorker1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
   </metadata>
 </root>
