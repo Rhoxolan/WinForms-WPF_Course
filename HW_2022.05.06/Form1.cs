@@ -1,3 +1,5 @@
+using System.ComponentModel;
+using System.Globalization;
 using System.Text;
 
 namespace HW_2022._05._06
@@ -25,6 +27,7 @@ namespace HW_2022._05._06
         private double totalSum;
         private List<Cheque> cheques;
         private static System.Windows.Forms.Timer _timer; //Таймер для вывода запроса об очистке формы
+        private static System.Windows.Forms.Timer timerTime; //Таймер для отображения текущего времени
 
         public Form1()
         {
@@ -39,6 +42,14 @@ namespace HW_2022._05._06
             cafeSum = 0;
             petrolSumLitres = 0;
             totalSum = 0;
+
+            //Таймер времени
+            toolStripStatusLabelTime.Text = $"{DateTime.Now.ToLongTimeString()}";
+            toolStripStatusLabelDayOfTheWeek.Text = $"{DateTime.Now.DayOfWeek.ToString()}";
+            timerTime = new();
+            timerTime.Tick += TimerTime_Tick;
+            timerTime.Interval = 500;
+            timerTime.Start();
 
             //АЗС
             price = new Dictionary<string, (string name, double price)>()
@@ -82,6 +93,12 @@ namespace HW_2022._05._06
             textBoxSomeOtherPrice.Text = cafePrices["Я от шерифа"].Price.ToString();
 
             labelTotalSum.Text = totalSum.ToString("F" + 2) + " грн";
+        }
+
+        private void TimerTime_Tick(object? sender, EventArgs e)
+        {
+            toolStripStatusLabelTime.Text = $"{DateTime.Now.ToLongTimeString()}";
+            toolStripStatusLabelDayOfTheWeek.Text = $"{DateTime.Now.DayOfWeek.ToString()}";
         }
 
         private void comboBoxBenzin_SelectedIndexChanged(object sender, EventArgs e)
@@ -314,6 +331,40 @@ namespace HW_2022._05._06
         private void buttonCleaned_Click(object sender, EventArgs e)
         {
             _timer.Stop();
+            Form1_Load(null, null);
+        }
+
+        private void укрToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("uk-UA");
+            System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("uk-UA");
+            System.ComponentModel.ComponentResourceManager manager = new ComponentResourceManager(this.GetType());
+            manager.ApplyResources(this, "$this");
+            foreach (Control c in this.Controls)
+            {
+                manager.ApplyResources(c, c.Name);
+                foreach (Control c2 in c.Controls) //Каждый элемент управления принадлежит свой группе, в данном случае - своему ГрупБоксу или СтатусСтрипу.
+                {
+                    manager.ApplyResources(c2, c2.Name);
+                }
+            }
+            Form1_Load(null, null);
+        }
+
+        private void русToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("ru-RU");
+            System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("ru-RU");
+            System.ComponentModel.ComponentResourceManager manager = new ComponentResourceManager(this.GetType());
+            manager.ApplyResources(this, "$this");
+            foreach (Control c in this.Controls)
+            {
+                manager.ApplyResources(c, c.Name);
+                foreach (Control c2 in c.Controls)
+                {
+                    manager.ApplyResources(c2, c2.Name);
+                }
+            }
             Form1_Load(null, null);
         }
     }
