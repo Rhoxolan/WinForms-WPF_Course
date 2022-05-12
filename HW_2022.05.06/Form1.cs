@@ -4,7 +4,7 @@ namespace HW_2022._05._06
 {
     public partial class Form1 : Form
     {
-        private class CafeProduct //Класс для хранения данных о товаре
+        private class CafeProduct //РљР»Р°СЃСЃ РґР»СЏ С…СЂР°РЅРµРЅРёСЏ РґР°РЅРЅС‹С… Рѕ С‚РѕРІР°СЂРµ
         {
             public string Name { get; set; }
             public double Price { get; set; }
@@ -17,14 +17,14 @@ namespace HW_2022._05._06
             }
         }
 
-        private Dictionary<string, (string Name, double Price)> price; //Коллекция для хранения видов бензина
-        private Dictionary<string, CafeProduct> cafePrices; //Коллекция для хранения товаров в кафе
+        private Dictionary<string, (string Name, double Price)> price; //РљРѕР»Р»РµРєС†РёСЏ РґР»СЏ С…СЂР°РЅРµРЅРёСЏ РІРёРґРѕРІ Р±РµРЅР·РёРЅР°
+        private Dictionary<string, CafeProduct> cafePrices; //РљРѕР»Р»РµРєС†РёСЏ РґР»СЏ С…СЂР°РЅРµРЅРёСЏ С‚РѕРІР°СЂРѕРІ РІ РєР°С„Рµ
         private double petrolSum;
         private double petrolSumLitres;
         private double cafeSum;
         private double totalSum;
         private List<Cheque> cheques;
-        private static System.Windows.Forms.Timer _timer; //Таймер для вывода запроса об очистке формы
+        private static System.Windows.Forms.Timer _timer; //РўР°Р№РјРµСЂ РґР»СЏ РІС‹РІРѕРґР° Р·Р°РїСЂРѕСЃР° РѕР± РѕС‡РёСЃС‚РєРµ С„РѕСЂРјС‹
 
         public Form1()
         {
@@ -40,48 +40,48 @@ namespace HW_2022._05._06
             petrolSumLitres = 0;
             totalSum = 0;
 
-            //АЗС
+            //РђР—РЎ
             price = new Dictionary<string, (string name, double price)>()
             {
-                ["Бензин премиум"] = ("Бензин премиум", 95),
-                ["Бензин люкс"] = ("Бензин люкс", 80),
-                ["Бензин стандарт"] = ("Бензин стандарт", 70),
-                ["Бензин эконом"] = ("Бензин эконом", 50),
-                ["Самогон"] = ("Самогон", 35)
-                //В коллекцию price мы можем добавлять новые виды бензина, либо же редактировать или удалять
-                //имеющиеся. Изменения в коде проводить не нужно, все автоматизировано.
+                ["Р‘РµРЅР·РёРЅ РїСЂРµРјРёСѓРј"] = ("Р‘РµРЅР·РёРЅ РїСЂРµРјРёСѓРј", 95),
+                ["Р‘РµРЅР·РёРЅ Р»СЋРєСЃ"] = ("Р‘РµРЅР·РёРЅ Р»СЋРєСЃ", 80),
+                ["Р‘РµРЅР·РёРЅ СЃС‚Р°РЅРґР°СЂС‚"] = ("Р‘РµРЅР·РёРЅ СЃС‚Р°РЅРґР°СЂС‚", 70),
+                ["Р‘РµРЅР·РёРЅ СЌРєРѕРЅРѕРј"] = ("Р‘РµРЅР·РёРЅ СЌРєРѕРЅРѕРј", 50),
+                ["РЎР°РјРѕРіРѕРЅ"] = ("РЎР°РјРѕРіРѕРЅ", 35)
+                //Р’ РєРѕР»Р»РµРєС†РёСЋ price РјС‹ РјРѕР¶РµРј РґРѕР±Р°РІР»СЏС‚СЊ РЅРѕРІС‹Рµ РІРёРґС‹ Р±РµРЅР·РёРЅР°, Р»РёР±Рѕ Р¶Рµ СЂРµРґР°РєС‚РёСЂРѕРІР°С‚СЊ РёР»Рё СѓРґР°Р»СЏС‚СЊ
+                //РёРјРµСЋС‰РёРµСЃСЏ. РР·РјРµРЅРµРЅРёСЏ РІ РєРѕРґРµ РїСЂРѕРІРѕРґРёС‚СЊ РЅРµ РЅСѓР¶РЅРѕ, РІСЃРµ Р°РІС‚РѕРјР°С‚РёР·РёСЂРѕРІР°РЅРѕ.
             };
-            foreach (var i in price) //Добавляем на комбоБокс виды бензина
+            foreach (var i in price) //Р”РѕР±Р°РІР»СЏРµРј РЅР° РєРѕРјР±РѕР‘РѕРєСЃ РІРёРґС‹ Р±РµРЅР·РёРЅР°
             {
                 comboBoxBenzin.Items.Add(i.Value.Name);
             }
-            comboBoxBenzin.SelectedItem = "Бензин премиум";
+            comboBoxBenzin.SelectedItem = "Р‘РµРЅР·РёРЅ РїСЂРµРјРёСѓРј";
             radioButtonAmount.Checked = true;
-            SUM.Text = petrolSum.ToString("F" + 2) + " грн";
+            SUM.Text = petrolSum.ToString("F" + 2) + " РіСЂРЅ";
 
-            //Кафе
+            //РљР°С„Рµ
             numericUpDownHotDog.Enabled = false;
             numericUpDownWater.Enabled = false;
             numericUpDownSomeOther.Enabled = false;
             numericUpDownBeer.Enabled = false;
-            CAFESUM.Text = cafeSum.ToString("F" + 2) + " грн";
+            CAFESUM.Text = cafeSum.ToString("F" + 2) + " РіСЂРЅ";
             cafePrices = new Dictionary<string, CafeProduct>()
             {
-                ["Хот-Дог"] = new("Хот-Дог", 27, 0),
-                ["Пиво"] = new("Пиво", 30, 0),
-                ["Вода"] = new("Вода", 10, 0),
-                ["Я от шерифа"] = new("Я от шерифа", 100, 0)
+                ["РҐРѕС‚-Р”РѕРі"] = new("РҐРѕС‚-Р”РѕРі", 27, 0),
+                ["РџРёРІРѕ"] = new("РџРёРІРѕ", 30, 0),
+                ["Р’РѕРґР°"] = new("Р’РѕРґР°", 10, 0),
+                ["РЇ РѕС‚ С€РµСЂРёС„Р°"] = new("РЇ РѕС‚ С€РµСЂРёС„Р°", 100, 0)
             };
-            checkBoxHotDog.Text = cafePrices["Хот-Дог"].Name;
-            checkBoxBeer.Text = cafePrices["Пиво"].Name;
-            checkBoxWater.Text = cafePrices["Вода"].Name;
-            checkBoxSomeOther.Text = cafePrices["Я от шерифа"].Name;
-            textBoxHotDogPrice.Text = cafePrices["Хот-Дог"].Price.ToString();
-            textBoxBeerPrice.Text = cafePrices["Пиво"].Price.ToString();
-            textBoxWaterPrice.Text = cafePrices["Вода"].Price.ToString();
-            textBoxSomeOtherPrice.Text = cafePrices["Я от шерифа"].Price.ToString();
+            checkBoxHotDog.Text = cafePrices["РҐРѕС‚-Р”РѕРі"].Name;
+            checkBoxBeer.Text = cafePrices["РџРёРІРѕ"].Name;
+            checkBoxWater.Text = cafePrices["Р’РѕРґР°"].Name;
+            checkBoxSomeOther.Text = cafePrices["РЇ РѕС‚ С€РµСЂРёС„Р°"].Name;
+            textBoxHotDogPrice.Text = cafePrices["РҐРѕС‚-Р”РѕРі"].Price.ToString();
+            textBoxBeerPrice.Text = cafePrices["РџРёРІРѕ"].Price.ToString();
+            textBoxWaterPrice.Text = cafePrices["Р’РѕРґР°"].Price.ToString();
+            textBoxSomeOtherPrice.Text = cafePrices["РЇ РѕС‚ С€РµСЂРёС„Р°"].Price.ToString();
 
-            labelTotalSum.Text = totalSum.ToString("F" + 2) + " грн";
+            labelTotalSum.Text = totalSum.ToString("F" + 2) + " РіСЂРЅ";
         }
 
         private void comboBoxBenzin_SelectedIndexChanged(object sender, EventArgs e)
@@ -91,15 +91,15 @@ namespace HW_2022._05._06
                 if (comboBoxBenzin.SelectedItem.ToString() == i.Value.Name)
                 {
                     textBoxBenzinPrice.Text = i.Value.Price.ToString();
-                    if (!String.IsNullOrEmpty(textBoxInputBenzinLitres.Text)) //Также меняем вывод цены при смене выбранного вида бензина
+                    if (!String.IsNullOrEmpty(textBoxInputBenzinLitres.Text)) //РўР°РєР¶Рµ РјРµРЅСЏРµРј РІС‹РІРѕРґ С†РµРЅС‹ РїСЂРё СЃРјРµРЅРµ РІС‹Р±СЂР°РЅРЅРѕРіРѕ РІРёРґР° Р±РµРЅР·РёРЅР°
                     {
                         petrolSum = Convert.ToDouble(textBoxInputBenzinLitres.Text) * i.Value.Price;
-                        SUM.Text = petrolSum.ToString("F" + 2) + " грн.";
+                        SUM.Text = petrolSum.ToString("F" + 2) + " РіСЂРЅ.";
                     }
                     if (!String.IsNullOrEmpty(textBoxInputBenzinPrice.Text))
                     {
                         petrolSumLitres = Convert.ToDouble(textBoxInputBenzinPrice.Text) / i.Value.Price;
-                        SUM.Text = petrolSumLitres.ToString("F" + 2) + " л.";
+                        SUM.Text = petrolSumLitres.ToString("F" + 2) + " Р».";
                     }
                     break;
                 }
@@ -113,9 +113,9 @@ namespace HW_2022._05._06
                 textBoxInputBenzinPrice.Text = "";
                 textBoxInputBenzinPrice.Enabled = false;
                 textBoxInputBenzinLitres.Enabled = true;
-                groupBoxPetrolChecksum.Text = "К оплате";
+                groupBoxPetrolChecksum.Text = "Рљ РѕРїР»Р°С‚Рµ";
                 petrolSum = 0;
-                SUM.Text = petrolSum.ToString("F" + 2) + " грн.";
+                SUM.Text = petrolSum.ToString("F" + 2) + " РіСЂРЅ.";
             }
         }
 
@@ -126,8 +126,8 @@ namespace HW_2022._05._06
                 textBoxInputBenzinLitres.Text = "";
                 textBoxInputBenzinLitres.Enabled = false;
                 textBoxInputBenzinPrice.Enabled = true;
-                groupBoxPetrolChecksum.Text = "К выдаче";
-                SUM.Text = "0 л.";
+                groupBoxPetrolChecksum.Text = "Рљ РІС‹РґР°С‡Рµ";
+                SUM.Text = "0 Р».";
             }
         }
 
@@ -140,7 +140,7 @@ namespace HW_2022._05._06
                     if (comboBoxBenzin.SelectedItem.ToString() == i.Value.Name)
                     {
                         petrolSum = Convert.ToDouble(textBoxInputBenzinLitres.Text) * i.Value.Price;
-                        SUM.Text = petrolSum.ToString("F" + 2) + " грн.";
+                        SUM.Text = petrolSum.ToString("F" + 2) + " РіСЂРЅ.";
                         break;
                     }
                 }
@@ -148,7 +148,7 @@ namespace HW_2022._05._06
             catch
             {
                 petrolSum = 0;
-                SUM.Text = petrolSum.ToString("F" + 2) + " грн.";
+                SUM.Text = petrolSum.ToString("F" + 2) + " РіСЂРЅ.";
             }
         }
 
@@ -162,7 +162,7 @@ namespace HW_2022._05._06
                     {
                         petrolSumLitres = Convert.ToDouble(textBoxInputBenzinPrice.Text) / i.Value.Price;
                         petrolSum = petrolSumLitres * i.Value.Price;
-                        SUM.Text = petrolSumLitres.ToString("F" + 2) + " л.";
+                        SUM.Text = petrolSumLitres.ToString("F" + 2) + " Р».";
                         break;
                     }
                 }
@@ -171,7 +171,7 @@ namespace HW_2022._05._06
             {
                 petrolSumLitres = 0;
                 petrolSum = 0;
-                SUM.Text = petrolSumLitres.ToString("F" + 2) + " л.";
+                SUM.Text = petrolSumLitres.ToString("F" + 2) + " Р».";
             }
         }
 
@@ -229,56 +229,56 @@ namespace HW_2022._05._06
 
         private void numericUpDownHotDog_ValueChanged(object sender, EventArgs e)
         {
-            cafePrices["Хот-Дог"].TotalPrice = cafePrices["Хот-Дог"].Price * (double)numericUpDownHotDog.Value;
+            cafePrices["РҐРѕС‚-Р”РѕРі"].TotalPrice = cafePrices["РҐРѕС‚-Р”РѕРі"].Price * (double)numericUpDownHotDog.Value;
             double totalPrice = 0;
             foreach (var i in cafePrices)
             {
                 totalPrice += i.Value.TotalPrice;
             }
             cafeSum = totalPrice;
-            CAFESUM.Text = cafeSum.ToString("F" + 2) + " грн";
+            CAFESUM.Text = cafeSum.ToString("F" + 2) + " РіСЂРЅ";
         }
 
         private void numericUpDownBeer_ValueChanged(object sender, EventArgs e)
         {
-            cafePrices["Пиво"].TotalPrice = cafePrices["Пиво"].Price * (double)numericUpDownBeer.Value;
+            cafePrices["РџРёРІРѕ"].TotalPrice = cafePrices["РџРёРІРѕ"].Price * (double)numericUpDownBeer.Value;
             double totalPrice = 0;
             foreach (var i in cafePrices)
             {
                 totalPrice += i.Value.TotalPrice;
             }
             cafeSum = totalPrice;
-            CAFESUM.Text = cafeSum.ToString("F" + 2) + " грн";
+            CAFESUM.Text = cafeSum.ToString("F" + 2) + " РіСЂРЅ";
         }
 
         private void numericUpDownWater_ValueChanged(object sender, EventArgs e)
         {
-            cafePrices["Вода"].TotalPrice = cafePrices["Вода"].Price * (double)numericUpDownWater.Value;
+            cafePrices["Р’РѕРґР°"].TotalPrice = cafePrices["Р’РѕРґР°"].Price * (double)numericUpDownWater.Value;
             double totalPrice = 0;
             foreach (var i in cafePrices)
             {
                 totalPrice += i.Value.TotalPrice;
             }
             cafeSum = totalPrice;
-            CAFESUM.Text = cafeSum.ToString("F" + 2) + " грн";
+            CAFESUM.Text = cafeSum.ToString("F" + 2) + " РіСЂРЅ";
         }
 
         private void numericUpDownSomeOther_ValueChanged(object sender, EventArgs e)
         {
-            cafePrices["Я от шерифа"].TotalPrice = cafePrices["Я от шерифа"].Price * (double)numericUpDownSomeOther.Value;
+            cafePrices["РЇ РѕС‚ С€РµСЂРёС„Р°"].TotalPrice = cafePrices["РЇ РѕС‚ С€РµСЂРёС„Р°"].Price * (double)numericUpDownSomeOther.Value;
             double totalPrice = 0;
             foreach (var i in cafePrices)
             {
                 totalPrice += i.Value.TotalPrice;
             }
             cafeSum = totalPrice;
-            CAFESUM.Text = cafeSum.ToString("F" + 2) + " грн";
+            CAFESUM.Text = cafeSum.ToString("F" + 2) + " РіСЂРЅ";
         }
 
         private void buttonCalc_Click(object sender, EventArgs e)
         {
             totalSum = cafeSum + petrolSum;
-            labelTotalSum.Text = totalSum.ToString("F" + 2) + " грн";
+            labelTotalSum.Text = totalSum.ToString("F" + 2) + " РіСЂРЅ";
             cheques.Add(new(DateTime.Now, totalSum));
             _timer.Tick += _timer_Tick;
             _timer.Interval = 10000;
@@ -288,7 +288,7 @@ namespace HW_2022._05._06
         private void _timer_Tick(object? sender, EventArgs e)
         {
             _timer.Stop();
-            if (MessageBox.Show("Очистить форму?", "Очистка формы", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            if (MessageBox.Show("РћС‡РёСЃС‚РёС‚СЊ С„РѕСЂРјСѓ?", "РћС‡РёСЃС‚РєР° С„РѕСЂРјС‹", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 Form1_Load(null, null);
             }
@@ -307,7 +307,7 @@ namespace HW_2022._05._06
             }
             if (!String.IsNullOrEmpty(showChecks.ToString()))
             {
-                MessageBox.Show(showChecks.ToString(), "Чеки за эту сессию");
+                MessageBox.Show(showChecks.ToString(), "Р§РµРєРё Р·Р° СЌС‚Сѓ СЃРµСЃСЃРёСЋ");
             }
         }
 
@@ -318,7 +318,7 @@ namespace HW_2022._05._06
         }
     }
 
-    internal record Cheque(DateTime CheckTime, double CheckSum) //Запись для зранения данных чека
+    internal record Cheque(DateTime CheckTime, double CheckSum) //Р—Р°РїРёСЃСЊ РґР»СЏ Р·СЂР°РЅРµРЅРёСЏ РґР°РЅРЅС‹С… С‡РµРєР°
     {
         public override string ToString()
         {
