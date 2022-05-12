@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.groupBoxPetrol = new System.Windows.Forms.GroupBox();
             this.labelChangeBenzinPrice = new System.Windows.Forms.Label();
@@ -72,6 +73,7 @@
             this.toolStripDropDownButtonLanguage = new System.Windows.Forms.ToolStripDropDownButton();
             this.укрToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.русToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.groupBoxPetrol.SuspendLayout();
             this.groupBoxAmountPrice.SuspendLayout();
             this.groupBoxPetrolChecksum.SuspendLayout();
@@ -383,6 +385,12 @@
             this.русToolStripMenuItem.Name = "русToolStripMenuItem";
             this.русToolStripMenuItem.Click += new System.EventHandler(this.русToolStripMenuItem_Click);
             // 
+            // notifyIcon1
+            // 
+            this.notifyIcon1.BalloonTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            resources.ApplyResources(this.notifyIcon1, "notifyIcon1");
+            this.notifyIcon1.Click += new System.EventHandler(this.notifyIcon1_Click);
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
@@ -394,7 +402,7 @@
             this.Controls.Add(this.groupBoxCafe);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Form1";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
+            this.ShowInTaskbar = false;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBoxPetrol.ResumeLayout(false);
             this.groupBoxPetrol.PerformLayout();
@@ -465,5 +473,6 @@
         private ToolStripDropDownButton toolStripDropDownButtonLanguage;
         private ToolStripMenuItem укрToolStripMenuItem;
         private ToolStripMenuItem русToolStripMenuItem;
+        private NotifyIcon notifyIcon1;
     }
 }
