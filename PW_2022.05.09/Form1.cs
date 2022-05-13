@@ -34,5 +34,26 @@ namespace PW_2022._05._09
                 writer.Close();
             }
         }
+
+        private void buttonLoadT2_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog ofd = new()
+            {
+                Filter = "Text Files(*.txt)|*.txt"
+            };
+            if (ofd.ShowDialog() == DialogResult.OK)
+            {
+                StreamReader reader = File.OpenText(ofd.FileName);
+                textBoxTaskTwo.Text = reader.ReadToEnd();
+                buttonEdit.Enabled = true;
+                reader.Close();
+            }
+        }
+
+        private void buttonEdit_Click(object sender, EventArgs e)
+        {
+            Form2 form2 = new();
+            form2.Show();
+        }
     }
 }
