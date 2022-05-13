@@ -52,7 +52,7 @@ namespace PW_2022._05._09
 
         private void buttonEdit_Click(object sender, EventArgs e)
         {
-            Form2 form2 = new();
+            Form2 form2 = new(textBoxTaskTwo);
             form2.Show();
         }
     }

@@ -22,4 +22,4 @@ PW - Проработка взаимодействия двух форм. Примера работы с формами в режимах Sho
 HW - Доработка HW 04.05.2022, Приложение "BestOil". Проработка StatusStrip, StatusLabel, DropDownButton. Простой пример изменения языка.
 
 09.05.2022 Меню
-PW - работа с OpenFileDialog и SaveFileDialog. Пример работы с классами StreamReader/StreamWriter, File и функциями OpenText и ReadToEnd. 
+PW - работа с OpenFileDialog и SaveFileDialog. Пример работы с классами StreamReader/StreamWriter, File и функциями OpenText и ReadToEnd. Пример передачи дочерней форме ссылки на элемент родительской формы.
