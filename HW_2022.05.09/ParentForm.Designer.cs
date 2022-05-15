@@ -63,14 +63,16 @@
             // NewMenuItem
             // 
             this.NewMenuItem.Name = "NewMenuItem";
-            this.NewMenuItem.Size = new System.Drawing.Size(98, 22);
+            this.NewMenuItem.Size = new System.Drawing.Size(180, 22);
             this.NewMenuItem.Text = "&New";
+            this.NewMenuItem.Click += new System.EventHandler(this.NewMenuItem_Click);
             // 
             // ExitMenuItem
             // 
             this.ExitMenuItem.Name = "ExitMenuItem";
-            this.ExitMenuItem.Size = new System.Drawing.Size(98, 22);
+            this.ExitMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ExitMenuItem.Text = "&Exit";
+            this.ExitMenuItem.Click += new System.EventHandler(this.ExitMenuItem_Click);
             // 
             // WindowMenuItem
             // 
@@ -85,21 +87,21 @@
             // WindowCascadeMenuItem
             // 
             this.WindowCascadeMenuItem.Name = "WindowCascadeMenuItem";
-            this.WindowCascadeMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.WindowCascadeMenuItem.Size = new System.Drawing.Size(118, 22);
             this.WindowCascadeMenuItem.Text = "Cascade";
             this.WindowCascadeMenuItem.Click += new System.EventHandler(this.WindowCascadeMenuItem_Click);
             // 
             // WindowTileMenuItem
             // 
             this.WindowTileMenuItem.Name = "WindowTileMenuItem";
-            this.WindowTileMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.WindowTileMenuItem.Size = new System.Drawing.Size(118, 22);
             this.WindowTileMenuItem.Text = "&Tile";
             this.WindowTileMenuItem.Click += new System.EventHandler(this.WindowTileMenuItem_Click);
             // 
             // WindowVerticalMenuItem
             // 
             this.WindowVerticalMenuItem.Name = "WindowVerticalMenuItem";
-            this.WindowVerticalMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.WindowVerticalMenuItem.Size = new System.Drawing.Size(118, 22);
             this.WindowVerticalMenuItem.Text = "Vertical";
             this.WindowVerticalMenuItem.Click += new System.EventHandler(this.WindowVerticalMenuItem_Click);
             // 
