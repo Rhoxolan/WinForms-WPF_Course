@@ -2,6 +2,8 @@ namespace HW_2022._05._09
 {
     public partial class ParentForm : Form
     {
+        private int openDocuments = 0;
+
         public ParentForm()
         {
             InitializeComponent();
@@ -25,6 +27,7 @@ namespace HW_2022._05._09
         private void NewMenuItem_Click(object sender, EventArgs e)
         {
             ChildForm newChild= new ChildForm();
+            newChild.Text = (++openDocuments).ToString();
             newChild.MdiParent = this;
             newChild.Show();
         }
