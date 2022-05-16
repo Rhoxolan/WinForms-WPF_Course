@@ -23,3 +23,4 @@ HW - Доработка HW 04.05.2022, Приложение "BestOil". Проработка StatusStrip, Stat
 
 09.05.2022 Меню
 PW - работа с OpenFileDialog и SaveFileDialog. Пример работы с классами StreamReader/StreamWriter, File и функциями OpenText и ReadToEnd. Пример передачи дочерней форме ссылки на элемент родительской формы.
+Hw - MDI-приложение. Проработка элементов меню и контекстного меню.
