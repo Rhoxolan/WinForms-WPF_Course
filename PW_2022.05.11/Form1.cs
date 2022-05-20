@@ -12,7 +12,7 @@ namespace PW_2022._05._11
             foreach(DriveInfo drive in DriveInfo.GetDrives())
             {
                 TreeNode tn = treeViewExplorer.Nodes.Add(drive.Name);
-                tn.Nodes.Add("Пример");
+                tn.Nodes.Add("РџСЂРёРјРµСЂ");
             }
         }
     }
