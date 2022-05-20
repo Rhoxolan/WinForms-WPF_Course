@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
+            this.treeViewExplorer = new System.Windows.Forms.TreeView();
             this.SuspendLayout();
             // 
             // label1
@@ -40,14 +41,23 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Задание 1";
             // 
+            // treeViewExplorer
+            // 
+            this.treeViewExplorer.Location = new System.Drawing.Point(12, 27);
+            this.treeViewExplorer.Name = "treeViewExplorer";
+            this.treeViewExplorer.Size = new System.Drawing.Size(299, 411);
+            this.treeViewExplorer.TabIndex = 1;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.treeViewExplorer);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Practical Work";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -56,5 +66,6 @@
         #endregion
 
         private Label label1;
+        private TreeView treeViewExplorer;
     }
 }
