@@ -107,7 +107,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Lavender;
-            this.ClientSize = new System.Drawing.Size(508, 107);
+            this.ClientSize = new System.Drawing.Size(754, 429);
             this.Controls.Add(this.numericUpDownDiagram3);
             this.Controls.Add(this.numericUpDownDiagram2);
             this.Controls.Add(this.numericUpDownDiagram1);
@@ -116,7 +116,8 @@
             this.Controls.Add(this.textBoxDiagram1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "PracticalWork";
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDiagram1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDiagram2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDiagram3)).EndInit();
