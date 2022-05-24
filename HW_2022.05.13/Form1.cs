@@ -13,14 +13,14 @@ namespace HW_2022._05._13
         {
             Graphics g = e.Graphics;
             Rectangle rect = new Rectangle(0, 0, 100, 100);
-            string name = "ИЗОЛЕНТА ПРО МАКС 2023+";
-            string tagline = "Изолента для заземления нового поколения!!!";
+            string name = "РР—РћР›Р•РќРўРђ РџР Рћ РњРђРљРЎ 2023+";
+            string tagline = "РР·РѕР»РµРЅС‚Р° РґР»СЏ Р·Р°Р·РµРјР»РµРЅРёСЏ РЅРѕРІРѕРіРѕ РїРѕРєРѕР»РµРЅРёСЏ!!!";
             Font fname = new Font("Comic Sans MS", 32, FontStyle.Bold);
             Font ftagline = new Font("Comic Sans MS", 16, FontStyle.Bold);
             LinearGradientBrush lgBrush = new LinearGradientBrush(rect, Color.Yellow, Color.Green, 0.0f, true);
             g.DrawString(name, fname, lgBrush, 30, 55);
             g.DrawString(tagline, ftagline, lgBrush, 90, 115);
-            Image im = new Bitmap("СЖИзолента.bmp");
+            Image im = new Bitmap("РЎР–РР·РѕР»РµРЅС‚Р°.bmp");
             g.DrawImage(im, 210, 175);
         }
     }
