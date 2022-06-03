@@ -5,13 +5,33 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PW_2022._05._16_WPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Практическая работа" Height="450" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition>
             </ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition>
+            </ColumnDefinition>
         </Grid.ColumnDefinitions>
+        <WrapPanel Grid.Column="0" Grid.ColumnSpan="2">
+            <Button Margin="2">Navy</Button>
+            <Button Margin="2">Blue</Button>
+            <Button Margin="2">Aqua</Button>
+            <Button Margin="2">Teal</Button>
+            <Button Margin="2">Olive</Button>
+            <Button Margin="2">Green</Button>
+            <Button Margin="2">Lime</Button>
+            <Button Margin="2">Yellow</Button>
+            <Button Margin="2">Orange</Button>
+            <Button Margin="2">Red</Button>
+            <Button Margin="2">Maroon</Button>
+            <Button Margin="2">Fuchsia</Button>
+            <Button Margin="2">Purple</Button>
+            <Button Margin="2">Black</Button>
+            <Button Margin="2">Silver</Button>
+            <Button Margin="2">Gray</Button>
+            <Button Margin="2">White</Button>
+        </WrapPanel>
     </Grid>
 </Window>
