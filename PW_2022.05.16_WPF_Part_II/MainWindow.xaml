@@ -8,16 +8,16 @@
         Title="Практическая Работа Часть 2" Height="287" Width="544">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition MinWidth = "170" Width="175*"></ColumnDefinition>
+            <ColumnDefinition Width="188*"></ColumnDefinition>
+            <ColumnDefinition Width="181*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
-        <WrapPanel Grid.Row="1" Grid.ColumnSpan="3">
+        <WrapPanel Grid.Column="1" Grid.ColumnSpan="2" Grid.RowSpan="3" Margin="0,90,0,0">
             <Button Background="Yellow" Content="A" Width="50" Height="50" Margin="10"/>
             <Button Background="Red" Content="A" Width="50" Height="50" Margin="10"/>
             <Button Background="Green" Content="A" Width="50" Height="50" Margin="10"/>
@@ -25,5 +25,16 @@
             <Button Background="Gray" Content="A" Width="50" Height="50" Margin="10"/>
             <Button Background="Beige" Content="A" Width="50" Height="50" Margin="10"/>
         </WrapPanel>
+        <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.ColumnSpan ="2">
+            <Button Margin="10" Content="Открыть" Height="30"/>
+            <Button Margin="10" Content="Сохранить" Height="30"/>
+            <Button Margin="10" Content="Закрыть" Height="30"/>
+        </StackPanel>
+        <StackPanel Orientation="Vertical" Grid.Column="0" Grid.RowSpan ="3">
+            <Label Margin="10" Content="Последние документы"/>
+            <Label Margin="10" Content="1.txt"/>
+            <Label Margin="10" Content="2.txt"/>
+            <Label Margin="10" Content="3.txt"/>
+        </StackPanel>
     </Grid>
 </Window>
