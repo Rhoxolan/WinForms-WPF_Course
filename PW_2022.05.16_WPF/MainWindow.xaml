@@ -15,23 +15,23 @@
             </ColumnDefinition>
         </Grid.ColumnDefinitions>
         <WrapPanel Grid.Column="0" Grid.ColumnSpan="2">
-            <Button Margin="2">Navy</Button>
-            <Button Margin="2">Blue</Button>
-            <Button Margin="2">Aqua</Button>
-            <Button Margin="2">Teal</Button>
-            <Button Margin="2">Olive</Button>
-            <Button Margin="2">Green</Button>
-            <Button Margin="2">Lime</Button>
-            <Button Margin="2">Yellow</Button>
-            <Button Margin="2">Orange</Button>
-            <Button Margin="2">Red</Button>
-            <Button Margin="2">Maroon</Button>
-            <Button Margin="2">Fuchsia</Button>
-            <Button Margin="2">Purple</Button>
-            <Button Margin="2">Black</Button>
-            <Button Margin="2">Silver</Button>
-            <Button Margin="2">Gray</Button>
-            <Button Margin="2">White</Button>
+            <Button Margin="2" Foreground="Navy">Navy</Button>
+            <Button Margin="2" Foreground="Blue">Blue</Button>
+            <Button Margin="2" Foreground="Aqua">Aqua</Button>
+            <Button Margin="2" Foreground="Teal">Teal</Button>
+            <Button Margin="2" Foreground="Olive">Olive</Button>
+            <Button Margin="2" Foreground="Green">Green</Button>
+            <Button Margin="2" Foreground="Lime">Lime</Button>
+            <Button Margin="2" Foreground="Yellow">Yellow</Button>
+            <Button Margin="2" Foreground="Orange">Orange</Button>
+            <Button Margin="2" Foreground="Red">Red</Button>
+            <Button Margin="2" Foreground="Maroon">Maroon</Button>
+            <Button Margin="2" Foreground="Fuchsia">Fuchsia</Button>
+            <Button Margin="2" Foreground="Purple">Purple</Button>
+            <Button Margin="2" Foreground="Black">Black</Button>
+            <Button Margin="2" Foreground="Silver">Silver</Button>
+            <Button Margin="2" Foreground="Gray">Gray</Button>
+            <Button Margin="2" Foreground="White">White</Button>
         </WrapPanel>
     </Grid>
 </Window>
