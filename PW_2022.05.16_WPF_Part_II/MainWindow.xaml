@@ -5,8 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PW_2022._05._16_WPF_Part_II"
         mc:Ignorable="d"
-        Title="Практическая Работа Часть 2" Height="450" Width="800">
+        Title="Практическая Работа Часть 2" Height="287" Width="544">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <WrapPanel Grid.Row="1" Grid.ColumnSpan="3">
+            <Button Background="Yellow" Content="A" Width="50" Height="50" Margin="10"/>
+            <Button Background="Red" Content="A" Width="50" Height="50" Margin="10"/>
+            <Button Background="Green" Content="A" Width="50" Height="50" Margin="10"/>
+            <Button Background="Blue" Content="A" Width="50" Height="50" Margin="10"/>
+            <Button Background="Gray" Content="A" Width="50" Height="50" Margin="10"/>
+            <Button Background="Beige" Content="A" Width="50" Height="50" Margin="10"/>
+        </WrapPanel>
     </Grid>
 </Window>
