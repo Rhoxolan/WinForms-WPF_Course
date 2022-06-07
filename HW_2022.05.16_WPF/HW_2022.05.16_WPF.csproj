@@ -90,6 +90,7 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <None Include="WPF_DZ_1.pdf" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
