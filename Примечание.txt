@@ -35,3 +35,4 @@ HW - проработка функционала библиотеки GDI+, прорисовка логотипа.
 16.06.2022 Введение в WPF
 PW1 - работа с WrapPanel, Grid, колонками.
 PW2 - работа с WrapPanel, StackPanel, Grid, колонками.
+DZ - каркас калькулятора. Работа с DockPanel, Grid, свойством Grid.ColumnSpan.
