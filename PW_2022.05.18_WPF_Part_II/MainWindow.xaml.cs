@@ -36,6 +36,11 @@ namespace PW_2022._05._18_WPF_Part_II
             button4 = new Button { Content = "Button 4" };
             button5 = new Button { Content = "Button 5" };
             dockPanel = new DockPanel();
+            this.Loaded += MainWindow_Loaded;
+        }
+
+        private void MainWindow_Loaded(object sender, RoutedEventArgs e)
+        {
             this.Content = dockPanel;
             dockPanel.Children.Add(button1);
             dockPanel.Children.Add(button2);
@@ -46,8 +51,6 @@ namespace PW_2022._05._18_WPF_Part_II
             DockPanel.SetDock(button2, Dock.Bottom);
             DockPanel.SetDock(button3, Dock.Left);
             DockPanel.SetDock(button4, Dock.Top);
-
-            //Ты тут. Разобраться как создавать виндов лоад, перенести часть туда, написать в примечание про виндов лоад
         }
     }
 }

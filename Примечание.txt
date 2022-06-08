@@ -38,4 +38,5 @@ PW2 - работа с WrapPanel, StackPanel, Grid, колонками.
 DZ - каркас калькулятора. Работа с DockPanel, Grid, свойством Grid.ColumnSpan.
 
 18.05.2022 Контейнеры
-PW1 - работа с DockPanel, компоновка посредством XAML.
+PW1 - работа с DockPanel, компоновка через XAML.
+PW2 - работа с DockPanel, компоновка через .cs. Работа со свойством Loaded.
