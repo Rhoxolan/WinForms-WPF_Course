@@ -5,6 +5,33 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PW_2022._05._18_WPF_Part_V"
         mc:Ignorable="d"
-        Title="Font Chooser" Height="450" Width="800" Background="GhostWhite">
-    
+        Title="Font Chooser" Height="654" Width="800" Background="GhostWhite">
+    <DockPanel FlowDirection="RightToLeft" LastChildFill="True">
+        <WrapPanel DockPanel.Dock="Bottom">
+            <Button Margin="5">OK</Button>
+            <Button Margin="5">Cancel</Button>
+        </WrapPanel>
+        <TextBox DockPanel.Dock="Bottom" Margin="5,0,5,5" Height="90" IsReadOnly="True"></TextBox>
+        <Label FlowDirection="LeftToRight" DockPanel.Dock="Bottom" Margin="5,0,1,0">Preview:</Label>
+        <UniformGrid DockPanel.Dock="Bottom" Columns="2" Rows="0">
+            <TextBox Margin="5,0,2.5,0" Height="90"></TextBox>
+            <TextBox Margin="2.5,0,5,0" Height="90"></TextBox>
+        </UniformGrid>
+        <UniformGrid DockPanel.Dock="Bottom" Columns="2" Rows="0">
+            <Label FlowDirection="LeftToRight">Typeface:Points</Label>
+            <Label FlowDirection="LeftToRight">FontFamily</Label>
+        </UniformGrid>
+        <WrapPanel DockPanel.Dock="Bottom" FlowDirection="LeftToRight">
+            <Button Margin="5">Family and typeface samples</Button>
+            <Button Margin="5">Typeface Features</Button>
+            <Button Margin="5">Decriptive Text</Button>
+        </WrapPanel>
+        <Grid DockPanel.Dock="Bottom">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.25*"></ColumnDefinition>
+                <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                <ColumnDefinition Width="0.7*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+        </Grid>
+    </DockPanel>
 </Window>
