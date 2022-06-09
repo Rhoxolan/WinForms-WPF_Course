@@ -32,6 +32,17 @@
                 <ColumnDefinition Width="0.5*"></ColumnDefinition>
                 <ColumnDefinition Width="0.7*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.3*"></RowDefinition>
+                <RowDefinition Height="2*"></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <TextBox Margin="5" Grid.Row="1" Grid.Column="2" Grid.RowSpan="2"></TextBox>
+            <Label Grid.Row="0" Grid.Column="2" FlowDirection="LeftToRight">Font family</Label>
+            <Label Grid.Row="0" Grid.Column="1" FlowDirection="LeftToRight">Typeface</Label>
+            <TextBox Margin="5" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"></TextBox>
+            <TextBox Margin="5,25,5,5" Grid.Row="2" Grid.Column="1"></TextBox>
+            <Label Grid.Row="2" Grid.Column="1" FlowDirection="LeftToRight">Size</Label>
         </Grid>
     </DockPanel>
 </Window>
