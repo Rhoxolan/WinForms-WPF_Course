@@ -22,9 +22,9 @@
             <Label FlowDirection="LeftToRight">FontFamily</Label>
         </UniformGrid>
         <WrapPanel DockPanel.Dock="Bottom" FlowDirection="LeftToRight">
-            <Button Margin="5">Family and typeface samples</Button>
-            <Button Margin="5">Typeface Features</Button>
-            <Button Margin="5">Decriptive Text</Button>
+            <TabItem Margin="5" Header="Family and typeface samples"></TabItem>
+            <TabItem Margin="5" Header="Typeface Features"></TabItem>
+            <TabItem Margin="5" Header="Decriptive Text"></TabItem>
         </WrapPanel>
         <Grid DockPanel.Dock="Bottom">
             <Grid.ColumnDefinitions>
@@ -43,6 +43,12 @@
             <TextBox Margin="5" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"></TextBox>
             <TextBox Margin="5,25,5,5" Grid.Row="2" Grid.Column="1"></TextBox>
             <Label Grid.Row="2" Grid.Column="1" FlowDirection="LeftToRight">Size</Label>
+            <StackPanel FlowDirection="LeftToRight" Grid.Row="2" Grid.Column="0">
+                <CheckBox Margin="3">Underline</CheckBox>
+                <CheckBox Margin="3">Baseline</CheckBox>
+                <CheckBox Margin="3">Strikenthrough</CheckBox>
+                <CheckBox Margin="3">OverLine</CheckBox>
+            </StackPanel>
         </Grid>
     </DockPanel>
 </Window>
