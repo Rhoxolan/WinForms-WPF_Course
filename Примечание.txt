@@ -43,3 +43,4 @@ PW2 - работа с DockPanel, компоновка через .cs. Работа со свойством Loaded.
 PW3 - работа с Grid, компоновка через XAML.
 PW4 - работа с Grid, компоновка через .cs. Работа со свойством Loaded.
 PW5 - каркас приложения "Font Chooser". Работа с Grid, WrapPanel, свойством WrapPanel FlowDirection ("RightToLeft"). Работа со свойством Margin. Работа с UnifromGrid. Работа с TabItem.
+HW - лабиринт, компоновка DockPanel через .cs. Работа со свойством Loaded.
