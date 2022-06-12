@@ -26,7 +26,7 @@ namespace HW_2022._05._20_WPF
             isEqualsOut = false;
         }
 
-        private void OneButton_Click(object sender, EventArgs e)
+        private void OneButton_Click(object sender, RoutedEventArgs e)
         {
             if (isEqualsOut)
             {
@@ -39,7 +39,7 @@ namespace HW_2022._05._20_WPF
             }
         }
 
-        private void TwoButton_Click(object sender, EventArgs e)
+        private void TwoButton_Click(object sender, RoutedEventArgs e)
         {
             if (isEqualsOut)
             {
@@ -52,7 +52,7 @@ namespace HW_2022._05._20_WPF
             }
         }
 
-        private void ThreeButton_Click(object sender, EventArgs e)
+        private void ThreeButton_Click(object sender, RoutedEventArgs e)
         {
             if (isEqualsOut)
             {
@@ -65,7 +65,7 @@ namespace HW_2022._05._20_WPF
             }
         }
 
-        private void FourButton_Click(object sender, EventArgs e)
+        private void FourButton_Click(object sender, RoutedEventArgs e)
         {
             if (isEqualsOut)
             {
@@ -78,7 +78,7 @@ namespace HW_2022._05._20_WPF
             }
         }
 
-        private void FiveButton_Click(object sender, EventArgs e)
+        private void FiveButton_Click(object sender, RoutedEventArgs e)
         {
             if (isEqualsOut)
             {
@@ -91,7 +91,7 @@ namespace HW_2022._05._20_WPF
             }
         }
 
-        private void SixButton_Click(object sender, EventArgs e)
+        private void SixButton_Click(object sender, RoutedEventArgs e)
         {
             if (isEqualsOut)
             {
@@ -104,7 +104,7 @@ namespace HW_2022._05._20_WPF
             }
         }
 
-        private void SevenButton_Click(object sender, EventArgs e)
+        private void SevenButton_Click(object sender, RoutedEventArgs e)
         {
             if (isEqualsOut)
             {
@@ -117,7 +117,7 @@ namespace HW_2022._05._20_WPF
             }
         }
 
-        private void EightButton_Click(object sender, EventArgs e)
+        private void EightButton_Click(object sender, RoutedEventArgs e)
         {
             if (isEqualsOut)
             {
@@ -130,7 +130,7 @@ namespace HW_2022._05._20_WPF
             }
         }
 
-        private void NineButton_Click(object sender, EventArgs e)
+        private void NineButton_Click(object sender, RoutedEventArgs e)
         {
             if (isEqualsOut)
             {
@@ -143,7 +143,7 @@ namespace HW_2022._05._20_WPF
             }
         }
 
-        private void ZeroButton_Click(object sender, EventArgs e)
+        private void ZeroButton_Click(object sender, RoutedEventArgs e)
         {
             if (isEqualsOut)
             {
@@ -156,7 +156,7 @@ namespace HW_2022._05._20_WPF
             }
         }
 
-        private void PlusButton_Click(object sender, EventArgs e)
+        private void PlusButton_Click(object sender, RoutedEventArgs e)
         {
             if (isEqualsOut)
             {
@@ -169,7 +169,7 @@ namespace HW_2022._05._20_WPF
             }
         }
 
-        private void MinusButton_Click(object sender, EventArgs e)
+        private void MinusButton_Click(object sender, RoutedEventArgs e)
         {
             if (isEqualsOut)
             {
@@ -182,7 +182,7 @@ namespace HW_2022._05._20_WPF
             }
         }
 
-        private void SubButton_Click(object sender, EventArgs e)
+        private void SubButton_Click(object sender, RoutedEventArgs e)
         {
             if (isEqualsOut)
             {
@@ -195,7 +195,7 @@ namespace HW_2022._05._20_WPF
             }
         }
 
-        private void DivisionButton_Click(object sender, EventArgs e)
+        private void DivisionButton_Click(object sender, RoutedEventArgs e)
         {
             if (isEqualsOut)
             {
@@ -208,7 +208,7 @@ namespace HW_2022._05._20_WPF
             }
         }
 
-        private void PointButton_Click(object sender, EventArgs e)
+        private void PointButton_Click(object sender, RoutedEventArgs e)
         {
             if (isEqualsOut)
             {
@@ -221,7 +221,7 @@ namespace HW_2022._05._20_WPF
             }
         }
 
-        private void EqualsButton_Click(object sender, EventArgs e)
+        private void EqualsButton_Click(object sender, RoutedEventArgs e)
         {
             try
             {
@@ -229,7 +229,9 @@ namespace HW_2022._05._20_WPF
                 table.Columns.Add("expression", typeof(string), TextBox.Text);
                 DataRow row = table.NewRow();
                 table.Rows.Add(row);
+                TextBoxHistory.Text = TextBox.Text + "=";
                 TextBox.Text = (string)row["expression"];
+                TextBoxHistory.Text += TextBox.Text;
                 isEqualsOut = false;
             }
             catch
@@ -239,12 +241,12 @@ namespace HW_2022._05._20_WPF
             }
         }
 
-        private void CButton_Click(object sender, EventArgs e)
+        private void CButton_Click(object sender, RoutedEventArgs e)
         {
             TextBox.Text = "";
         }
 
-        private void DelButton_Click(object sender, EventArgs e)
+        private void DelButton_Click(object sender, RoutedEventArgs e)
         {
             if (TextBox.Text.Length != 0)
             {
@@ -255,7 +257,7 @@ namespace HW_2022._05._20_WPF
         }
 
         //Меняем последний знак
-        private void ChangeButton_Click(object sender, EventArgs e)
+        private void ChangeButton_Click(object sender, RoutedEventArgs e)
         {
             StringBuilder sb = new StringBuilder(TextBox.Text);
             for (int i = TextBox.Text.Length - 1; i >= 0; i--)

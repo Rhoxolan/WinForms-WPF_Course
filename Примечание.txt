@@ -35,7 +35,7 @@ HW - проработка функционала библиотеки GDI+, прорисовка логотипа.
 16.05.2022 Введение в WPF
 PW1 - работа с WrapPanel, Grid, колонками.
 PW2 - работа с WrapPanel, StackPanel, Grid, колонками.
-DZ - каркас калькулятора. Работа с DockPanel, Grid, свойством Grid.ColumnSpan.
+HW - каркас калькулятора. Работа с DockPanel, Grid, свойством Grid.ColumnSpan.
 
 18.05.2022 Контейнеры
 PW1 - работа с DockPanel, компоновка через XAML.
@@ -44,3 +44,6 @@ PW3 - работа с Grid, компоновка через XAML.
 PW4 - работа с Grid, компоновка через .cs. Работа со свойством Loaded.
 PW5 - каркас приложения "Font Chooser". Работа с Grid, WrapPanel, свойством WrapPanel FlowDirection ("RightToLeft"). Работа со свойством Margin. Работа с UnifromGrid. Работа с TabItem.
 HW - лабиринт, компоновка DockPanel через .cs. Работа со свойством Loaded.
+
+16.05.2022 Элементы управления WPF
+HW - реализация калькулятора по каркасу с HW_16.05.2022, обработчики взяты с WinForms PW_29.04.2022.
