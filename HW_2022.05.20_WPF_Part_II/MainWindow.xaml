@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HW_2022._05._20_WPF_Part_II"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" PreviewKeyDown="Window_PreviewKeyDown">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>
@@ -87,7 +87,6 @@
         <Button Grid.Row="4" Grid.Column="12" Margin="3" FontSize="14" Background="GreenYellow">{</Button>
         <Button Grid.Row="4" Grid.Column="13" Margin="3" FontSize="14" Background="GreenYellow">}</Button>
         <Button Grid.Row="4" Grid.Column="14" Margin="3" FontSize="14" Background="GreenYellow">||</Button>
-
         <Button Grid.Row="3" Grid.Column="0" Margin="3" FontSize="14" Background="PaleVioletRed">~</Button>
         <Button Grid.Row="3" Grid.Column="1" Margin="3" FontSize="14" Background="PaleVioletRed">!</Button>
         <Button Grid.Row="3" Grid.Column="2" Margin="3" FontSize="14" Background="PaleVioletRed">@</Button>
