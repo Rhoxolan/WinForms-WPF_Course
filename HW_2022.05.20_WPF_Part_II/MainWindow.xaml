@@ -47,5 +47,60 @@
         <Button Grid.Row="7" Grid.Column="12" Margin="3" FontSize="14">ALT</Button>
         <Button Grid.Row="7" Grid.Column="13" Margin="3" FontSize="14">WIN</Button>
         <Button Grid.Row="7" Grid.Column="14" Margin="3" FontSize="14">CTRL</Button>
+        <Button Grid.Row="6" Grid.ColumnSpan="2" Grid.Column="0" Margin="3" FontSize="14">Shift</Button>
+        <Button Grid.Row="6" Grid.Column="2" Margin="3" FontSize="14" Background="PaleVioletRed">z</Button>
+        <Button Grid.Row="6" Grid.Column="3" Margin="3" FontSize="14" Background="Yellow">x</Button>
+        <Button Grid.Row="6" Grid.Column="4" Margin="3" FontSize="14" Background="GreenYellow">c</Button>
+        <Button Grid.Row="6" Grid.Column="5" Margin="3" FontSize="14" Background="Aqua">v</Button>
+        <Button Grid.Row="6" Grid.Column="6" Margin="3" FontSize="14" Background="Aqua">b</Button>
+        <Button Grid.Row="6" Grid.Column="7" Margin="3" FontSize="14" Background="Magenta">n</Button>
+        <Button Grid.Row="6" Grid.Column="8" Margin="3" FontSize="14" Background="Magenta">m</Button>
+        <Button Grid.Row="6" Grid.Column="9" Margin="3" FontSize="14" Background="PaleVioletRed">&lt;</Button>
+        <Button Grid.Row="6" Grid.Column="10" Margin="3" FontSize="14" Background="Yellow">&gt;</Button>
+        <Button Grid.Row="6" Grid.Column="11" Margin="3" FontSize="14" Background="GreenYellow">?</Button>
+        <Button Grid.Row="6" Grid.ColumnSpan="3" Grid.Column="12" Margin="3" FontSize="14">Shift</Button>
+        <Button Grid.Row="5" Grid.ColumnSpan="2" Grid.Column="0" Margin="3" FontSize="14">Caps lock</Button>
+        <Button Grid.Row="5" Grid.Column="2" Margin="3" FontSize="14" Background="PaleVioletRed">a</Button>
+        <Button Grid.Row="5" Grid.Column="3" Margin="3" FontSize="14" Background="Yellow">s</Button>
+        <Button Grid.Row="5" Grid.Column="4" Margin="3" FontSize="14" Background="GreenYellow">d</Button>
+        <Button Grid.Row="5" Grid.Column="5" Margin="3" FontSize="14" Background="Aqua">f</Button>
+        <Button Grid.Row="5" Grid.Column="6" Margin="3" FontSize="14" Background="Aqua">g</Button>
+        <Button Grid.Row="5" Grid.Column="7" Margin="3" FontSize="14" Background="Magenta">h</Button>
+        <Button Grid.Row="5" Grid.Column="8" Margin="3" FontSize="14" Background="Magenta">j</Button>
+        <Button Grid.Row="5" Grid.Column="9" Margin="3" FontSize="14" Background="PaleVioletRed">k</Button>
+        <Button Grid.Row="5" Grid.Column="10" Margin="3" FontSize="14" Background="Yellow">l</Button>
+        <Button Grid.Row="5" Grid.Column="11" Margin="3" FontSize="14" Background="GreenYellow">:</Button>
+        <Button Grid.Row="5" Grid.Column="12" Margin="3" FontSize="14" Background="GreenYellow">"</Button>
+        <Button Grid.Row="5" Grid.Column="13" Grid.ColumnSpan="2" Margin="3" FontSize="14">Enter</Button>
+        <Button Grid.Row="4" Grid.ColumnSpan="1" Grid.Column="0" Margin="3" FontSize="14">Tab</Button>
+        <Button Grid.Row="4" Grid.Column="1" Margin="3" FontSize="14" Background="PaleVioletRed">q</Button>
+        <Button Grid.Row="4" Grid.Column="2" Margin="3" FontSize="14" Background="Yellow">w</Button>
+        <Button Grid.Row="4" Grid.Column="3" Margin="3" FontSize="14" Background="GreenYellow">e</Button>
+        <Button Grid.Row="4" Grid.Column="4" Margin="3" FontSize="14" Background="Aqua">r</Button>
+        <Button Grid.Row="4" Grid.Column="5" Margin="3" FontSize="14" Background="Aqua">t</Button>
+        <Button Grid.Row="4" Grid.Column="6" Margin="3" FontSize="14" Background="Magenta">y</Button>
+        <Button Grid.Row="4" Grid.Column="7" Margin="3" FontSize="14" Background="Magenta">u</Button>
+        <Button Grid.Row="4" Grid.Column="8" Margin="3" FontSize="14" Background="PaleVioletRed">i</Button>
+        <Button Grid.Row="4" Grid.Column="9" Margin="3" FontSize="14" Background="Yellow">o</Button>
+        <Button Grid.Row="4" Grid.Column="10" Margin="3" FontSize="14" Background="GreenYellow">p</Button>
+        <Button Grid.Row="4" Grid.Column="11" Margin="3" FontSize="14" Background="GreenYellow">"</Button>
+        <Button Grid.Row="4" Grid.Column="12" Margin="3" FontSize="14" Background="GreenYellow">{</Button>
+        <Button Grid.Row="4" Grid.Column="13" Margin="3" FontSize="14" Background="GreenYellow">}</Button>
+        <Button Grid.Row="4" Grid.Column="14" Margin="3" FontSize="14" Background="GreenYellow">||</Button>
+
+        <Button Grid.Row="3" Grid.Column="0" Margin="3" FontSize="14" Background="PaleVioletRed">~</Button>
+        <Button Grid.Row="3" Grid.Column="1" Margin="3" FontSize="14" Background="PaleVioletRed">!</Button>
+        <Button Grid.Row="3" Grid.Column="2" Margin="3" FontSize="14" Background="PaleVioletRed">@</Button>
+        <Button Grid.Row="3" Grid.Column="3" Margin="3" FontSize="14" Background="Yellow">#</Button>
+        <Button Grid.Row="3" Grid.Column="4" Margin="3" FontSize="14" Background="GreenYellow">$</Button>
+        <Button Grid.Row="3" Grid.Column="5" Margin="3" FontSize="14" Background="Aqua">%</Button>
+        <Button Grid.Row="3" Grid.Column="6" Margin="3" FontSize="14" Background="Aqua">^</Button>
+        <Button Grid.Row="3" Grid.Column="7" Margin="3" FontSize="14" Background="Magenta">&amp;</Button>
+        <Button Grid.Row="3" Grid.Column="8" Margin="3" FontSize="14" Background="Magenta">8</Button>
+        <Button Grid.Row="3" Grid.Column="9" Margin="3" FontSize="14" Background="PaleVioletRed">(</Button>
+        <Button Grid.Row="3" Grid.Column="10" Margin="3" FontSize="14" Background="Yellow">)</Button>
+        <Button Grid.Row="3" Grid.Column="11" Margin="3" FontSize="14" Background="GreenYellow">-</Button>
+        <Button Grid.Row="3" Grid.Column="12" Margin="3" FontSize="14" Background="GreenYellow">+</Button>
+        <Button Grid.Row="3" Grid.Column="13" Grid.ColumnSpan="2" Margin="3" FontSize="14">Backspace</Button>
     </Grid>
 </Window>
