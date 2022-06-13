@@ -7,6 +7,45 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" FontSize="22">Speed:0 chars/mir</Label>
+        <Label Grid.Row="0" Grid.Column="4" Grid.ColumnSpan="2" FontSize="22">Fails 0</Label>
+        <CheckBox Grid.Row="0" Grid.Column="12" Grid.ColumnSpan="3" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Center">Case Sensitive</CheckBox>
+        <Slider Grid.Row="0" Grid.Column="9" Grid.ColumnSpan="3" VerticalAlignment="Center"></Slider>
+        <Button Grid.ColumnSpan="2" Grid.Row="1" Grid.Column="9" Margin="7" FontSize="18">Start</Button>
+        <Button Grid.ColumnSpan="2" Grid.Row="1" Grid.Column="11" Margin="7" FontSize="18">Stop</Button>
+        <Button Grid.Row="7" Grid.Column="0" Margin="3" FontSize="14">CTRL</Button>
+        <Button Grid.Row="7" Grid.Column="1" Margin="3" FontSize="14">WIN</Button>
+        <Button Grid.Row="7" Grid.Column="2" Margin="3" FontSize="14">ALT</Button>
+        <Button Grid.Row="7" Grid.Column="3" Margin="3" FontSize="14" Grid.ColumnSpan="9">Space</Button>
+        <Button Grid.Row="7" Grid.Column="12" Margin="3" FontSize="14">ALT</Button>
+        <Button Grid.Row="7" Grid.Column="13" Margin="3" FontSize="14">WIN</Button>
+        <Button Grid.Row="7" Grid.Column="14" Margin="3" FontSize="14">CTRL</Button>
     </Grid>
 </Window>
