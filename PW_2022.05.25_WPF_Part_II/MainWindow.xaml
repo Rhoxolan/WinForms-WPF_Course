@@ -6,7 +6,32 @@
         xmlns:local="clr-namespace:PW_2022._05._25_WPF_Part_II"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+    <GroupBox Margin="10" Header="Внешний GroupBox">
+        <UniformGrid Rows="2" Columns="0">
+            <GroupBox Margin="5" Header="Внутренний GroupBox 1">
+                <UniformGrid Rows="2">
+                    <UniformGrid Rows="2">
+                        <Label>Ширина текста</Label>
+                        <TextBox Margin="10"></TextBox>
+                    </UniformGrid>
+                    <UniformGrid Rows="2">
+                        <Label>Ширина окна</Label>
+                        <TextBox Margin="10"></TextBox>
+                    </UniformGrid>
+                </UniformGrid>
+            </GroupBox>
+            <GroupBox Margin="5" Header="Внутренний GroupBox 2">
+                <UniformGrid Rows="2">
+                    <UniformGrid Rows="2">
+                        <Label>Заголовок внутреннего GroupBox</Label>
+                        <TextBox Margin="10"></TextBox>
+                    </UniformGrid>
+                    <UniformGrid Rows="2">
+                        <Label>Заголовок внешнего GroupBox</Label>
+                        <TextBox Margin="10"></TextBox>
+                    </UniformGrid>
+                </UniformGrid>
+            </GroupBox>
+        </UniformGrid>
+    </GroupBox>
 </Window>
