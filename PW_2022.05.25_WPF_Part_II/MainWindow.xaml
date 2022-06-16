@@ -5,30 +5,31 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PW_2022._05._25_WPF_Part_II"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800"
+        x:Name="mainWindow">
     <GroupBox Margin="10" Header="Внешний GroupBox">
         <UniformGrid Rows="2" Columns="0">
             <GroupBox Margin="5" Header="Внутренний GroupBox 1">
                 <UniformGrid Rows="2">
                     <UniformGrid Rows="2">
                         <Label>Ширина текста</Label>
-                        <TextBox Margin="10"></TextBox>
+                        <TextBox Margin="10" Text="{Binding RelativeSource={RelativeSource Mode=Self}, Path=FontSize, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBox>
                     </UniformGrid>
                     <UniformGrid Rows="2">
                         <Label>Ширина окна</Label>
-                        <TextBox Margin="10"></TextBox>
+                        <TextBox Margin="10" Text="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType={x:Type Window}}, Path=Width, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBox>
                     </UniformGrid>
                 </UniformGrid>
             </GroupBox>
-            <GroupBox Margin="5" Header="Внутренний GroupBox 2">
+            <GroupBox Margin="5" Header="Внутренний GroupBox 2" x:Name="grBx2">
                 <UniformGrid Rows="2">
                     <UniformGrid Rows="2">
                         <Label>Заголовок внутреннего GroupBox</Label>
-                        <TextBox Margin="10"></TextBox>
+                        <TextBox Margin="10" Text="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type GroupBox}}, Path=Header, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBox>
                     </UniformGrid>
                     <UniformGrid Rows="2">
                         <Label>Заголовок внешнего GroupBox</Label>
-                        <TextBox Margin="10"></TextBox>
+                        <TextBox Margin="10" Text="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type GroupBox},AncestorLevel=2}, Path=Header, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBox>
                     </UniformGrid>
                 </UniformGrid>
             </GroupBox>
