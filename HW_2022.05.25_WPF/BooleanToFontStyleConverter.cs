@@ -11,9 +11,10 @@ namespace HW_2022._05._25_WPF
 {
     public class BooleanToFontStyleConverter : IValueConverter
     {
+        //Подробнее https://www.cyberforum.ru/wpf-silverlight/thread2427817.html
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            if (parameter != null && (bool)parameter == true)
+            if ((bool)value == true)
             {
                 return FontStyles.Italic;
             }

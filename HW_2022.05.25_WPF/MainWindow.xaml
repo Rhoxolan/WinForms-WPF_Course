@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.Resources>
+            <local:BooleanToFontStyleConverter x:Key="BooleanToFontStyleConverter"/>
+        </Grid.Resources>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0.20*"></ColumnDefinition>
             <ColumnDefinition Width="0.20*"></ColumnDefinition>
@@ -20,12 +23,13 @@
             <RowDefinition Height="2.75*"></RowDefinition>
         </Grid.RowDefinitions>
         <TextBox Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3" Margin="5" Text="Это текст"
-                 FontSize="{Binding ElementName=fontSizeSlider, Path=Value}"></TextBox>
+                 FontSize="{Binding ElementName=fontSizeSlider, Path=Value}"
+                 FontStyle="{Binding IsChecked, Converter={StaticResource BooleanToFontStyleConverter}, ElementName=fontStyleCheckBox}"></TextBox>
         <Label Grid.Row="0" Grid.Column="0" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center">Font Weight</Label>
         <Label Grid.Row="1" Grid.Column="0" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center">Font Style</Label>
         <Label Grid.Row="2" Grid.Column="0" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center">Foreground</Label>
         <Label Grid.Row="3" Grid.Column="0" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center">Fontsize</Label>
-        <CheckBox Grid.Row="1" Grid.Column="1" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center">Italic</CheckBox>
+        <CheckBox x:Name="fontStyleCheckBox" IsChecked="False" Grid.Row="1" Grid.Column="1" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center">Italic</CheckBox>
         <ComboBox Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Margin = "15" VerticalAlignment="Center"></ComboBox>
         <ComboBox Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Margin = "15" VerticalAlignment="Center"></ComboBox>
         <TextBox Grid.Row="3" Grid.Column="1" Margin="15,20,15,20"
