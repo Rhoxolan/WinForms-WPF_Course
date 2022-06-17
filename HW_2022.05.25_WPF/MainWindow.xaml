@@ -27,7 +27,8 @@
             <sys:String>UltraBold</sys:String>
             <sys:String>UltraLight</sys:String>
         </x:Array>
-    </Window.Resources>
+    </Window.Resources>
+
     <Grid>
         <Grid.Resources>
             <local:BooleanToFontStyleConverter x:Key="BooleanToFontStyleConverter"/>
