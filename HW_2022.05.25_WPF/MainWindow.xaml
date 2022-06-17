@@ -32,6 +32,7 @@
     <Grid>
         <Grid.Resources>
             <local:BooleanToFontStyleConverter x:Key="BooleanToFontStyleConverter"/>
+            <local:ColorToBrushConverter x:Key="ColorToBrushConverter"/>
         </Grid.Resources>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0.20*"></ColumnDefinition>
@@ -45,10 +46,11 @@
             <RowDefinition></RowDefinition>
             <RowDefinition Height="2.75*"></RowDefinition>
         </Grid.RowDefinitions>
-        <TextBox Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3" Margin="5" Text="Это текст"
+        <TextBox x:Name="textBox" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3" Margin="5" Text="Это текст"
                  FontSize="{Binding ElementName=fontSizeSlider, Path=Value}"
                  FontStyle="{Binding IsChecked, Converter={StaticResource BooleanToFontStyleConverter}, ElementName=fontStyleCheckBox}"
-                 FontWeight="{Binding ElementName=fontWeightComboBox, Path=SelectedItem}"></TextBox>
+                 FontWeight="{Binding ElementName=fontWeightComboBox, Path=SelectedItem}"
+                 Foreground="{Binding Converter={StaticResource ColorToBrushConverter}, ElementName=foregroundComboBox, Path=SelectedItem}"></TextBox>
         <Label Grid.Row="0" Grid.Column="0" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center">Font Weight</Label>
         <Label Grid.Row="1" Grid.Column="0" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center">Font Style</Label>
         <Label Grid.Row="2" Grid.Column="0" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center">Foreground</Label>
@@ -56,7 +58,16 @@
         <CheckBox x:Name="fontStyleCheckBox" IsChecked="False" Grid.Row="1" Grid.Column="1" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center">Italic</CheckBox>
         <ComboBox x:Name="fontWeightComboBox" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Margin = "15" VerticalAlignment="Center"
                   DataContext="{StaticResource FontWeightRes}" ItemsSource="{Binding}"></ComboBox>
-        <ComboBox x:Name="foregroundComboBox" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Margin = "15" VerticalAlignment="Center"></ComboBox>
+        <ComboBox SelectedIndex="0" x:Name="foregroundComboBox" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Margin = "15" VerticalAlignment="Center">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <Rectangle Fill="{Binding Name}" Width="16" Height="16" Margin="0,2,5,2" />
+                        <TextBlock Text="{Binding Name}" />
+                    </StackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
         <TextBox Grid.Row="3" Grid.Column="1" Margin="15,20,15,20"
                  Text="{Binding StringFormat={}{0:F2}, ElementName=fontSizeSlider, Path=Value, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBox>
         <Slider x:Name="fontSizeSlider" Grid.Row="3" Grid.Column="2" VerticalAlignment="Center" Margin="15" Minimum="7" Value="12" Maximum="72"></Slider>

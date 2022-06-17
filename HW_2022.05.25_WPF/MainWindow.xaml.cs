@@ -23,6 +23,8 @@ namespace HW_2022._05._25_WPF
         public MainWindow()
         {
             InitializeComponent();
+            //!! Подробнее https://www.wpf-tutorial.com/ru/73/списочные-элементы-управления/элемент-управления-combobox/
+            foregroundComboBox.ItemsSource = typeof(Colors).GetProperties();
         }
     }
 }
