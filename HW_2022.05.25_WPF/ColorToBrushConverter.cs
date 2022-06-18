@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Globalization;
 using System.Linq;
 using System.Text;
@@ -16,7 +17,9 @@ namespace HW_2022._05._25_WPF
         {
             if(value != null)
             {
-                return Brushes.Blue;
+                //MessageBox.Show(value.ToString()); //Для отладки
+                //return System.Windows.Media.Brushes.Blue; //Для отладки
+                //return new SolidColorBrush((System.Windows.Media.Color)value);
             }
             return null;
         }
