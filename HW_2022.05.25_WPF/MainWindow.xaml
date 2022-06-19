@@ -50,7 +50,7 @@
                  FontSize="{Binding ElementName=fontSizeSlider, Path=Value}"
                  FontStyle="{Binding IsChecked, Converter={StaticResource BooleanToFontStyleConverter}, ElementName=fontStyleCheckBox}"
                  FontWeight="{Binding ElementName=fontWeightComboBox, Path=SelectedItem}"
-                 Foreground="{Binding Converter={StaticResource ColorToBrushConverter}, ElementName=foregroundComboBox, Path=SelectedItem}"></TextBox>
+                 Foreground="{Binding Converter={StaticResource ColorToBrushConverter}, ElementName=foregroundComboBox, Path=SelectedValue.Name}"></TextBox>
         <Label Grid.Row="0" Grid.Column="0" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center">Font Weight</Label>
         <Label Grid.Row="1" Grid.Column="0" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center">Font Style</Label>
         <Label Grid.Row="2" Grid.Column="0" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center">Foreground</Label>

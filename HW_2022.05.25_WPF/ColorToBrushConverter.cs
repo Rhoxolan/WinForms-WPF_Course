@@ -17,9 +17,7 @@ namespace HW_2022._05._25_WPF
         {
             if(value != null)
             {
-                //MessageBox.Show(value.ToString()); //Для отладки
-                //return System.Windows.Media.Brushes.Blue; //Для отладки
-                //return new SolidColorBrush((System.Windows.Media.Color)value);
+                return value;
             }
             return null;
         }
