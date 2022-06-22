@@ -43,7 +43,7 @@
                 <DataTemplate>
                     <StackPanel Margin="5">
                         <Image MaxHeight="55" MaxWidth="55" Source="{Binding Path=Path}"></Image>
-                        <TextBlock Text="{Binding Path=Path}"></TextBlock>
+                        <TextBlock Text="{Binding Fileinfo.Name}"></TextBlock>
                     </StackPanel>
                 </DataTemplate>
             </ListBox.ItemTemplate>
@@ -51,7 +51,7 @@
 
         <WrapPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="1">
             <Button Command="{Binding AddCommand}" Margin="10" Height="20" Width="105">+</Button>
-            <Button Margin="10" Height="20" Width="105">-</Button>
+            <Button CommandParameter="{Binding ImageShowed}" Command="{Binding RemoveCommand}" Margin="10" Height="20" Width="105">-</Button>
         </WrapPanel>
     </Grid>
 </Window>

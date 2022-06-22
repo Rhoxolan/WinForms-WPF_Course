@@ -99,10 +99,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="unnamed.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Rhoxolan.png" />
+    <Resource Include="Screenshot_1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -19,11 +19,7 @@ namespace PW_2022._05._27_WPF
 
         public ApplicationViewModel()
         {
-            Images = new ObservableCollection<ShowedImage>
-            {
-                new ShowedImage { Path = "unnamed.jpg", Fileinfo = new FileInfo("unnamed.jpg") },
-                new ShowedImage { Path = "Rhoxolan.png", Fileinfo = new FileInfo("Rhoxolan.png") }
-            };
+            Images = new ObservableCollection<ShowedImage>();
         }
 
         // команда добавления нового объекта
@@ -41,6 +37,25 @@ namespace PW_2022._05._27_WPF
                           Images.Add(new ShowedImage { Path = ofd.FileName, Fileinfo = new FileInfo(ofd.FileName) });
                       }
                   }));
+            }
+        }
+
+        // команда удаления
+        private RelayCommand removeCommand;
+        public RelayCommand RemoveCommand
+        {
+            get
+            {
+                return removeCommand ??
+                  (removeCommand = new RelayCommand(obj =>
+                  {
+                      ShowedImage image = obj as ShowedImage;
+                      if (image != null)
+                      {
+                          Images.Remove(image);
+                      }
+                  },
+                 (obj) => Images.Count > 0));
             }
         }
 
