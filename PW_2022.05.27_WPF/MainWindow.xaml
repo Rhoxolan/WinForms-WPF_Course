@@ -24,13 +24,14 @@
                 <Style TargetType="TextBlock">
                     <Setter Property="Margin" Value="5"></Setter>
                 </Style>
+                <local:IntToStringConverter x:Key="IntToStringConverter"></local:IntToStringConverter>
             </StackPanel.Resources>
             <TextBlock>Путь:</TextBlock>
             <TextBlock Text="{Binding Fileinfo}"></TextBlock>
             <TextBlock>Имя:</TextBlock>
             <TextBlock Text="{Binding Fileinfo.Name}"></TextBlock>
             <TextBlock>Размер:</TextBlock>
-            <TextBlock Text="{Binding Fileinfo.Length}"></TextBlock>
+            <TextBlock Text="{Binding Fileinfo.Length, Converter={StaticResource IntToStringConverter}}"></TextBlock>
         </StackPanel>
         
         <ListBox Grid.Column="0" Grid.Row="1" ItemsSource="{Binding Images}" SelectedItem="{Binding ImageShowed}">
