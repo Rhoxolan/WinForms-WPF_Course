@@ -19,6 +19,20 @@
         <Image Grid.Column="0" Grid.Row="0" Margin="5" DataContext="{Binding ImageShowed}"
                Source="{Binding Path}"></Image>
 
+        <StackPanel Grid.Column="1" Grid.Row="0" DataContext="{Binding ImageShowed}">
+            <StackPanel.Resources>
+                <Style TargetType="TextBlock">
+                    <Setter Property="Margin" Value="5"></Setter>
+                </Style>
+            </StackPanel.Resources>
+            <TextBlock>Путь:</TextBlock>
+            <TextBlock Text="{Binding Fileinfo}"></TextBlock>
+            <TextBlock>Имя:</TextBlock>
+            <TextBlock Text="{Binding Fileinfo.Name}"></TextBlock>
+            <TextBlock>Размер:</TextBlock>
+            <TextBlock Text="{Binding Fileinfo.Length}"></TextBlock>
+        </StackPanel>
+        
         <ListBox Grid.Column="0" Grid.Row="1" ItemsSource="{Binding Images}" SelectedItem="{Binding ImageShowed}">
             <ListBox.ItemsPanel>
                 <ItemsPanelTemplate>
