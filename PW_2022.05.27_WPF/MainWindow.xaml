@@ -15,5 +15,24 @@
             <RowDefinition></RowDefinition>
             <RowDefinition Height="0.5*"></RowDefinition>
         </Grid.RowDefinitions>
+
+        <Image Grid.Column="0" Grid.Row="0" Margin="5" DataContext="{Binding ImageShowed}"
+               Source="{Binding Path}"></Image>
+
+        <ListBox Grid.Column="0" Grid.Row="1" ItemsSource="{Binding Images}" SelectedItem="{Binding ImageShowed}">
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel Orientation="Horizontal"/>
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Margin="5">
+                        <Image MaxHeight="55" MaxWidth="55" Source="{Binding Path=Path}"></Image>
+                        <TextBlock Text="{Binding Path=Path}"></TextBlock>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
     </Grid>
 </Window>
