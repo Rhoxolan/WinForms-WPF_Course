@@ -23,6 +23,7 @@ namespace PW_2022._05._27_WPF_V2
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = new ApplicationViewModel();
         }
     }
 }

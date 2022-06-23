@@ -11,7 +11,7 @@ namespace PW_2022._05._27_WPF_V2
 {
     public class ShowedImage
     {
-        private string Path { get; set; }
-        private FileInfo Fileinfo { get; set; }
+        public string Path { get; set; }
+        public FileInfo Fileinfo { get; set; }
     }
 }

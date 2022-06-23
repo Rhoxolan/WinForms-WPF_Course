@@ -21,6 +21,8 @@ namespace PW_2022._05._27_WPF_V2
         {
             Images = new BindingList<ShowedImage>();
             imageShowed = null;
+            Images.Add(new ShowedImage { Path = "unnamed.jpg", Fileinfo = new FileInfo("unnamed.jpg") });
+            Images.Add(new ShowedImage { Path = "Rhoxolan.png", Fileinfo = new FileInfo("Rhoxolan.png") });
         }
 
         public ShowedImage ImageShowed
