@@ -8,6 +8,7 @@ using System.Runtime.CompilerServices;
 using System.Collections.ObjectModel;
 using System.IO;
 using Microsoft.Win32;
+using System.Windows.Input;
 
 namespace PW_2022._05._27_WPF_V2
 {
@@ -16,13 +17,50 @@ namespace PW_2022._05._27_WPF_V2
         public BindingList<ShowedImage> Images { get; set; }
 
         private ShowedImage imageShowed;
+        private RelayCommand addCommand;
+        private RelayCommand removeCommand;
 
         public ApplicationViewModel()
         {
             Images = new BindingList<ShowedImage>();
             imageShowed = null;
-            Images.Add(new ShowedImage { Path = "unnamed.jpg", Fileinfo = new FileInfo("unnamed.jpg") });
-            Images.Add(new ShowedImage { Path = "Rhoxolan.png", Fileinfo = new FileInfo("Rhoxolan.png") });
+            addCommand = null;
+            removeCommand = null;
+        }
+
+        //Добавление изображения
+        public RelayCommand AddCommand
+        {
+            get
+            {
+                return addCommand ??
+                  (addCommand = new RelayCommand(obj =>
+                  {
+                      OpenFileDialog ofd = new OpenFileDialog();
+                      if ((bool)ofd.ShowDialog())
+                      {
+                          Images.Add(new ShowedImage { Path = ofd.FileName, Fileinfo = new FileInfo(ofd.FileName) });
+                      }
+                  }));
+            }
+        }
+
+        //Удаление изображения
+        public RelayCommand RemoveCommand
+        {
+            get
+            {
+                return removeCommand ??
+                  (removeCommand = new RelayCommand(obj =>
+                  {
+                      ShowedImage image = obj as ShowedImage;
+                      if (image != null)
+                      {
+                          Images.Remove(image);
+                      }
+                  },
+                 (obj) => Images.Count > 0));
+            }
         }
 
         public ShowedImage ImageShowed

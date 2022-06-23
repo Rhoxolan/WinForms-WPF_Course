@@ -49,5 +49,9 @@
             </ListBox.ItemTemplate>
         </ListBox>
 
+        <WrapPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="1">
+            <Button Command="{Binding AddCommand}" Margin="10" Height="20" Width="105">+</Button>
+            <Button CommandParameter="{Binding ImageShowed}" Command="{Binding RemoveCommand}" Margin="10" Height="20" Width="105">-</Button>
+        </WrapPanel>
     </Grid>
 </Window>
