@@ -5,8 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HW_2022._05._30_WPF"
         mc:Ignorable="d"
-        Title="Authentication" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="Authentication" Height="153" Width="262" ResizeMode="CanMinimize">
+    <Canvas>
+        <TextBlock Canvas.Left="10" TextWrapping="Wrap" Text="User Name:" Canvas.Top="10" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock Canvas.Left="10" TextWrapping="Wrap" Text="Password:" Canvas.Top="33" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <TextBox Canvas.Left="84" TextWrapping="Wrap" Canvas.Top="8" Width="120" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBox Canvas.Left="84" TextWrapping="Wrap" Canvas.Top="31" Width="120" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <CheckBox Content="Remember me" Canvas.Left="84" Canvas.Top="54"/>
+        <Button Content="Log In" Width="50" Canvas.Left="84" Canvas.Top="74"/>
+        <Button Content="Cancel" Width="50" Canvas.Left="139" Canvas.Top="74"/>
+    </Canvas>
 </Window>
