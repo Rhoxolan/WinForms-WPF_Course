@@ -72,6 +72,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PW_2022.05.27_WPF", "PW_202
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PW_2022.05.27_WPF_V2", "PW_2022.05.27_WPF_V2\PW_2022.05.27_WPF_V2.csproj", "{1F3ED44B-DB75-4753-95CA-0CE3626223F8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PW_2022.05.30_WPF", "PW_2022.05.30_WPF\PW_2022.05.30_WPF.csproj", "{EA060D91-56DB-47CE-B3B5-07C312990F90}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -206,6 +208,10 @@ Global
 		{1F3ED44B-DB75-4753-95CA-0CE3626223F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F3ED44B-DB75-4753-95CA-0CE3626223F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F3ED44B-DB75-4753-95CA-0CE3626223F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA060D91-56DB-47CE-B3B5-07C312990F90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA060D91-56DB-47CE-B3B5-07C312990F90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA060D91-56DB-47CE-B3B5-07C312990F90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA060D91-56DB-47CE-B3B5-07C312990F90}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
