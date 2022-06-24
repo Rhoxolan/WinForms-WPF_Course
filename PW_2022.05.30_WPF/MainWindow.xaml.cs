@@ -15,14 +15,30 @@ using System.Windows.Shapes;
 
 namespace PW_2022._05._30_WPF
 {
-    /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
+        byte move;
         public MainWindow()
         {
             InitializeComponent();
+            move = 1;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            if(move == 1)
+            {
+                Button thisBtn = (Button)sender;
+                thisBtn.Style = (Style)gameTable.Resources["Xs button"];
+                thisBtn.Content = "X";
+                move = 2;
+            }
+            else
+            {
+                Button thisBtn = (Button)sender;
+                thisBtn.Content = "0";
+                move = 1;
+            }
         }
     }
 }

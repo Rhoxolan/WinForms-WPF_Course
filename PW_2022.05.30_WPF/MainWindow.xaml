@@ -5,17 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PW_2022._05._30_WPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="500" Width="500">
-    <UniformGrid Columns="3" Rows="3" Margin="1">
+        Title="MainWindow" Height="500" Width="500" Background="GhostWhite">
+    <UniformGrid x:Name="gameTable" Columns="3" Rows="3" Margin="1">
         <UniformGrid.Resources>
             <Style x:Key="Xs button">
                 <Setter Property="ItemsControl.Background" Value="Moccasin"></Setter>
                 <Setter Property="ItemsControl.Foreground" Value="Blue"></Setter>
+                <Setter Property="ItemsControl.FontSize" Value="28"></Setter>
             </Style>
             <Style x:Key="Os button">
                 <Setter Property="ItemsControl.Background" Value="PaleGreen"></Setter>
                 <Setter Property="ItemsControl.Foreground" Value="Red"></Setter>
+                <Setter Property="ItemsControl.FontSize" Value="28"></Setter>
             </Style>
         </UniformGrid.Resources>
+        <Button Click="Button_Click" Margin="5" Background="White"></Button>
+        <Button Click="Button_Click" Margin="5" Background="White"></Button>
+        <Button Click="Button_Click" Margin="5" Background="White"></Button>
+        <Button Click="Button_Click" Margin="5" Background="White"></Button>
+        <Button Click="Button_Click" Margin="5" Background="White"></Button>
+        <Button Click="Button_Click" Margin="5" Background="White"></Button>
+        <Button Click="Button_Click" Margin="5" Background="White"></Button>
+        <Button Click="Button_Click" Margin="5" Background="White"></Button>
+        <Button Click="Button_Click" Margin="5" Background="White"></Button>
     </UniformGrid>
 </Window>
