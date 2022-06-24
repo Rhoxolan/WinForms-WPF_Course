@@ -5,14 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HW_2022._05._30_WPF"
         mc:Ignorable="d"
-        Title="Authentication" Height="153" Width="262" ResizeMode="CanMinimize">
+        Title="Authentication" Height="172" Width="262" ResizeMode="CanMinimize">
+    <Window.Resources>
+        <ControlTemplate TargetType="Button" x:Key="btTemplateLogin">
+            <Border CornerRadius="25" BorderBrush="Gray" BorderThickness="2" Background="LightGreen">
+                <ContentControl HorizontalAlignment="Center" VerticalAlignment="Center" Content="{TemplateBinding Content}"/>
+            </Border>
+        </ControlTemplate>
+        <ControlTemplate TargetType="Button" x:Key="btTemplateCancel">
+            <Border CornerRadius="25" BorderBrush="Gray" BorderThickness="2" Background="Red">
+                <ContentControl HorizontalAlignment="Center" VerticalAlignment="Center" Content="{TemplateBinding Content}"/>
+            </Border>
+        </ControlTemplate>
+    </Window.Resources>
     <Canvas>
         <TextBlock Canvas.Left="10" TextWrapping="Wrap" Text="User Name:" Canvas.Top="10" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <TextBlock Canvas.Left="10" TextWrapping="Wrap" Text="Password:" Canvas.Top="33" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         <TextBox Canvas.Left="84" TextWrapping="Wrap" Canvas.Top="8" Width="120" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <TextBox Canvas.Left="84" TextWrapping="Wrap" Canvas.Top="31" Width="120" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <CheckBox Content="Remember me" Canvas.Left="84" Canvas.Top="54"/>
-        <Button Content="Log In" Width="50" Canvas.Left="84" Canvas.Top="74"/>
-        <Button Content="Cancel" Width="50" Canvas.Left="139" Canvas.Top="74"/>
+        <Button Template="{StaticResource btTemplateLogin}" Content="Log In" Width="75" Height="20" Canvas.Left="84" Canvas.Top="74"/>
+        <Button Template="{StaticResource btTemplateCancel}" Content="Cancel" Width="75" Height="20" Canvas.Left="84" Canvas.Top="99"/>
     </Canvas>
 </Window>
