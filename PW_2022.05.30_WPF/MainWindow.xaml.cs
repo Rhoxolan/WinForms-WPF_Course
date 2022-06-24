@@ -36,6 +36,7 @@ namespace PW_2022._05._30_WPF
             else
             {
                 Button thisBtn = (Button)sender;
+                thisBtn.Style = (Style)gameTable.Resources["Os button"];
                 thisBtn.Content = "0";
                 move = 1;
             }
