@@ -24,5 +24,19 @@ namespace HW_2022._05._30_WPF
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            if (logTextBox.Text != null && logTextBox.Text != String.Empty &&
+                passBox.Password != null && passBox.Password != String.Empty)
+            {
+                MessageBox.Show("Добро пожаловать в систему!");
+            }
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }
