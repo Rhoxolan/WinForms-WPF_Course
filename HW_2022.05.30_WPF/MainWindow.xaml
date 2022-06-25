@@ -65,7 +65,7 @@
                 </ControlTemplate>
             </PasswordBox.Template>
         </PasswordBox>
-            <CheckBox Background="LightPink"  Foreground="AntiqueWhite" Content="Remember me" Canvas.Left="84" Canvas.Top="54"/>
+        <CheckBox Background="LightPink"  Foreground="AntiqueWhite" Content="Remember me" Canvas.Left="84" Canvas.Top="54"/>
         <Button Template="{StaticResource btTemplateLogin}" Content="Log In" Width="75" Height="20" Canvas.Left="84" Canvas.Top="74" Click="Button_Click"/>
         <Button Template="{StaticResource btTemplateCancel}" Content="Cancel" Width="75" Height="20" Canvas.Left="84" Canvas.Top="99" Click="Button_Click_1"/>
     </Canvas>
