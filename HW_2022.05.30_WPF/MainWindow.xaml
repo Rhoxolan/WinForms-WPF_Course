@@ -45,11 +45,11 @@
         </ControlTemplate>
     </Window.Resources>
     <Canvas>
-        <TextBlock Foreground="AntiqueWhite" Canvas.Left="10" TextWrapping="Wrap" Text="User Name:" Canvas.Top="10" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <TextBlock Foreground="AntiqueWhite" Canvas.Left="10" TextWrapping="Wrap" Text="Password:" Canvas.Top="35" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <TextBlock Foreground="AntiqueWhite" Canvas.Left="10" TextWrapping="Wrap" Text="User Name:" Canvas.Top="11" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <TextBlock Foreground="AntiqueWhite" Canvas.Left="10" TextWrapping="Wrap" Text="Password:" Canvas.Top="33" HorizontalAlignment="Center" VerticalAlignment="Top"/>
 
         <!-- Кастомизация шаблона: https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms752068(v=vs.100) -->
-        <TextBox x:Name="logTextBox" Canvas.Left="84" TextWrapping="NoWrap" Canvas.Top="8" Height="20" Width="120" HorizontalAlignment="Left" VerticalAlignment="Center">
+        <TextBox x:Name="logTextBox" Canvas.Left="84" TextWrapping="NoWrap" Canvas.Top="8" Height="18" Width="120" HorizontalAlignment="Left" VerticalAlignment="Center">
             <TextBox.Template>
                 <ControlTemplate TargetType="{x:Type TextBoxBase}">
                     <Border Name="Border" CornerRadius="25" Padding="2" BorderThickness="1" Background="LightGray" BorderBrush="Gray">
@@ -82,7 +82,7 @@
         </TextBox>
 
         <!-- Кастомизация PasswordBox: https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ff468216(v=vs.100) -->
-        <PasswordBox x:Name="passBox" Canvas.Left="84" Canvas.Top="33" Width="120" Height="20" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <PasswordBox x:Name="passBox" Canvas.Left="84" Canvas.Top="31" Width="120" Height="18" HorizontalAlignment="Center" VerticalAlignment="Top">
             <PasswordBox.Template>
                 <ControlTemplate TargetType="{x:Type PasswordBox}">
                     <Border Name="Border" CornerRadius="25" Padding="2" BorderThickness="1" Background="LightGray" BorderBrush="Gray">
@@ -98,8 +98,8 @@
                 </ControlTemplate>
             </PasswordBox.Template>
         </PasswordBox>
-        <CheckBox Background="LightPink"  Foreground="AntiqueWhite" Content="Remember me" Canvas.Left="84" Canvas.Top="59" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <Button Template="{StaticResource btTemplateLogin}" Content="Log In" Width="75" Height="20" Canvas.Left="84" Canvas.Top="79" Click="Button_Click" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <Button Template="{StaticResource btTemplateCancel}" Content="Cancel" Width="75" Height="20" Canvas.Left="84" Canvas.Top="104" Click="Button_Click_1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <CheckBox Background="LightPink"  Foreground="AntiqueWhite" Content="Remember me" Canvas.Left="84" Canvas.Top="56" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Button Template="{StaticResource btTemplateLogin}" Content="Log In" Width="75" Height="20" Canvas.Left="84" Canvas.Top="76" Click="Button_Click" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Button Template="{StaticResource btTemplateCancel}" Content="Cancel" Width="75" Height="20" Canvas.Left="84" Canvas.Top="100" Click="Button_Click_1" HorizontalAlignment="Center" VerticalAlignment="Top"/>
     </Canvas>
 </Window>
