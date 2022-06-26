@@ -46,27 +46,60 @@
     </Window.Resources>
     <Canvas>
         <TextBlock Foreground="AntiqueWhite" Canvas.Left="10" TextWrapping="Wrap" Text="User Name:" Canvas.Top="10" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <TextBlock Foreground="AntiqueWhite" Canvas.Left="10" TextWrapping="Wrap" Text="Password:" Canvas.Top="33" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <TextBox x:Name="logTextBox" Canvas.Left="84" TextWrapping="Wrap" Canvas.Top="8" Height="18" Width="120" HorizontalAlignment="Left" VerticalAlignment="Center">
+        <TextBlock Foreground="AntiqueWhite" Canvas.Left="10" TextWrapping="Wrap" Text="Password:" Canvas.Top="35" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+
+        <!-- Кастомизация шаблона: https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms752068(v=vs.100) -->
+        <TextBox x:Name="logTextBox" Canvas.Left="84" TextWrapping="NoWrap" Canvas.Top="8" Height="20" Width="120" HorizontalAlignment="Left" VerticalAlignment="Center">
             <TextBox.Template>
-                <ControlTemplate TargetType="TextBox">
-                    <Border CornerRadius="25" BorderBrush="Gray" Background="LightGray">
-                        <ContentControl HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="AntiqueWhite"></ContentControl>
+                <ControlTemplate TargetType="{x:Type TextBoxBase}">
+                    <Border Name="Border" CornerRadius="25" Padding="2" BorderThickness="1" Background="LightGray" BorderBrush="Gray">
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualState x:Name="Normal" />
+                                <VisualState x:Name="Disabled">
+                                    <Storyboard>
+                                        <ColorAnimationUsingKeyFrames Storyboard.TargetName="Border"
+                                                Storyboard.TargetProperty="(Panel.Background).(SolidColorBrush.Color)">
+                                            <EasingColorKeyFrame KeyTime="0" Value="LightGray"/>
+                                        </ColorAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="ReadOnly">
+                                    <Storyboard>
+                                        <ColorAnimationUsingKeyFrames Storyboard.TargetName="Border"
+                                                Storyboard.TargetProperty="(Panel.Background).(SolidColorBrush.Color)">
+                                            <EasingColorKeyFrame KeyTime="0" Value="DarkGray" />
+                                        </ColorAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="MouseOver"/>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                        <ScrollViewer Margin="0" x:Name="PART_ContentHost" />
                     </Border>
                 </ControlTemplate>
             </TextBox.Template>
         </TextBox>
-        <PasswordBox x:Name="passBox" Canvas.Left="84" Canvas.Top="31" Width="120" Height="18" HorizontalAlignment="Center" VerticalAlignment="Center">
+
+        <!-- Кастомизация PasswordBox: https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ff468216(v=vs.100) -->
+        <PasswordBox x:Name="passBox" Canvas.Left="84" Canvas.Top="33" Width="120" Height="20" HorizontalAlignment="Center" VerticalAlignment="Center">
             <PasswordBox.Template>
-                <ControlTemplate TargetType="PasswordBox">
-                    <Border CornerRadius="25" BorderBrush="Gray" Background="LightGray">
-                        <ContentControl HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="AntiqueWhite"></ContentControl>
+                <ControlTemplate TargetType="{x:Type PasswordBox}">
+                    <Border Name="Border" CornerRadius="25" Padding="2" BorderThickness="1" Background="LightGray" BorderBrush="Gray">
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualState x:Name="Normal" />
+                                <VisualState x:Name="Disabled" />
+                                <VisualState x:Name="MouseOver" />
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                        <ScrollViewer x:Name="PART_ContentHost" />
                     </Border>
                 </ControlTemplate>
             </PasswordBox.Template>
         </PasswordBox>
-        <CheckBox Background="LightPink"  Foreground="AntiqueWhite" Content="Remember me" Canvas.Left="84" Canvas.Top="54"/>
-        <Button Template="{StaticResource btTemplateLogin}" Content="Log In" Width="75" Height="20" Canvas.Left="84" Canvas.Top="74" Click="Button_Click"/>
-        <Button Template="{StaticResource btTemplateCancel}" Content="Cancel" Width="75" Height="20" Canvas.Left="84" Canvas.Top="99" Click="Button_Click_1"/>
+        <CheckBox Background="LightPink"  Foreground="AntiqueWhite" Content="Remember me" Canvas.Left="84" Canvas.Top="59" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button Template="{StaticResource btTemplateLogin}" Content="Log In" Width="75" Height="20" Canvas.Left="84" Canvas.Top="79" Click="Button_Click" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button Template="{StaticResource btTemplateCancel}" Content="Cancel" Width="75" Height="20" Canvas.Left="84" Canvas.Top="104" Click="Button_Click_1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
     </Canvas>
 </Window>
