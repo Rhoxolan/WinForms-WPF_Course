@@ -5,8 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HW_2022._06._01_WPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="550">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="7*"></RowDefinition>
+            <RowDefinition Height="49*"></RowDefinition>
+            <RowDefinition Height="6*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" Margin="3" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontSize="18">Transactions</TextBlock>
+        <ListBox Grid.Row="1" Margin="3"></ListBox>
+        <WrapPanel Grid.Row="2">
+            <TextBlock Margin="3">Товар</TextBlock>
+            <TextBox Margin="3" Height="25" Width="100"></TextBox>
+            <TextBlock Margin="3">Сумма</TextBlock>
+            <TextBox Margin="3" Height="25" Width="100"></TextBox>
+        </WrapPanel>
+        <Button Grid.Row="2" Margin="3" Height="25" Width="100" HorizontalAlignment="Right" VerticalAlignment="Top">Внести</Button>
     </Grid>
 </Window>
