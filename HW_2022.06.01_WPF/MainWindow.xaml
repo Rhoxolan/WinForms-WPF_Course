@@ -13,7 +13,20 @@
             <RowDefinition Height="6*"></RowDefinition>
         </Grid.RowDefinitions>
         <TextBlock Grid.Row="0" Margin="3" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontSize="18">Transactions</TextBlock>
-        <ListBox x:Name="lb" Grid.Row="1" Margin="3"></ListBox>
+        <!-- HorizontalContentAlignment нужен для отображения элементов в LB по разные стороны панели! -->
+        <ListBox HorizontalContentAlignment="Stretch" x:Name="lb" Grid.Row="1" Margin="3">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid Margin="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <TextBlock Grid.Row="0" FontSize="18" Margin="1" HorizontalAlignment="Left" Text="{Binding Name}"></TextBlock>
+                        <TextBlock Grid.Row="0" FontSize="18" Margin="1" HorizontalAlignment="Right" Text="{Binding Sum}"></TextBlock>
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
         <WrapPanel Grid.Row="2">
             <TextBlock Margin="3">Товар</TextBlock>
             <TextBox x:Name="nameTB" Margin="3" Height="25" Width="100"></TextBox>

@@ -17,9 +17,12 @@ namespace HW_2022._06._01_WPF
             Sum = sum;
         }
 
-        bool IsNegative()
+        public bool IsNegative
         {
-            return Sum < 0;
+            get
+            {
+                return Sum < 0;
+            }
         }
     }
 }
