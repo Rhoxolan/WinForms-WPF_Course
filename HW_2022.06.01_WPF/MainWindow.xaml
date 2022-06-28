@@ -13,13 +13,13 @@
             <RowDefinition Height="6*"></RowDefinition>
         </Grid.RowDefinitions>
         <TextBlock Grid.Row="0" Margin="3" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontSize="18">Transactions</TextBlock>
-        <ListBox Grid.Row="1" Margin="3"></ListBox>
+        <ListBox x:Name="lb" Grid.Row="1" Margin="3"></ListBox>
         <WrapPanel Grid.Row="2">
             <TextBlock Margin="3">Товар</TextBlock>
-            <TextBox Margin="3" Height="25" Width="100"></TextBox>
+            <TextBox x:Name="nameTB" Margin="3" Height="25" Width="100"></TextBox>
             <TextBlock Margin="3">Сумма</TextBlock>
-            <TextBox Margin="3" Height="25" Width="100"></TextBox>
+            <TextBox x:Name="sumTB" Margin="3" Height="25" Width="100"></TextBox>
         </WrapPanel>
-        <Button Grid.Row="2" Margin="3" Height="25" Width="100" HorizontalAlignment="Right" VerticalAlignment="Top">Внести</Button>
+        <Button Grid.Row="2" Margin="3" Height="25" Width="100" HorizontalAlignment="Right" VerticalAlignment="Top" Click="Button_Click">Внести</Button>
     </Grid>
 </Window>
