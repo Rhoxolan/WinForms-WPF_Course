@@ -40,6 +40,8 @@ namespace PW_2022._06._03
             set => SetValue(ValueProperty, value);
         }
 
+
+
         public event RoutedEventHandler ValueChanged
         {
             add { AddHandler(ValueChangedEvent, value); }
