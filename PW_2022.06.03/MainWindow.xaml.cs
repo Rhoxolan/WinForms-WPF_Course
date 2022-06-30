@@ -24,5 +24,10 @@ namespace PW_2022._06._03
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            SumLabel.Content = (leftOp.Value + rightOp.Value).ToString();
+        }
     }
 }
