@@ -5,16 +5,17 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:PW_2022._06._03"
              mc:Ignorable="d" 
-             d:DesignHeight="30" d:DesignWidth="100">
+             d:DesignHeight="30" d:DesignWidth="100"
+             x:Name="contrl">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="79*"></ColumnDefinition>
             <ColumnDefinition Width="21*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <TextBox x:Name="textBoxPart" Grid.Column="0" FontSize="18" TextChanged="TextBox_TextChanged"></TextBox>
+        <TextBox Text="{Binding Value, ElementName=contrl}" x:Name="textBoxPart" Grid.Column="0" FontSize="18" TextChanged="TextBox_TextChanged"></TextBox>
         <UniformGrid Grid.Column="1" Rows="2">
-            <Button Margin="1,0,1,0.5" FontSize="7">˄</Button>
-            <Button Margin="1,0.5,1,0" FontSize="7">˅</Button>
+            <Button Margin="1,0,1,0.5" FontSize="7" Click="Button_Click_Up">˄</Button>
+            <Button Margin="1,0.5,1,0" FontSize="7" Click="Button_Click_Down">˅</Button>
         </UniformGrid>
     </Grid>
 </UserControl>

@@ -11,10 +11,10 @@
         <Label Content="+" FontWeight="ExtraBold" Canvas.Left="115" Canvas.Top="10"/>
         <local:NumericUpDown x:Name="rightOp" Canvas.Left="138" Canvas.Top="10" Width="100"/>
         <Label Content="=" FontWeight="ExtraBold" Canvas.Left="243" Canvas.Top="11"/>
-        <Label x:Name="SumLabel" FontSize="16" Canvas.Left="267" Canvas.Top="11" Width="100"/>
+        <Label x:Name="SumLabel" FontSize="18" Canvas.Left="267" Canvas.Top="7" Width="100" Height="Auto" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         <Button Content="Рассчитать" Canvas.Left="10" Canvas.Top="43" Click="Button_Click"/>
-        <TextBlock Canvas.Left="11" TextWrapping="Wrap" Text="{Binding Value, ElementName=leftOp}" Canvas.Top="68" TextAlignment="Center"  Width="63"/>
-        <TextBlock TextWrapping="Wrap" Text="+" Canvas.Left="79" Canvas.Top="68" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <TextBlock Canvas.Left="92" TextWrapping="Wrap" Text="{Binding Value, ElementName=rightOp}" Canvas.Top="68" TextAlignment="Center"  Width="63" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBlock FontSize="18" Canvas.Left="11" TextWrapping="Wrap" Text="{Binding Value, ElementName=leftOp}" Canvas.Top="73" TextAlignment="Center"  Width="63" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <TextBlock FontSize="18" TextWrapping="Wrap" Text="+" Canvas.Left="79" Canvas.Top="73" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <TextBlock FontSize="18" Canvas.Left="96" TextWrapping="Wrap" Text="{Binding Value, ElementName=rightOp}" Canvas.Top="73" TextAlignment="Center"  Width="63" HorizontalAlignment="Left" VerticalAlignment="Top"/>
     </Canvas>
 </Window>

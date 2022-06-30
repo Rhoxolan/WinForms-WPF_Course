@@ -56,5 +56,15 @@ namespace PW_2022._06._03
             //RoutedEventArgs args = new RoutedEventArgs(ValueChangedEvent);
             //RaiseEvent(args);
         }
+
+        private void Button_Click_Up(object sender, RoutedEventArgs e)
+        {
+            ++Value;
+        }
+
+        private void Button_Click_Down(object sender, RoutedEventArgs e)
+        {
+            --Value;
+        }
     }
 }
