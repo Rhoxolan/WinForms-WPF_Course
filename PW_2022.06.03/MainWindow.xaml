@@ -9,7 +9,7 @@
     <Canvas>
         <local:NumericUpDown x:Name="leftOp" Canvas.Left="10" Canvas.Top="10" Width="100"/>
         <Label Content="+" FontWeight="ExtraBold" Canvas.Left="115" Canvas.Top="10"/>
-        <local:NumericUpDown x:Name="rightOp" Canvas.Left="138" Canvas.Top="10" Width="100"/>
+        <local:NumericUpDown ValueChanged="rightOp_ValueChanged" x:Name="rightOp" Canvas.Left="138" Canvas.Top="10" Width="100"/>
         <Label Content="=" FontWeight="ExtraBold" Canvas.Left="243" Canvas.Top="11"/>
         <Label x:Name="SumLabel" FontSize="18" Canvas.Left="267" Canvas.Top="7" Width="100" Height="Auto" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         <Button Content="Рассчитать" Canvas.Left="10" Canvas.Top="43" Click="Button_Click"/>

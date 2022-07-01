@@ -29,5 +29,10 @@ namespace PW_2022._06._03
         {
             SumLabel.Content = (leftOp.Value + rightOp.Value).ToString();
         }
+
+        private void rightOp_ValueChanged(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show(rightOp.Value.ToString());
+        }
     }
 }

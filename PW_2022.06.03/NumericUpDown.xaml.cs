@@ -39,22 +39,22 @@ namespace PW_2022._06._03
             set => SetValue(ValueProperty, value);
         }
 
-        //public event RoutedEventHandler ValueChanged
-        //{
-        //    add { AddHandler(ValueChangedEvent, value); }
-        //    remove { RemoveHandler(ValueChangedEvent, value); }
-        //}
+        public event RoutedEventHandler ValueChanged
+        {
+            add { AddHandler(ValueChangedEvent, value); }
+            remove { RemoveHandler(ValueChangedEvent, value); }
+        }
 
-        //public static readonly RoutedEvent ValueChangedEvent =
-        //    EventManager.RegisterRoutedEvent("ValueChanged", RoutingStrategy.Bubble, typeof(RoutedEventHandler),
-        //        typeof(NumericUpDown));
+        public static readonly RoutedEvent ValueChangedEvent =
+            EventManager.RegisterRoutedEvent("ValueChanged", RoutingStrategy.Bubble, typeof(RoutedEventHandler),
+                typeof(NumericUpDown));
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-            //e.Handled = true;
             Value = Convert.ToInt32(textBoxPart.Text);
-            //RoutedEventArgs args = new RoutedEventArgs(ValueChangedEvent);
-            //RaiseEvent(args);
+            e.Handled = true;
+            RoutedEventArgs args = new RoutedEventArgs(ValueChangedEvent);
+            RaiseEvent(args);
         }
 
         private void Button_Click_Up(object sender, RoutedEventArgs e)
