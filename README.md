@@ -1,1 +1,1 @@
-Практические работы и домашние задания по предмету "Основы разработки приложений с использованием Windows Forms и WPF" (25.04.2022 - 03.06.2022) в Компьютерной Академии ШАГ г. Кривой Рог.
+Practical works and homeworks on the subject "The basics of developing applications on Windows Forms and WPF" (25.04.2022 - 03.06.2022) at STEP IT Academy in Kryvyi Rih.
